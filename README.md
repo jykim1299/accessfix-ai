@@ -27,6 +27,8 @@ Meta Muse Spark proposes accessibility fixes; AccessFix AI independently tests r
 
 ## Watch Demo / Try Read-Only Demo
 
+**[Live Demo — explore the recorded experiments](https://jykim1299.github.io/accessfix-ai/)**
+
 | Destination | Publication status | Local review |
 |---|---|---|
 | Watch Demo | `VIDEO_URL_PENDING` | [English narration](media/accessfix-joanna-final-narrated.mp4) · [Captions only](media/accessfix-joanna-final-captioned.mp4) · [SRT](media/accessfix-joanna-final.en.srt) |
