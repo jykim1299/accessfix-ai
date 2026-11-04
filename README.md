@@ -31,11 +31,11 @@ Meta Muse Spark proposes accessibility fixes; AccessFix AI independently tests r
 
 | Destination | Publication status | Included materials |
 |---|---|---|
-| Watch Demo | `VIDEO_URL_PENDING` | [English narration](media/accessfix-joanna-final-narrated.mp4) · [Captions only](media/accessfix-joanna-final-captioned.mp4) · [SRT](media/accessfix-joanna-final.en.srt) |
+| Watch Demo | [Watch on YouTube](https://youtu.be/K9ZAIQ5C6Uc) | [English narration](media/accessfix-joanna-final-narrated.mp4) · [Captions only](media/accessfix-joanna-final-captioned.mp4) · [SRT](media/accessfix-joanna-final.en.srt) |
 | Try Read-Only Demo | [Live Demo](https://jykim1299.github.io/accessfix-ai/) | Public recorded demo on GitHub Pages; local instructions below |
 | GitHub repository | [jykim1299/accessfix-ai](https://github.com/jykim1299/accessfix-ai) | Public source and reviewed evidence |
 
-The video shows actual RC4 browsing of preserved experiments. It does not show a live model repair. The repository and read-only demo are public; the YouTube video link remains pending.
+The video shows actual RC4 browsing of preserved experiments. It does not show a live model repair. The repository, read-only demo, and [YouTube video](https://youtu.be/K9ZAIQ5C6Uc) are public.
 
 ## Run the working code
 
@@ -147,7 +147,7 @@ Each public file has a SHA-256 and preserved/derived status. Reviewed copies ret
 
 The presentation uses original saved screenshots with labeled crops. New RC4 footage shows navigation of those records; no new repair inference was performed. The final 165-second video uses Amazon Polly Joanna Neural narration, approved by the project owner after listening. [Voice rights](docs/JOANNA_VOICE_RIGHTS_KO.md). Codex assisted development and preparation; it is separate from the Meta repair model.
 
-The GitHub repository and recorded read-only demo are publicly available with owner approval. YouTube upload and official hackathon submission remain pending.
+The GitHub repository and recorded read-only demo are publicly available with owner approval. The YouTube video has been published. Official hackathon submission remains pending.
 
 Pinned M5 upstream commit (full identifier):
 
