@@ -1,0 +1,23 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/record.json",
+      "sha256": "d053735e311850175e99bdddabefd32ca6c26ff8d138c7e5cd49f15fe2761b79"
+    }
+  ],
+  "data": {
+    "kind": "Project-authored synthetic fixture",
+    "name": "AccessFix AI Notification switch",
+    "license": "MIT (fixture source)",
+    "sha256": "1b5acbff8048509820d62385d1a6e475e61377a2f0827a4f7398187846da3afe",
+    "hashes": {
+      "src/App.tsx": "1b5acbff8048509820d62385d1a6e475e61377a2f0827a4f7398187846da3afe",
+      "src/main.tsx": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "src/styles.css": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6"
+    },
+    "evidenceArchiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011"
+  }
+}

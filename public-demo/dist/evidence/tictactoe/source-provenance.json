@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/sadanandpai/frontend-mini-challenges",
+  "commit": "48b7dae8bae41e4c69b904c7793bb8a4f892f337",
+  "commit_time_utc": "2026-10-20T04:28:12Z",
+  "retrieved_utc": "2026-10-28T07:58:19.501561+00:00",
+  "license": "MIT",
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "local_path": "evaluation/m5_public_tictactoe/upstream/LICENSE",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/LICENSE",
+      "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475",
+      "bytes": 1069,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "package.json",
+      "local_path": "evaluation/m5_public_tictactoe/upstream/package.json",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/package.json",
+      "sha256": "ac9b5b1930f77dcfe0986ce689e31ab6b29690e0eccb478eb29d25695427092b",
+      "bytes": 1053,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/package.json",
+      "local_path": "evaluation/m5_public_tictactoe/upstream/react-package.json",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/package.json",
+      "sha256": "ee238a7ceb1d6e2559b1a8c46f3a169848b467c77a8ef0a82f74fa3de668f27c",
+      "bytes": 1367,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/tic-tac-toe/App.jsx",
+      "local_path": "evaluation/m5_public_tictactoe/application/src/App.jsx",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/tic-tac-toe/App.jsx",
+      "sha256": "2e70cb7140949e3d7eeb30fe2838ff5435bd3b599ef215c87125bc3bb460a29a",
+      "bytes": 2774,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/tic-tac-toe/constant.js",
+      "local_path": "evaluation/m5_public_tictactoe/application/src/constant.js",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/tic-tac-toe/constant.js",
+      "sha256": "583ea3cb5aaf1d406717e95953e23baa7883c313bde07396caba4d305a26d2bc",
+      "bytes": 433,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/tic-tac-toe/tictactoe.module.css",
+      "local_path": "evaluation/m5_public_tictactoe/application/src/tictactoe.module.css",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/tic-tac-toe/tictactoe.module.css",
+      "sha256": "4c8d614057b0e2c983f65a39031b99f48d6d40dae5a0d67b420cbbff1d8b2e23",
+      "bytes": 805,
+      "byte_identical": true
+    }
+  ]
+}

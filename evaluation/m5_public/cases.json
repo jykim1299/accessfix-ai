@@ -1,0 +1,8 @@
+[
+  {
+    "id": "public-accordion",
+    "split": "external-public",
+    "title": "Public React accordion \u00b7 question disclosure",
+    "task": "Read and collapse FAQ answers with the keyboard and pointer. Preserve all five questions and answers, independent expansion when multiple-open is enabled, exclusive expansion when it is disabled, and the existing multiple-open checkbox. Repair observed accessibility issues in the supplied Accordion component and CSS without changing content or adding dependencies."
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "key": "m4-control-dev-tabs",
+      "subdir": "m4/manual-history-v1/dev-tabs/jobs",
+      "repair_id": "b6c834e855624d239b52474488ada21d",
+      "title": "Manual regression control · Project views · keyboard tabs",
+      "provenance": "manual-control"
+    },
+    {
+      "key": "m4-control-holdout-menu",
+      "subdir": "m4/manual-history-v1/holdout-menu/jobs",
+      "repair_id": "5021a0be08f843ac9caa26fa96611747",
+      "title": "Manual regression control · Workspace actions · menu lifecycle",
+      "provenance": "manual-control"
+    },
+    {
+      "key": "m4-control-holdout-switch",
+      "subdir": "m4/manual-history-v1/holdout-switch/jobs",
+      "repair_id": "8873dfaa4cbe41cea4c203d89e87603e",
+      "title": "Manual regression control · Notification settings · switch and save",
+      "provenance": "manual-control"
+    },
+    {
+      "key": "m4-control-holdout-action",
+      "subdir": "m4/manual-history-v1/holdout-action/jobs",
+      "repair_id": "b3f008be730a4782b875cc725c69f489",
+      "title": "Manual regression control · Order summary · named action activation",
+      "provenance": "manual-control"
+    },
+    {
+      "key": "m4-meta-dev-tabs",
+      "subdir": "m4/meta-live-v1/dev-tabs/jobs",
+      "repair_id": "f4ebaa0f3eaa4ee0907961d4596fb874",
+      "title": "Meta M4 · Project views · keyboard tabs",
+      "provenance": "ai"
+    },
+    {
+      "key": "m4-meta-holdout-menu",
+      "subdir": "m4/meta-live-v1/holdout-menu/jobs",
+      "repair_id": "dd7011debd554dfa807b45aeb8f082ac",
+      "title": "Meta M4 · Workspace actions · menu lifecycle",
+      "provenance": "ai"
+    },
+    {
+      "key": "m4-meta-holdout-switch",
+      "subdir": "m4/meta-live-v1/holdout-switch/jobs",
+      "repair_id": "5797f925762948bb8a5bdd0841101fe0",
+      "title": "Meta M4 · Notification settings · switch and save",
+      "provenance": "ai"
+    },
+    {
+      "key": "m4-meta-holdout-action",
+      "subdir": "m4/meta-live-v1/holdout-action/jobs",
+      "repair_id": "39d0aebf21294ae0b7dcdaede0cfc478",
+      "title": "Meta M4 · Order summary · named action activation",
+      "provenance": "ai"
+    }
+  ]
+}

@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "case_id": "holdout-switch",
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-save",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "toggle-on",
+        "draft-not-saved",
+        "saved-summary",
+        "reset-preserves",
+        "background-action",
+        "persistence",
+        "toggle-off"
+      ],
+      "required_states": [
+        "initial",
+        "changed",
+        "saved",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "toggle-off",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "switch",
+          "name": "Weekly summary",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "On",
+            "inDialog": false
+          },
+          "elapsed_s": 1.1669601440000001
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Save settings",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save settings",
+            "inDialog": false
+          },
+          "elapsed_s": 1.4245717709999999
+        },
+        {
+          "kind": "pointer",
+          "role": "switch",
+          "name": "Weekly summary",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "Off",
+            "inDialog": false
+          },
+          "elapsed_s": 1.4727342819999998
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Reset changes",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Reset changes",
+            "inDialog": false
+          },
+          "elapsed_s": 1.523449615
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Send test notification",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Send test notification",
+            "inDialog": false
+          },
+          "elapsed_s": 1.7563991419999998
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / NOTIFICATIONS\n\nNotification settings\n\nChoose the updates you want, then save your preferences.\n\nDelivery upd",
+            "inDialog": false
+          },
+          "elapsed_s": 2.348005352
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "changed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "changed.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.72363813
+    },
+    {
+      "id": "pointer-reset",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "toggle-on",
+        "draft-not-saved",
+        "saved-summary",
+        "reset-preserves",
+        "background-action",
+        "persistence",
+        "toggle-again",
+        "save-after-reset"
+      ],
+      "required_states": [
+        "initial",
+        "changed",
+        "saved",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "toggle-again",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "switch",
+          "name": "Weekly summary",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "On",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0341265569999996
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Reset changes",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Reset changes",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2973959640000003
+        },
+        {
+          "kind": "pointer",
+          "role": "switch",
+          "name": "Weekly summary",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "On",
+            "inDialog": false
+          },
+          "elapsed_s": 1.3775840659999994
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Save settings",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save settings",
+            "inDialog": false
+          },
+          "elapsed_s": 1.4298472629999996
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Send test notification",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Send test notification",
+            "inDialog": false
+          },
+          "elapsed_s": 1.6759209839999993
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / NOTIFICATIONS\n\nNotification settings\n\nChoose the updates you want, then save your preferences.\n\nDelivery upd",
+            "inDialog": false
+          },
+          "elapsed_s": 2.238823203
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "changed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "changed.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.5933571339999997
+    },
+    {
+      "id": "keyboard-save",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "toggle-on",
+        "draft-not-saved",
+        "saved-summary",
+        "reset-preserves",
+        "background-action",
+        "persistence",
+        "toggle-off"
+      ],
+      "required_states": [
+        "initial",
+        "changed",
+        "saved",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "fail",
+          "expected": "true",
+          "actual": "false"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "missing"
+        },
+        {
+          "id": "saved-summary",
+          "status": "missing"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "toggle-off",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "Off",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0011980570000005
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "Off",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0251720009999998
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: toggle-on"
+        }
+      ],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "changed",
+          "status": "missing"
+        },
+        {
+          "state": "saved",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.332625516000001
+    },
+    {
+      "id": "keyboard-reset",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "toggle-on",
+        "draft-not-saved",
+        "saved-summary",
+        "reset-preserves",
+        "background-action",
+        "persistence",
+        "toggle-again",
+        "save-after-reset"
+      ],
+      "required_states": [
+        "initial",
+        "changed",
+        "saved",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "fail",
+          "expected": "true",
+          "actual": "false"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "missing"
+        },
+        {
+          "id": "saved-summary",
+          "status": "missing"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "toggle-again",
+          "status": "missing"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "Off",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0075831000000017
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "DIV",
+            "role": "switch",
+            "name": "Weekly summary",
+            "text": "Off",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0292652450000006
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: toggle-on"
+        }
+      ],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "label-content-name-mismatch",
+              "impact": "serious",
+              "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+              "help": "Elements must have their visible text as part of their accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".switch"
+                  ],
+                  "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                  "any": [
+                    {
+                      "id": "label-content-name-mismatch",
+                      "data": {
+                        "messageKey": "valueText"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Text inside the element may be value text rather than a label"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "changed",
+          "status": "missing"
+        },
+        {
+          "state": "saved",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.3074882160000016
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.081014255,
+  "browser_s": 10.120105044,
+  "elapsed_s": 10.240338301,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 11.41323189996183
+}

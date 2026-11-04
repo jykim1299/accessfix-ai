@@ -1,0 +1,13 @@
+{
+  "source": "tests/m2/run-ui.mjs",
+  "source_sha256": "8962936737c9acced221bffb27613b643bb85b1fe15f39e9fbec9e609c0703ab",
+  "changes": [
+    "Resolve identical Playwright and axe packages from tests/m2/package.json",
+    "Use current OpenAI M1 comparison link name; same m1-ai destination and keyboard workflow",
+    "Current UI uses 검증에서 거절된 후보 for general rejection; original archived M1 pointer regression, model provenance and decision assertions unchanged",
+    "Await asynchronous provider catalog using toBeEnabled, instead of immediate snapshot after run load; targeted refresh test 5/5, no product mutation or inference"
+  ],
+  "model_calls": "0; explicit manual mutation provider only",
+  "prior_test_result": "artifacts/m4/m2-regression-v1: 25/26 passed; one legacy copy assertion failed, preserved",
+  "timing_failure_record": "artifacts/m4/m2-regression-v2: 25/26; provider request still loading at immediate check; target follow-up artifacts/m4/refresh-provider-v1"
+}

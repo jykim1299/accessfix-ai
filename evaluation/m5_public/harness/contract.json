@@ -1,0 +1,109 @@
+{
+  "version": "m5-public-accordion-contract-v1",
+  "cases": {
+    "public-accordion": {
+      "workflows": [
+        {
+          "id": "pointer-multi",
+          "modality": "pointer",
+          "scenario": "multi",
+          "checks": [
+            "content-preserved",
+            "initial-collapsed",
+            "first-answer",
+            "multiple-answers",
+            "independent-close",
+            "mode-clears",
+            "single-mode",
+            "third-answer",
+            "exclusive-open",
+            "collapse-current"
+          ],
+          "states": [
+            "initial",
+            "first-open",
+            "multiple-open",
+            "mode-changed",
+            "exclusive-open",
+            "final"
+          ]
+        },
+        {
+          "id": "pointer-single",
+          "modality": "pointer",
+          "scenario": "single",
+          "checks": [
+            "content-preserved",
+            "initial-collapsed",
+            "single-mode",
+            "fifth-answer",
+            "exclusive-open",
+            "multiple-mode",
+            "mode-preserves",
+            "multiple-answers",
+            "independent-close",
+            "collapse-current"
+          ],
+          "states": [
+            "initial",
+            "first-open",
+            "multiple-open",
+            "mode-changed",
+            "exclusive-open",
+            "final"
+          ]
+        },
+        {
+          "id": "keyboard-multi",
+          "modality": "keyboard",
+          "scenario": "multi",
+          "checks": [
+            "content-preserved",
+            "initial-collapsed",
+            "first-answer",
+            "multiple-answers",
+            "independent-close",
+            "mode-clears",
+            "single-mode",
+            "third-answer",
+            "exclusive-open",
+            "collapse-current"
+          ],
+          "states": [
+            "initial",
+            "first-open",
+            "multiple-open",
+            "mode-changed",
+            "exclusive-open",
+            "final"
+          ]
+        },
+        {
+          "id": "keyboard-single",
+          "modality": "keyboard",
+          "scenario": "single",
+          "checks": [
+            "content-preserved",
+            "initial-collapsed",
+            "single-mode",
+            "fifth-answer",
+            "exclusive-open",
+            "multiple-mode",
+            "mode-preserves",
+            "multiple-answers",
+            "independent-close",
+            "collapse-current"
+          ],
+          "states": [
+            "initial",
+            "first-open",
+            "multiple-open",
+            "mode-changed",
+            "exclusive-open",
+            "final"
+          ]
+        }
+      ]
+    }
+  }
+}

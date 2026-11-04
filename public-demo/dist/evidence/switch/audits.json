@@ -1,0 +1,1354 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/result.json",
+      "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/result.json",
+      "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b"
+    }
+  ],
+  "data": {
+    "before": [
+      {
+        "task": "pointer-save",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-reset",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-save",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "missing"
+          },
+          {
+            "state": "saved",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-reset",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<div class=\"switch\" role=\"switch\" tabindex=\"0\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></div>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "missing"
+          },
+          {
+            "state": "saved",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "task": "pointer-save",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "span"
+                    ],
+                    "html": "<span aria-hidden=\"true\">Off</span>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "fgColor": "#ffffff",
+                          "bgColor": "#e6ece8",
+                          "contrastRatio": 1.19,
+                          "fontSize": "12.0pt (16px)",
+                          "fontWeight": "bold",
+                          "messageKey": null,
+                          "expectedContrastRatio": "4.5:1"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                            "target": [
+                              ".switch"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-reset",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "span"
+                    ],
+                    "html": "<span aria-hidden=\"true\">Off</span>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "fgColor": "#ffffff",
+                          "bgColor": "#e6ece8",
+                          "contrastRatio": 1.19,
+                          "fontSize": "12.0pt (16px)",
+                          "fontWeight": "bold",
+                          "messageKey": null,
+                          "expectedContrastRatio": "4.5:1"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                            "target": [
+                              ".switch"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-save",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "span"
+                    ],
+                    "html": "<span aria-hidden=\"true\">Off</span>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "fgColor": "#ffffff",
+                          "bgColor": "#e6ece8",
+                          "contrastRatio": 1.19,
+                          "fontSize": "12.0pt (16px)",
+                          "fontWeight": "bold",
+                          "messageKey": null,
+                          "expectedContrastRatio": "4.5:1"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                            "target": [
+                              ".switch"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-reset",
+        "audits": [
+          {
+            "state": "initial",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "span"
+                    ],
+                    "html": "<span aria-hidden=\"true\">Off</span>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "fgColor": "#ffffff",
+                          "bgColor": "#e6ece8",
+                          "contrastRatio": 1.19,
+                          "fontSize": "12.0pt (16px)",
+                          "fontWeight": "bold",
+                          "messageKey": null,
+                          "expectedContrastRatio": "4.5:1"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                            "target": [
+                              ".switch"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "Element has insufficient color contrast of 1.19 (foreground color: #ffffff, background color: #e6ece8, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"false\"><span aria-hidden=\"true\">Off</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "initial.png"
+          },
+          {
+            "state": "changed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "changed.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "label-content-name-mismatch",
+                "impact": "serious",
+                "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+                "help": "Elements must have their visible text as part of their accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".switch"
+                    ],
+                    "html": "<button type=\"button\" class=\"switch\" role=\"switch\" aria-label=\"Weekly summary\" aria-describedby=\"weekly-description\" aria-checked=\"true\"><span aria-hidden=\"true\">On</span></button>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Text inside the element may be value text rather than a label",
+                    "any": [
+                      {
+                        "id": "label-content-name-mismatch",
+                        "data": {
+                          "messageKey": "valueText"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Text inside the element may be value text rather than a label"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      }
+    ]
+  }
+}

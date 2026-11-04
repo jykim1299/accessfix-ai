@@ -1,0 +1,654 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/baseline/result.json",
+      "sha256": "5c7a7d57640809bb9de96313d2b84afdbecdc64de43c7724f539c0a768b26101"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/validation/result.json",
+      "sha256": "4faf0b2aec5cd0d52e5d4f09604bf7b31a9b4151cba3224ef96b50ba1fcc1d95"
+    }
+  ],
+  "data": [
+    {
+      "id": "pointer-apply",
+      "name": "Apply and clear the discount with the pointer",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pointer-clear-first",
+      "name": "Keep order actions working after clearing",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-enter",
+      "name": "Activate with Enter and preserve the result",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "fail",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "clear-coupon",
+          "status": "missing"
+        },
+        {
+          "id": "clear-persistence",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-space",
+      "name": "Activate with Space and preserve the result",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "fail",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "clear-coupon",
+          "status": "missing"
+        },
+        {
+          "id": "clear-persistence",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ]
+    }
+  ]
+}

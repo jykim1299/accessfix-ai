@@ -1,0 +1,556 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/result.json",
+      "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/result.json",
+      "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b"
+    }
+  ],
+  "data": [
+    {
+      "id": "pointer-save",
+      "name": "Change and save using the pointer",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "toggle-off",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "toggle-off",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pointer-reset",
+      "name": "Change, reset, and save using the pointer",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "toggle-again",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "toggle-again",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-save",
+      "name": "Change and save using the keyboard",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "fail",
+          "expected": "true",
+          "actual": "false"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "missing"
+        },
+        {
+          "id": "saved-summary",
+          "status": "missing"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "toggle-off",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "toggle-off",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-reset",
+      "name": "Change, reset, and save using the keyboard",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "fail",
+          "expected": "true",
+          "actual": "false"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "missing"
+        },
+        {
+          "id": "saved-summary",
+          "status": "missing"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "toggle-again",
+          "status": "missing"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "false",
+            "saved": "Weekly summary: Off",
+            "test": "Test notifications: 0"
+          }
+        },
+        {
+          "id": "toggle-on",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "draft-not-saved",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "reset-preserves",
+          "status": "pass",
+          "expected": "false",
+          "actual": "false"
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Weekly summary: Off",
+          "actual": "Weekly summary: Off"
+        },
+        {
+          "id": "toggle-again",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "save-after-reset",
+          "status": "pass",
+          "expected": "Weekly summary: On",
+          "actual": "Weekly summary: On"
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "Test notifications: 1",
+          "actual": "Test notifications: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          },
+          "actual": {
+            "state": "true",
+            "saved": "Weekly summary: On",
+            "test": "Test notifications: 0"
+          }
+        }
+      ]
+    }
+  ]
+}

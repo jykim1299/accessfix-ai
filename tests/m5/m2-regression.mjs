@@ -1,0 +1,94 @@
+// M5 full M2 regression: semantic copy update and explicit asynchronous provider readiness.
+// English UI expectations retain the same 26 checks; earlier run evidence is unchanged.
+// M2 browser acceptance tests. Actual API/data, explicit manual mutation server.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {createRequire} from 'node:module';
+const require=createRequire(new URL('../m2/package.json',import.meta.url));
+const {chromium}=require('playwright');
+const {expect}=require('playwright/test');
+const args=Object.fromEntries(process.argv.slice(2).reduce((a,v,i,s)=>i%2?a:[...a,[v.replace(/^--/,''),s[i+1]]],[]));
+const origin=args.url||'http://127.0.0.1:8801';
+const testOrigin=args['test-url']||'http://127.0.0.1:8802';
+if(!args.output)throw Error('--output must name a new evidence directory');
+const output=path.resolve(args.output);await fs.mkdir(output,{recursive:false});
+const root=path.resolve(import.meta.dirname,'../..');
+const axe=await fs.readFile(require.resolve('axe-core/axe.min.js'),'utf8');
+const checks=[],network=[],errors=[],audits=[];
+const start=Date.now();
+const save=(name,value)=>fs.writeFile(path.join(output,name),JSON.stringify(value,null,2));
+async function bundles(){const hashes={};for(const base of [origin,testOrigin])for(const file of ['/app.js','/app.css']){const response=await fetch(base+file);assert.equal(response.status,200);hashes[base+file]=createHash('sha256').update(Buffer.from(await response.arrayBuffer())).digest('hex');}return hashes;}
+const initialBundles=await bundles();await save('bundle-start.json',initialBundles);
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+const browser=await chromium.launch({headless:true});
+const context=await browser.newContext({viewport:{width:1440,height:1000},locale:'en-US',acceptDownloads:true});
+await context.tracing.start({screenshots:true,snapshots:true,sources:false});
+const page=await context.newPage();page.setDefaultTimeout(12000);
+page.on('pageerror',e=>errors.push({url:page.url(),message:e.message}));
+page.on('response',response=>{if(new URL(response.url()).pathname.startsWith('/api/'))network.push({time:new Date().toISOString(),url:response.url(),method:response.request().method(),status:response.status()});});
+async function check(id,fn){const t=Date.now();try{const detail=await fn();checks.push({id,status:'pass',elapsed_s:(Date.now()-t)/1000,detail});console.log(JSON.stringify({id,status:'pass'}));}catch(error){checks.push({id,status:'fail',elapsed_s:(Date.now()-t)/1000,error:String(error.stack||error)});await page.screenshot({path:path.join(output,id+'-failure.png'),fullPage:false}).catch(()=>{});console.log(JSON.stringify({id,status:'fail',error:error.message}));}await save('checks.json',checks);}
+async function screenshot(name,fullPage=false){await page.screenshot({path:path.join(output,name+'.png'),fullPage});}
+async function ready(){await page.getByRole('heading',{level:1}).waitFor();await page.waitForFunction(()=>!document.body.innerText.includes('Loading the recorded run and verification evidence'));}
+async function scan(name){await page.addScriptTag({content:axe});const result=await page.evaluate(async()=>await window.axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa','best-practice']},resultTypes:['violations','incomplete']}));await save(name+'.axe.json',result);audits.push({page:name,violations:result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),incomplete:result.incomplete.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))});assert.equal(result.violations.length,0,`${name} axe violations: ${result.violations.map(v=>v.id).join(', ')}`);return {violation_rules:0,incomplete_rules:result.incomplete.length};}
+async function reach(locator){for(let i=0;i<90;i++){if(await locator.evaluate(el=>el===document.activeElement))return;await page.keyboard.press('Tab');}throw Error('Keyboard could not reach target');}
+async function tab(name){await page.getByRole('tab',{name,exact:true}).click();await page.getByRole('tabpanel').waitFor();}
+async function readRun(){const key=decodeURIComponent(new URL(page.url()).hash.slice('#/runs/'.length));return (await page.request.get(`${new URL(page.url()).origin}/api/runs/${encodeURIComponent(key)}`)).json();}
+async function waitJob(expectedKind='analysis'){
+ const deadline=Date.now()+180000;const statuses=[];
+ while(Date.now()<deadline){const r=await readRun();const record=expectedKind==='repair'?r.repair:r.analysis;if(record){statuses.push(record.status);if(['completed','failed','restored'].includes(record.status)){await delay(2800);return {run:r,statuses:[...new Set(statuses)]};}}await delay(1000);}
+ throw Error('Actual browser job did not finish within 180 seconds');
+}
+async function beginAnalysis(){await page.goto(origin+'/#/');await ready();const button=page.getByRole('button',{name:'Analyze · Start analysis',exact:true});await reach(button);await page.keyboard.press('Enter');await page.waitForURL(/#\/runs\/analysis-/);return waitJob();}
+let productionRun,manualRun,manualFailure;
+try{
+ await check('01-service-and-examples',async()=>{const response=await page.goto(origin);assert.equal(response.status(),200);await ready();await page.getByLabel('Target project',{exact:true}).selectOption('delivery-modal');assert.match(await page.getByLabel('Target project',{exact:true}).innerText(),/Delivery preferences modal/);assert.equal(await page.getByRole('button',{name:'Analyze · Start analysis',exact:true}).isEnabled(),true);await screenshot('dashboard',true);return {url:page.url()};});
+ await check('02-dashboard-axe',()=>scan('dashboard'));
+ await check('03-keyboard-demo-and-tabs',async()=>{const demo=page.getByRole('link',{name:'OpenAI M1 comparison',exact:true});await reach(demo);const outline=await demo.evaluate(el=>getComputedStyle(el).outlineStyle);assert.notEqual(outline,'none');await page.keyboard.press('Enter');await page.waitForURL(/#\/runs\/m1-ai$/);await ready();const overview=page.getByRole('tab',{name:'Overview',exact:true});await reach(overview);await page.keyboard.press('End');assert.equal(await page.getByRole('tab',{name:'Evidence & safety',exact:true}).getAttribute('aria-selected'),'true');await page.keyboard.press('Home');assert.equal(await overview.getAttribute('aria-selected'),'true');return {focus_visible:true,tab_arrow_navigation:true};});
+ await check('04-existing-ai-record-and-state',async()=>{await page.goto(origin+'/#/runs/m1-ai');await ready();const data=await readRun();assert.equal(data.provenance,'ai');assert.equal(data.read_only,true);assert.equal(data.repair.decision.accepted,true);assert.equal(data.repair.status,'restored');assert.equal(data.repair.selected,'original');assert.match(await page.locator('main').innerText(),/Verified candidate/);assert.match(await page.locator('main').innerText(),/Restored/);assert.match(await page.locator('main').innerText(),/Original selected/);assert.equal(await page.getByRole('button',{name:'Repair recorded',exact:true}).isDisabled(),true);await screenshot('ai-overview',true);return {key:data.key,decision:data.repair.decision.status,current_status:data.repair.status};});
+ await check('05-ai-overview-axe',()=>scan('ai-overview'));
+ await check('06-before-after-real-images',async()=>{await tab('Before / After');const images=page.getByRole('img');await images.first().waitFor();assert.equal(await images.count(),2);await page.waitForFunction(()=>[...document.querySelectorAll('figure img')].every(i=>i.complete&&i.naturalWidth>0));const data=await readRun();assert.equal(data.repair.decision.metrics.after.keyboard_pass,3);assert.equal(data.analysis.metrics.keyboard_pass,0);assert.match(await page.getByRole('tabpanel').innerText(),/14 \/ 15/);assert.match(await page.getByRole('tabpanel').innerText(),/15 \/ 15/);await screenshot('before-after',true);return {image_count:2,before_keyboard:0,after_keyboard:3};});
+ await check('07-comparison-axe',()=>scan('before-after'));
+ await check('08-diff-download',async()=>{await tab('Code diff');assert.match(await page.getByRole('tabpanel').innerText(),/useLayoutEffect/);const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('link',{name:'Download diff',exact:true}).click()]);const file=path.join(output,'downloaded-patch.diff');await download.saveAs(file);assert.match(await fs.readFile(file,'utf8'),/aria-labelledby/);await screenshot('code-diff');return {filename:download.suggestedFilename()};});
+ await check('09-evidence-and-trace',async()=>{await tab('Evidence & safety');assert.equal(await page.getByRole('button',{name:'Original restored',exact:true}).isDisabled(),true);await page.getByLabel('File type',{exact:true}).selectOption('traces');const links=page.getByRole('link',{name:/Download .*trace\.zip/});assert.ok(await links.count()>=5);const [download]=await Promise.all([page.waitForEvent('download'),links.first().click()]);const target=path.join(output,'downloaded-trace.zip');await download.saveAs(target);const bytes=await fs.readFile(target);assert.equal(bytes.subarray(0,2).toString(),'PK');await screenshot('evidence');return {trace_count:await links.count(),download_bytes:bytes.length};});
+ await check('10-evidence-axe',()=>scan('evidence'));
+ await check('11-refresh-saved-run',async()=>{const url=page.url();await page.reload();await ready();assert.equal(page.url(),url);assert.match(await page.locator('main').innerText(),/Original selected/);assert.equal((await readRun()).repair.id,'060e72c0e457402db2b74c67fd864274');});
+ await check('12-rejected-control-provenance',async()=>{await page.goto(origin+'/#/runs/m1-control');await ready();assert.match(await page.locator('main').innerText(),/Manual regression control/);assert.match(await page.locator('main').innerText(),/Rejected candidate/);const r=await readRun();assert.equal(r.provenance,'manual-control');assert.equal(r.repair.decision.accepted,false);await tab('Evidence & safety');assert.match(await page.getByRole('tabpanel').innerText(),/A pointer user task did not complete/);await screenshot('rejected-control',true);});
+ await check('13-rejected-axe',()=>scan('rejected-control'));
+ await check('14-new-real-analysis',async()=>{const result=await beginAnalysis();productionRun=result.run;assert.equal(result.run.analysis.status,'completed');assert.equal(result.run.analysis.metrics.pointer_pass,2);assert.equal(result.run.analysis.metrics.keyboard_pass,0);assert.equal(result.run.repair,null);assert.ok(result.statuses.includes('baseline_running')||result.statuses.includes('queued'),'No running API phase observed');assert.match(await page.locator('main').innerText(),/Missing checks \/ review needed/);await screenshot('new-analysis',true);return {key:result.run.key,statuses:result.statuses,model_requests:0};});
+ await check('15-new-analysis-refresh-and-repair-availability',async()=>{
+  assert.ok(productionRun);const url=page.url();let release;let observed;
+  const held=new Promise(resolve=>{release=resolve;});
+  const requested=new Promise(resolve=>{observed=resolve;});
+  const providerRoute=async route=>{observed();await held;await route.continue();};
+  await page.route('**/api/providers',providerRoute);
+  const response=page.waitForResponse(r=>r.url()===origin+'/api/providers'&&r.status()===200);
+  try{
+   await page.reload();await requested;await ready();assert.equal(page.url(),url);
+   const repair=page.getByRole('button',{name:'Repair · Generate patch',exact:true});
+   await expect(repair).toBeDisabled();
+   release();const providers=await (await response).json();assert.ok(providers.some(p=>p.available));
+   await expect(page.getByRole('combobox',{name:'Model provider',exact:true}).locator('option')).toHaveCount(providers.length);
+   await expect(repair).toBeEnabled();
+   assert.equal((await readRun()).analysis.id,productionRun.analysis.id);
+   return {provider_count:providers.length,disabled_before_catalog:true,enabled_after_catalog:true,same_saved_analysis:true};
+  }finally{release();await page.unroute('**/api/providers',providerRoute);}
+ });
+ await check('16-mobile-layout-and-axe',async()=>{await page.setViewportSize({width:390,height:844});await page.goto(origin+'/#/runs/m1-ai');await ready();await tab('Before / After');await page.waitForFunction(()=>[...document.querySelectorAll('figure img')].every(i=>i.complete&&i.naturalWidth>0));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal page overflow at390px');await screenshot('mobile-before-after',true);return scan('mobile-before-after');});
+ await check('16b-mobile-dashboard-and-axe',async()=>{await page.goto(origin+'/#/');await ready();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal dashboard overflow at390px');assert.equal(await page.getByRole('button',{name:'Analyze · Start analysis',exact:true}).isVisible(),true);await screenshot('mobile-dashboard',true);return scan('mobile-dashboard');});
+ await check('16c-mobile-320-reflow',async()=>{await page.setViewportSize({width:320,height:844});await page.goto(origin+'/#/runs/m1-ai');await ready();await tab('Before / After');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Horizontal page overflow at320px');await screenshot('mobile-320-before-after',true);return scan('mobile-320-before-after');});
+ await check('17-no-production-model-requests',async()=>{const requests=network.filter(n=>new URL(n.url).origin===origin&&n.method==='POST'&&/\/repair$/.test(n.url));assert.equal(requests.length,0);return {actual_model_requests:0};});
+ await page.setViewportSize({width:1440,height:1000});
+ await check('18-ui-repair-manual-control-real-browser',async()=>{await page.goto(testOrigin+'/#/');await ready();await page.getByRole('button',{name:'Analyze · Start analysis',exact:true}).click();await page.waitForURL(/#\/runs\/analysis-/);const analysis=await waitJob();assert.equal(analysis.run.analysis.status,'completed');await page.getByRole('button',{name:'Repair · Generate patch',exact:true}).click();await page.waitForURL(/#\/runs\/repair-/);const result=await waitJob('repair');manualRun=result.run;assert.equal(manualRun.provenance,'test-control');assert.equal(manualRun.repair.status,'completed');assert.equal(manualRun.repair.decision.accepted,true);assert.equal(manualRun.repair.model.request_attempts,0);assert.equal(manualRun.repair.model.live_response_received,false);assert.equal(manualRun.repair.decision.metrics.after.keyboard_pass,3);assert.match(await page.locator('main').innerText(),/test control/);return {key:manualRun.key,provider:manualRun.repair.model.provider,statuses:result.statuses,external_model_requests:0};});
+ await check('19-ui-restore-and-retained-decision',async()=>{assert.ok(manualRun);await tab('Evidence & safety');await reach(page.getByRole('button',{name:'Restore original',exact:true}));await page.keyboard.press('Enter');await page.getByRole('button',{name:'Original restored',exact:true}).waitFor();const restored=await readRun();assert.equal(restored.repair.status,'restored');assert.equal(restored.repair.selected,'original');assert.equal(restored.repair.decision.accepted,true);assert.equal(restored.repair.original_intact,true);await screenshot('restored-test-control',true);await page.reload();await ready();assert.match(await page.locator('main').innerText(),/Restored · Historical decision preserved/);});
+ await check('20-failed-repair-ui',async()=>{await page.goto(testOrigin+'/#/');await ready();await page.getByRole('button',{name:'Analyze · Start analysis',exact:true}).click();await page.waitForURL(/#\/runs\/analysis-/);const analysis=await waitJob();assert.equal(analysis.run.analysis.status,'completed');await page.getByRole('button',{name:'Repair · Generate patch',exact:true}).click();await page.waitForURL(/#\/runs\/repair-/);const result=await waitJob('repair');manualFailure=result.run;assert.equal(manualFailure.repair.status,'failed');assert.equal(manualFailure.repair.selected,'original');assert.equal(manualFailure.repair.decision,null);assert.match(await page.locator('main').innerText(),/Run failed/);assert.equal(manualFailure.repair.model.request_attempts,0);await screenshot('failed-test-control',true);return {key:manualFailure.key,provider_error:manualFailure.repair.model.error,external_model_requests:0};});
+ await check('21-failure-axe',()=>scan('failed-test-control'));
+ await check('22-no-browser-errors',async()=>{assert.deepEqual(errors,[]);return {page_errors:0};});
+ await check('23-m1-evidence-preserved',async()=>{const manifest=JSON.parse(await fs.readFile(path.join(root,'reports/m1-20261027/artifact-manifest.json'),'utf8'));const mismatches=[];for(const [name,hash]of Object.entries(manifest.sha256)){const current=createHash('sha256').update(await fs.readFile(path.join(root,name))).digest('hex');if(current!==hash)mismatches.push(name);}assert.deepEqual(mismatches,[]);return {files:Object.keys(manifest.sha256).length,mismatches:0};});
+ await check('24-bundle-stability',async()=>{const final=await bundles();await save('bundle-end.json',final);assert.deepEqual(final,initialBundles);return {unchanged_assets:Object.keys(final).length};});
+}finally{
+ await context.tracing.stop({path:path.join(output,'ui-trace.zip')});await browser.close();
+ await save('api-requests.json',network);await save('browser-errors.json',errors);await save('axe-summary.json',audits);
+ const result={schema_version:1,purpose:'Actual Product UI/API browser verification; mutation provider is explicit manual control, not AI performance',started_utc:new Date(start).toISOString(),finished_utc:new Date().toISOString(),elapsed_s:(Date.now()-start)/1000,playwright:require('playwright/package.json').version,axe:require('axe-core/package.json').version,checks:checks.length,passed:checks.filter(c=>c.status==='pass').length,failed:checks.filter(c=>c.status==='fail').length,external_model_requests:0,production_analysis:productionRun?.key,manual_success:manualRun?.key,manual_failure:manualFailure?.key,results:checks};await save('summary.json',result);console.log(JSON.stringify({checks:result.checks,passed:result.passed,failed:result.failed,output}));if(result.failed)process.exitCode=1;
+}

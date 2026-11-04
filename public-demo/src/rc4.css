@@ -1,0 +1,45 @@
+/* RC4: present the two measured outcomes together, using the existing blue system. */
+.site-header{background:#fff}
+.feature-proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.feature-proof-card{min-width:0;padding:20px;background:#fff;border:1px solid #B7CDE8;border-radius:14px;box-shadow:0 12px 30px #173c700c}
+.feature-proof-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.feature-proof-header h3{font-size:23px;line-height:1.2;margin:0}
+.feature-proof-kicker{display:block;color:#17613F;font-size:12px;font-weight:750;line-height:1.5;letter-spacing:.055em;text-transform:uppercase;margin-bottom:6px}
+.feature-rejected .feature-proof-kicker{color:#A5233E}
+.feature-proof-header .impact-verdict{margin:0;font-size:13px;padding:7px 10px}
+.feature-proof-card .impact-capture-pair{gap:12px}
+.feature-proof-card .impact-capture figcaption{min-height:94px;justify-content:center;padding:11px 12px;gap:5px}
+.feature-proof-card .impact-capture figcaption strong{font-size:16px;line-height:1.35}
+.feature-proof-card .impact-phase{font-size:12px;line-height:1.4}
+.feature-proof-card .impact-crop{height:108px}
+.feature-proof-card .impact-crop-tabs{padding-block:20px}
+.feature-proof-card .impact-crop-tabs img{height:68px;object-position:left -230px top -270px}
+.feature-proof-card .impact-capture-after .impact-crop-tabs img{object-position:left -340px top -270px}
+.feature-proof-metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;min-height:77px;margin:16px 0 12px}
+.feature-proof-metrics>div{min-width:0}.feature-proof-metrics span{display:block;font-size:13px;line-height:1.45;color:#42566F}
+.feature-keyboard>strong,.feature-contrast>strong{display:block;font-size:32px;line-height:1.25;font-weight:750;letter-spacing:-.04em;color:#0B1B34}
+.feature-keyboard>strong>span{display:inline;font-size:22px;color:#526780}
+.feature-contrast>strong{color:#A5233E}.feature-contrast>span:first-child{font-size:12px;max-width:200px}
+.feature-pointer>strong{font-size:17px;line-height:1.5;display:block;color:#0B1B34}
+.feature-decision{display:flex;align-items:center;gap:9px;min-height:44px;margin:0 0 8px;padding:10px 12px;border-radius:7px;background:#E9F6EF;color:#17613F;font-size:14px;line-height:1.45}
+.feature-rejected .feature-decision{background:#FFF0F3;color:#A5233E}.feature-decision .impact-icon{width:18px;height:18px}
+.feature-result-link{min-height:40px;display:inline-flex;align-items:center;font-size:14px}
+.feature-source-note{margin:12px 0 0;color:#526780;font-size:12px;line-height:1.65;max-width:1100px}
+.feature-proof-card a:focus-visible{outline:3px solid #0756B9;outline-offset:4px}
+.feature-proof-card .impact-crop:focus-visible{outline-offset:-4px}
+.contrast-proof{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 14px}
+.contrast-proof>b{font-size:17px;color:#A5233E}.contrast-proof>b>span{font-size:29px;letter-spacing:-.03em}
+.contrast-proof>span{font-size:14px;color:#42566F}
+.repair-explanation{margin:0}.repair-explanation>div+div{margin-top:18px}.repair-explanation dt{font-size:14px;line-height:1.5;font-weight:750;color:#0756B9;margin-bottom:4px}.repair-explanation dd{font-size:16px;line-height:1.65;color:#0B1B34;margin:0;max-width:880px}
+.keyboard-intent{font-size:15px;line-height:1.8;max-width:900px;color:#42566F;margin:-8px 0 24px}
+.keyboard-intent kbd{padding:3px 6px;background:#fff;border:1px solid #9DB5D3;border-radius:4px;color:#0B1B34;font-size:13px;white-space:nowrap}
+.recorded-events-disclosure .action-log{border:0;padding:8px 0;margin-bottom:0}.recorded-events-disclosure .proof-phase-explanation{margin-top:12px}
+.guided-content[data-guide-step="3"]>.judge-technical{margin:14px 0;padding:10px 20px}
+.guided-content[data-guide-step="3"]>.impact-proof{margin-bottom:22px}
+.guided-content[data-guide-step="4"]>.judge-verdict-panel{margin-top:22px}
+@media(min-width:1001px){.impact-hero{padding-top:16px;padding-bottom:8px}.impact-hero h1{font-size:36px;margin-bottom:10px}.impact-hero+.recorded-note{margin-bottom:14px}.impact-showcase-top h2{max-width:none;font-size:28px}.impact-showcase-top .impact-kicker{margin-bottom:5px}.impact-showcase-top{margin-bottom:16px}}
+@media(max-width:1000px){.feature-proof-grid{grid-template-columns:1fr;gap:20px}.feature-proof-card .impact-capture-pair{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-proof-card .impact-crop{height:108px}.feature-proof-header h3{font-size:24px}}
+@media(max-width:560px){.feature-proof-card{padding:14px}.feature-proof-header{gap:10px;align-items:flex-start}.feature-proof-header h3{font-size:21px}.feature-proof-header .impact-verdict{font-size:12px;padding:6px 8px;gap:4px}.feature-proof-header .impact-verdict .impact-icon{width:17px;height:17px}.feature-proof-kicker{font-size:11px;letter-spacing:.035em}.feature-proof-card .impact-capture-pair{gap:10px}.feature-proof-card .impact-capture figcaption{padding:9px 8px;min-height:108px}.feature-proof-card .impact-phase{font-size:12px}.feature-proof-card .impact-capture figcaption strong{font-size:15px}.feature-proof-card .impact-crop{height:90px}.feature-proof-card .impact-crop-tabs img{object-position:left -236px top -270px}.feature-proof-card .impact-capture-after .impact-crop-tabs img{object-position:left -344px top -270px}.feature-proof-card .impact-crop-switch img{zoom:1.5}.feature-keyboard>strong,.feature-contrast>strong{font-size:29px}.feature-keyboard>strong>span{font-size:18px}.feature-proof-metrics{gap:10px;margin-top:14px}.feature-pointer>strong{font-size:16px}.feature-decision{font-size:13px;padding:10px}.feature-source-note{font-size:12px}.repair-explanation dd{font-size:15px}.keyboard-intent{font-size:14px}.guided-content[data-guide-step="3"]>.judge-technical{padding:8px 14px}.contrast-proof>b>span{font-size:28px}}
+@media(max-width:360px){.feature-proof-header{flex-wrap:wrap}.feature-proof-header .impact-verdict{margin-left:auto}.feature-proof-header>div{max-width:100%}.feature-proof-header h3{font-size:20px}.feature-proof-kicker{font-size:11px}.feature-proof-card .impact-capture figcaption{padding:9px 7px}.feature-proof-card .impact-capture figcaption strong{font-size:14px}.feature-proof-card .impact-capture .impact-phase{font-size:11px}.feature-proof-metrics>div>span{font-size:12px}.feature-decision{align-items:flex-start}}
+
+@media(max-width:560px){.feature-proof-card .impact-crop-tabs{padding-block:11px}}

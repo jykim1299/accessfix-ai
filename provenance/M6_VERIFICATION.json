@@ -1,0 +1,345 @@
+{
+  "created_utc": "2026-10-28T13:48:06.478839+00:00",
+  "release_source": "rc3",
+  "source": {
+    "source_files": 147,
+    "source_archive": "accessfix-rc-source.zip",
+    "sha256": "6c9cfe816057970e70e9eba3b519eeefa744b9b9f4ae1906d280ead668120026",
+    "bytes": 267806,
+    "git_history_included": false,
+    "source_directory": "source"
+  },
+  "evidence": {
+    "bundle": "accessfix-demo-evidence.zip",
+    "sha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011",
+    "bytes": 15604116,
+    "files": 815,
+    "omitted_files": 521,
+    "history_records": 11,
+    "changed_copies": 28,
+    "model_calls": 0
+  },
+  "actual_new_model_calls": 0,
+  "actual_new_model_tokens": 0,
+  "preservation": [
+    {
+      "milestone": "m1-20261027",
+      "files": 667,
+      "changed": []
+    },
+    {
+      "milestone": "m2-20261027",
+      "files": 146,
+      "changed": []
+    },
+    {
+      "milestone": "m3-20261028",
+      "files": 202,
+      "changed": []
+    },
+    {
+      "milestone": "m4-20261028",
+      "files": 3207,
+      "changed": []
+    },
+    {
+      "milestone": "m5-20261028",
+      "files": 1777,
+      "changed": []
+    },
+    {
+      "freeze": "m4",
+      "files": 23,
+      "changed": []
+    },
+    {
+      "freeze": "m5_public_tictactoe",
+      "files": 19,
+      "changed": []
+    }
+  ],
+  "clean_install": {
+    "python": "3.12.10",
+    "node": "24.22.1",
+    "pnpm": "11.25.0",
+    "rc3_fresh_pip_no_cache": true,
+    "rc3_separate_pnpm_store": true,
+    "frontend_build": "passed",
+    "fresh_playwright_chromium_download": true,
+    "reviewed_bundle_installed_files": 815,
+    "docker_built_no_cache": true,
+    "docker_image_id": "sha256:4531caac99f4f313c34dc0c34f49108d2e99670e65973f961bffd77c5b1b28f8",
+    "rc2_end_to_end": "passed",
+    "rc3_server_launch": "blocked by automatic approval policy, detailed reason unavailable; not retried",
+    "runtime_equivalence": {
+      "rc2_clean_e2e_server": "http://127.0.0.1:8809",
+      "final_source": "rc3",
+      "identical_files": 142,
+      "different_or_added": [
+        "scripts/install_demo_evidence.py",
+        "tests/m6/verify-video.mjs",
+        "tests/test_release_bundle.py",
+        "README.md"
+      ],
+      "runtime_and_frontend_identical": true,
+      "final_server_start": "blocked by automatic approval policy; no detailed reason; not retried",
+      "final_installer_success": 815,
+      "final_python_passed": 140,
+      "subtests_passed": 6,
+      "skipped": 1
+    }
+  },
+  "tests": {
+    "rc3_python_passed": 140,
+    "subtests_passed": 6,
+    "skipped": 1,
+    "skip_reason": "Windows did not permit creating the test symbolic link",
+    "warning": "Starlette httpx TestClient deprecation",
+    "full_existing_ui": {
+      "passed": 26,
+      "total": 26
+    },
+    "clean_public_subset_ui": {
+      "passed": 10,
+      "total": 10
+    },
+    "docker_isolation": {
+      "passed": 14,
+      "total": 14
+    },
+    "new_analysis": {
+      "analysis_id": "b8d766c5656f4afd923fb6c4c7cdda30",
+      "status": "completed",
+      "metrics": {
+        "measurement_complete": false,
+        "pointer_reference_valid": true,
+        "pointer_pass": 2,
+        "pointer_total": 2,
+        "keyboard_pass": 0,
+        "keyboard_total": 3,
+        "axe_state_nodes": 1,
+        "incomplete_state_nodes": 0,
+        "observed_audit_states": 14,
+        "violations": [
+          "open|aria-dialog-name|[\".preferences-dialog\"]"
+        ],
+        "incomplete": [],
+        "failures": [
+          "keyboard-save:focus-entry",
+          "keyboard-save:focus-forward",
+          "keyboard-save:focus-reverse",
+          "keyboard-save:focus-return",
+          "keyboard-cancel:focus-entry",
+          "keyboard-cancel:focus-forward",
+          "keyboard-cancel:focus-reverse",
+          "keyboard-cancel:focus-return",
+          "keyboard-escape:focus-entry",
+          "keyboard-escape:focus-forward",
+          "keyboard-escape:focus-reverse",
+          "keyboard-escape:closed",
+          "keyboard-escape:focus-return"
+        ],
+        "measurement_problems": [
+          "keyboard-escape:cancelled:audit_missing"
+        ],
+        "browser_errors": [],
+        "manual_review": true,
+        "axe_zero_keyboard_failed": false
+      },
+      "image_id": "sha256:4531caac99f4f313c34dc0c34f49108d2e99670e65973f961bffd77c5b1b28f8",
+      "elapsed_s": 29.17200000002049,
+      "actual_model_calls": 0,
+      "repair_requests": 0,
+      "session_values_saved": false
+    }
+  },
+  "ui_audits": [
+    {
+      "name": "dashboard",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m4-meta-dev-tabs-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m4-meta-holdout-menu-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m4-meta-holdout-switch-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m4-meta-holdout-action-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m3-meta-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m1-ai-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "m1-control-compare",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "name": "mobile-320-switch",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    }
+  ],
+  "security": {
+    "time_utc": "2026-10-28T13:43:47.900131+00:00",
+    "counts": {
+      "source_files": 146,
+      "evidence_members": 815,
+      "git_blobs": 306
+    },
+    "known_api_keys_available": 1,
+    "known_local_session_values_checked": 13,
+    "public_blocking_locations": 0,
+    "findings": [
+      {
+        "scope": "excluded-git-history",
+        "path": "588a00526f3cef3af8068d3712ff34c94f2e8340:docs/M2_RUN_KO.md",
+        "categories": {
+          "private_user_path": 1
+        }
+      }
+    ],
+    "history_included": false,
+    "raw_trace_members_included": 0,
+    "model_requests": 0,
+    "limitations": [
+      "Pattern and exact-value scan is not a proof against all secret formats.",
+      "Screenshots/video need visual inspection; this tool does not OCR them.",
+      "Public email-like matches require manual review.",
+      "Historical findings remain local; no Git rewrite or public push performed."
+    ]
+  },
+  "semantic_evidence_integrity": {
+    "records_checked": 22,
+    "historical_decisions_metrics_model_usage_changed": 0
+  },
+  "video": {
+    "recorded_utc": "2026-10-28T13:15:15.220Z",
+    "actual_browser_recording": true,
+    "stored_evidence_replay": true,
+    "live_model_requests": 0,
+    "mutating_requests": [],
+    "browser_errors": [],
+    "recording_error": null,
+    "segments": 9,
+    "duration_s": 173.68,
+    "within_three_minutes": true,
+    "format": "WebM",
+    "audio": "none; silent screen capture with burned-in English captions",
+    "video_sha256": "d0a93e591c196209781ca4ed3909937eda609d8018ad74bd7263ee80a8bba9da",
+    "subtitles_sha256": "2a21a4efa79bcc56888215c975ee115ea5d5719544cb4824378a62de1dfe2fd7",
+    "viewports": {
+      "width": 1440,
+      "height": 1000
+    },
+    "disclosure": "Recorded results · Actual Meta API runs · No live inference",
+    "annotations": "Disclosure and captions are recording overlays; product metrics/evidence are unchanged.",
+    "source_records": [
+      "m4-meta-dev-tabs",
+      "m4-meta-holdout-switch",
+      "m4-meta-holdout-menu"
+    ]
+  },
+  "video_playback": {
+    "duration_s": 173.68,
+    "within_three_minutes": true,
+    "seeked_decoded_states": [
+      {
+        "time": 2,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 58
+      },
+      {
+        "time": 30,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 172
+      },
+      {
+        "time": 66,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 290
+      },
+      {
+        "time": 85,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 371
+      },
+      {
+        "time": 102,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 493
+      },
+      {
+        "time": 122,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 603
+      },
+      {
+        "time": 145,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 648
+      },
+      {
+        "time": 170,
+        "width": 1440,
+        "height": 1000,
+        "error": null,
+        "decoded_frames": 678
+      }
+    ],
+    "actual_video_playback": true,
+    "model_requests": 0
+  },
+  "publication": {
+    "github_pushed": false,
+    "deployed": false,
+    "license": "MIT draft; owner decision pending"
+  },
+  "limitations": [
+    "Small reviewed-app prototype, not arbitrary sites or WCAG conformance certification.",
+    "M4 acceptance 3/4 is not full accessibility resolution; menu retains violations and review.",
+    "M5 external app rejected for new incomplete; observed visual board-outline loss was not caught by task gate.",
+    "Mobile comparison has 4 contrast incomplete nodes in this M6 view; previous M5 table/Diff review remains separate.",
+    "Known-value/pattern scans and selected media inspection do not prove absence of every possible secret.",
+    "Final RC3 server was not launched; RC2 independently passed with byte-identical runtime and frontend."
+  ]
+}

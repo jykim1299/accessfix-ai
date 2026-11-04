@@ -1,0 +1,762 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/result.json",
+      "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/result.json",
+      "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf"
+    }
+  ],
+  "data": [
+    {
+      "id": "pointer-duplicate",
+      "name": "Duplicate and keep draft creation working",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pointer-archive",
+      "name": "Archive and keep draft creation working",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-duplicate",
+      "name": "Duplicate, cancel, and return keyboard focus",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "closed",
+          "status": "missing"
+        },
+        {
+          "id": "selection-result",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-closed",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-command",
+          "status": "missing"
+        },
+        {
+          "id": "selection-focus-return",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-focus-return",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-command",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "selection-focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 1",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "keyboard-archive",
+      "name": "Archive, cancel, and return keyboard focus",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "closed",
+          "status": "missing"
+        },
+        {
+          "id": "selection-result",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-closed",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "missing"
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-command",
+          "status": "missing"
+        },
+        {
+          "id": "selection-focus-return",
+          "status": "missing"
+        },
+        {
+          "id": "cancel-focus-return",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          },
+          "actual": {
+            "status": "Active",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-command",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "selection-result",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "selection-focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancel-closed",
+          "status": "pass",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "cancel-preserves",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 1"
+          }
+        },
+        {
+          "id": "cancel-focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          },
+          "actual": {
+            "status": "Archived",
+            "copies": "Copies: 0",
+            "drafts": "Drafts: 2"
+          }
+        }
+      ]
+    }
+  ]
+}

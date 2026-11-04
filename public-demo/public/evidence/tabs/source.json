@@ -1,0 +1,23 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/record.json",
+      "sha256": "5ef0c1f7efcaa2801b7065210ce42765d0280f438459bea22d65b2972cd19a30"
+    }
+  ],
+  "data": {
+    "kind": "Project-authored synthetic fixture",
+    "name": "AccessFix AI Project tabs",
+    "license": "MIT (fixture source)",
+    "sha256": "8748a694ff69b3442aea76ad1ae2ca8c95b16704e9cdfbd130e582d0b19fc2d1",
+    "hashes": {
+      "src/App.tsx": "8748a694ff69b3442aea76ad1ae2ca8c95b16704e9cdfbd130e582d0b19fc2d1",
+      "src/main.tsx": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "src/styles.css": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6"
+    },
+    "evidenceArchiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011"
+  }
+}

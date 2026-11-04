@@ -1,0 +1,101 @@
+{
+  "createdUtc": "2026-11-01T11:56:52.453928+00:00",
+  "assets": [
+    {
+      "asset": "assets/tabs-before-original.png",
+      "source": "public-demo/public/evidence/tabs/before.png",
+      "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742",
+      "byteIdentical": true
+    },
+    {
+      "asset": "assets/tabs-after-original.png",
+      "source": "public-demo/public/evidence/tabs/after.png",
+      "sha256": "76832a39de8e16bfcb83e652c40a27a19c70362b87d8d8edd0403808c8ee4ef3",
+      "byteIdentical": true
+    },
+    {
+      "asset": "assets/switch-before-original.png",
+      "source": "public-demo/public/evidence/switch/before.png",
+      "sha256": "3cb9ed8a07fbe94da1fa1a0804df82d138c9335d36d5b9734a39368072275c4b",
+      "byteIdentical": true
+    },
+    {
+      "asset": "assets/switch-after-original.png",
+      "source": "public-demo/public/evidence/switch/after.png",
+      "sha256": "edf5027affeb823e97d63f376247be25248a0bb71a772b85bf305d7e47c2de5f",
+      "byteIdentical": true
+    },
+    {
+      "asset": "assets/graphical-abstract.svg",
+      "sha256": "78422015581d1e81921a0da4d81cd48e432ae90187d031d6e9c19084a0000152",
+      "derived": true,
+      "method": "Labeled SVG composition with clipped original PNGs; no pixel/color edits to evidence sources; PNG exported from SVG in Chromium."
+    },
+    {
+      "asset": "assets/graphical-abstract-mobile.svg",
+      "sha256": "44eb7cfbfbc7475430404ce376f98817069f195eb07ec78a5465970e35fe0c14",
+      "derived": true,
+      "method": "Labeled SVG composition with clipped original PNGs; no pixel/color edits to evidence sources; PNG exported from SVG in Chromium."
+    },
+    {
+      "asset": "assets/graphical-abstract.png",
+      "sha256": "af7155a467c8b859fae0671d4d0f87ed2572a47c178f6270096e72939d990d39",
+      "derived": true,
+      "method": "Labeled SVG composition with clipped original PNGs; no pixel/color edits to evidence sources; PNG exported from SVG in Chromium."
+    },
+    {
+      "asset": "assets/graphical-abstract-mobile.png",
+      "sha256": "772a0a6d96dd40906a2c4269ca235155fc3efecfdf4b71911d579c7d84a58f64",
+      "derived": true,
+      "method": "Labeled SVG composition with clipped original PNGs; no pixel/color edits to evidence sources; PNG exported from SVG in Chromium."
+    },
+    {
+      "asset": "assets/rc4-overview.png",
+      "sha256": "1e9f8c4bc69d780207384e66ef5ee9446bffd3146849cfed8531e1b83eca6cdd",
+      "source": "Approved RC4 on loopback; new actual UI capture at1440 CSS pixels, device scale2",
+      "historicalExperimentRerun": false
+    },
+    {
+      "asset": "assets/rc4-dual-proof.png",
+      "sha256": "67b43cf669149c80d4c8268273f9eddf7fd53fbff6e2e3e1e374c70211f2d625",
+      "source": "Approved RC4 on loopback; new actual UI capture at1440 CSS pixels, device scale2",
+      "historicalExperimentRerun": false
+    },
+    {
+      "asset": "assets/rc4-tabs-comparison.png",
+      "sha256": "9c512bca2e07d08319017780e6ba70af3a1a49c66740dfaf8194dd15e9dad7ca",
+      "source": "Approved RC4 on loopback; new actual UI capture at1440 CSS pixels, device scale2",
+      "historicalExperimentRerun": false
+    },
+    {
+      "asset": "assets/rc4-switch-comparison.png",
+      "sha256": "c0f52fd8c6bcbb5932e95fb746285de09f1b5fc46932efc3c2d1b29452781dcd",
+      "source": "Approved RC4 on loopback; new actual UI capture at1440 CSS pixels, device scale2",
+      "historicalExperimentRerun": false
+    },
+    {
+      "asset": "assets/accessfix-logo.png",
+      "sha256": "f9a92a3ce071e2f48132d059cbc39621b090b45df3f5a4f529b64abb42251453",
+      "source": "New code-native presentation vector/PNG, based on existing AccessFix branding and actual RC4 evidence"
+    },
+    {
+      "asset": "assets/accessfix-logo.svg",
+      "sha256": "32e3a84bda183d846583405a58856d0f84cda9ba242063a5cfed8034daa80d32",
+      "source": "New code-native presentation vector/PNG, based on existing AccessFix branding and actual RC4 evidence"
+    },
+    {
+      "asset": "assets/process-flow-mobile.svg",
+      "sha256": "d315d6e6fbce272bdd398acb2c3701807f5503d9d12e72aad78039547746b953",
+      "source": "New code-native presentation vector/PNG, based on existing AccessFix branding and actual RC4 evidence"
+    },
+    {
+      "asset": "assets/process-flow.svg",
+      "sha256": "534943ca95ad8603ea2802f4be83a2e1b2cf976ad5dd061afe2b215312f529a3",
+      "source": "New code-native presentation vector/PNG, based on existing AccessFix branding and actual RC4 evidence"
+    }
+  ],
+  "newModelCalls": 0,
+  "originalScreenshotsUnmodified": true,
+  "logo": "Existing AccessFix AI BrandMark paths; no Meta logo or endorsement",
+  "video": "New actual RC4 evidence browsing recordings; cropped for editing, no new repair call; local README preview labeled as unpublished."
+}

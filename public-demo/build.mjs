@@ -1,0 +1,14 @@
+import {build} from 'esbuild';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+process.chdir(root);
+const generated=path.resolve(root,'dist');
+if(path.dirname(generated)!==root||path.basename(generated)!=='dist')throw new Error('Unexpected generated directory');
+await fs.rm(generated,{recursive:true,force:true});
+await fs.mkdir(generated,{recursive:true});
+await fs.cp('public',generated,{recursive:true});
+await build({entryPoints:['src/main.tsx'],bundle:true,outfile:'dist/app.js',minify:true,sourcemap:false,target:'es2022',jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},legalComments:'linked'});
+await fs.copyFile('index.html','dist/index.html');
+console.log('Static read-only demo built in dist. No backend or model requests.');

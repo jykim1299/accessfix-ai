@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-28T21:50:47.340611+00:00",
+  "development_m6_commit": "5ee0882",
+  "copied_source_zip_sha256": "6c9cfe816057970e70e9eba3b519eeefa744b9b9f4ae1906d280ead668120026",
+  "evidence_zip_sha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011",
+  "copied_not_newly_authored": true,
+  "removed_obsolete_demo_docs": [
+    "docs/M5_DEMO_SCRIPT_EN.md",
+    "docs/M6_DEMO_SCRIPT_EN.md",
+    "docs/M6_RECORDING_GUIDE_KO.md"
+  ],
+  "product_runtime_changes": 0,
+  "new_model_calls": 0,
+  "new_scope": "English video annotations, optional local synthesis, MP4 conversion, documentation and publication packaging",
+  "old_git_history_included": false,
+  "license_status": "pending owner decision"
+}

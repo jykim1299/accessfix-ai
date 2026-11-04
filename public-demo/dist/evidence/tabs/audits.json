@@ -1,0 +1,372 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/result.json",
+      "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/result.json",
+      "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767"
+    }
+  ],
+  "data": {
+    "before": [
+      {
+        "task": "pointer-activity",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "activity",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "activity.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-billing",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "billing",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "billing.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-activity",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "activity",
+            "status": "missing"
+          },
+          {
+            "state": "returned-overview",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-billing",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "billing",
+            "status": "missing"
+          },
+          {
+            "state": "returned-overview",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "task": "pointer-activity",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "activity",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "activity.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-billing",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "billing",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "billing.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-activity",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "activity",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "activity.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-billing",
+        "audits": [
+          {
+            "state": "overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "overview.png"
+          },
+          {
+            "state": "billing",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "billing.png"
+          },
+          {
+            "state": "returned-overview",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "returned-overview.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      }
+    ]
+  }
+}

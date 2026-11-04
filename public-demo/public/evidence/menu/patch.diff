@@ -1,0 +1,89 @@
+--- original/src/App.tsx
++++ candidate/src/App.tsx
+@@ -1,4 +1,4 @@
+-import React, { useEffect, useState } from 'react';
++import React, { useEffect, useRef, useState } from 'react';
+ 
+ type DraftState = { status: 'Active' | 'Archived'; copies: number; drafts: number };
+ function initialState(): DraftState {
+@@ -12,10 +12,65 @@
+ export default function App() {
+   const [state, setState] = useState(initialState);
+   const [open, setOpen] = useState(false);
++  const buttonRef = useRef<HTMLButtonElement>(null);
++  const menuRef = useRef<HTMLDivElement>(null);
+   useEffect(() => { localStorage.setItem('accessfix.m4.menu', JSON.stringify(state)); }, [state]);
++  useEffect(() => {
++    if (open) menuRef.current?.querySelector<HTMLElement>('[role="menuitem"]')?.focus();
++  }, [open]);
++  useEffect(() => {
++    if (!open) return;
++    function onPointerDown(event: PointerEvent) {
++      const container = menuRef.current?.parentElement;
++      if (container && !container.contains(event.target as Node)) setOpen(false);
++    }
++    function onDocumentKeyDown(event: KeyboardEvent) {
++      if (event.key === 'Escape') {
++        setOpen(false);
++        buttonRef.current?.focus();
++      }
++    }
++    document.addEventListener('pointerdown', onPointerDown);
++    document.addEventListener('keydown', onDocumentKeyDown);
++    return () => {
++      document.removeEventListener('pointerdown', onPointerDown);
++      document.removeEventListener('keydown', onDocumentKeyDown);
++    };
++  }, [open]);
+   function choose(action: 'duplicate' | 'archive') {
+     setState(current => action === 'duplicate' ? { ...current, copies: current.copies + 1 } : { ...current, status: 'Archived' });
+     setOpen(false);
++    buttonRef.current?.focus();
++  }
++  function onButtonKeyDown(event: React.KeyboardEvent) {
++    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
++      event.preventDefault();
++      if (!open) setOpen(true);
++      else menuRef.current?.querySelector<HTMLElement>('[role="menuitem"]')?.focus();
++    }
++  }
++  function onMenuKeyDown(event: React.KeyboardEvent) {
++    const items = Array.from(menuRef.current?.querySelectorAll<HTMLElement>('[role="menuitem"]') ?? []);
++    const currentIndex = items.indexOf(document.activeElement as HTMLElement);
++    if (event.key === 'ArrowDown') {
++      event.preventDefault();
++      items[(currentIndex + 1 + items.length) % items.length]?.focus();
++    } else if (event.key === 'ArrowUp') {
++      event.preventDefault();
++      items[(currentIndex - 1 + items.length) % items.length]?.focus();
++    } else if (event.key === 'Home') {
++      event.preventDefault();
++      items[0]?.focus();
++    } else if (event.key === 'End') {
++      event.preventDefault();
++      items[items.length - 1]?.focus();
++    } else if (event.key === 'Escape') {
++      event.preventDefault();
++      setOpen(false);
++      buttonRef.current?.focus();
++    } else if (event.key === 'Tab') {
++      setOpen(false);
++    }
+   }
+   return <main>
+     <header><p className="eyebrow">NORTHSTAR / DRAFTS</p><h1>Draft workspace</h1><p>Manage your delivery draft and create the next one.</p></header>
+@@ -23,10 +78,10 @@
+       <h2 id="draft-title">Current draft</h2>
+       <dl><div><dt>Status</dt><dd role="status" aria-label="Draft status">{state.status}</dd></div><div><dt>Copies</dt><dd role="status" aria-label="Copy count">Copies: {state.copies}</dd></div></dl>
+       <div className="menu-container">
+-        <button id="workspace-actions" aria-haspopup="menu" aria-expanded={open} aria-controls={open ? 'draft-actions' : undefined} onClick={() => setOpen(value => !value)}>Workspace actions</button>
+-        {open && <div id="draft-actions" role="menu" aria-labelledby="workspace-actions" className="menu">
+-          <button role="menuitem" tabIndex={-1} onClick={() => choose('duplicate')}>Duplicate draft</button>
+-          <button role="menuitem" tabIndex={-1} onClick={() => choose('archive')}>Archive draft</button>
++        <button id="workspace-actions" ref={buttonRef} aria-haspopup="menu" aria-expanded={open} aria-controls={open ? 'draft-actions' : undefined} onClick={() => setOpen(value => !value)} onKeyDown={onButtonKeyDown}>Workspace actions</button>
++        {open && <div id="draft-actions" ref={menuRef} role="menu" aria-labelledby="workspace-actions" className="menu" onKeyDown={onMenuKeyDown}>
++          <button role="menuitem" tabIndex={0} onClick={() => choose('duplicate')}>Duplicate draft</button>
++          <button role="menuitem" tabIndex={0} onClick={() => choose('archive')}>Archive draft</button>
+         </div>}
+       </div>
+     </section>

@@ -1,0 +1,2492 @@
+{
+  "schema_version": 1,
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-save",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "saved-summary",
+        "saved-storage",
+        "closed",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "saved"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.175445552
+        },
+        {
+          "kind": "pointer-input",
+          "name": "Display name",
+          "length": 12,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.425299907
+        },
+        {
+          "kind": "pointer",
+          "role": "checkbox",
+          "name": "Email updates",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.478894696
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Save preferences",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.530568953
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7789183419999999
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.862244747
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Create draft",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 1.9108517659999997
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.0386296080000004
+    },
+    {
+      "id": "pointer-cancel",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.009605368
+        },
+        {
+          "kind": "pointer-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2680891229999998
+        },
+        {
+          "kind": "pointer",
+          "role": "checkbox",
+          "name": "Email updates",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3157562170000001
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.367459329
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6015739119999999
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.6842661120000002
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Create draft",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 1.7341132740000003
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cancelled.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 1.8354001589999998
+    },
+    {
+      "id": "keyboard-save",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "saved-summary",
+        "saved-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "saved"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9877828929999996
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.0165139159999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2679804279999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2981430759999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3256957409999997
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3535243110000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3812276409999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4078411529999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.436318569
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4645813589999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.493346501
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5254275799999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5602433869999994
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.590240968
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.61538447
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6420819059999994
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6695824279999998
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6971894199999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7234071480000002
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.750397175
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7788604880000003
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8053555129999994
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8424961610000001
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 12,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8791909690000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.913912523
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9356782119999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9619590069999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9941341409999995
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0166269389999996
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.2453302649999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.2951837809999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.316681627
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.3376933579999997
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.3601935160000003
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.3805904559999997
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.632860406
+    },
+    {
+      "id": "keyboard-cancel",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0397812279999998
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.0667666040000003
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3997440320000005
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4300146999999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.454461125
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4819987309999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.505201696
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5410273080000005
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.56540496
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5886660790000005
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6145729969999993
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6494035449999993
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6906424220000007
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7205036980000004
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7470013830000006
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.773224673999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7979887600000002
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8213714469999995
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8549335269999991
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8793626839999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.904034181000001
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9370576939999993
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9828494370000007
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.0253319709999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.063908278000001
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.084919957
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.108103471
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.140065826
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.365514276
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.4141575919999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.436451848999999
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.456361196
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.4797819789999993
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.498962170999999
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cancelled.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.6340260880000006
+    },
+    {
+      "id": "keyboard-escape",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 0.996447295
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.02325785
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2694455259999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2990536379999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3265682209999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3573710059999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3877041759999993
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4161222780000007
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4431279620000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.46974835
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4977309609999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5248095570000004
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5602417380000007
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5917294039999996
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6192605540000005
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6481571000000004
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.6741439929999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7028575139999993
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7337192250000006
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7614690119999996
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.7925552260000004
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.818716595
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.8571302049999994
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9006365750000005
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.9308563030000006
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.949543576
+        },
+        {
+          "kind": "key",
+          "key": "Escape",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.965453071
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.209376996000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.254944632000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.2765106539999995
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.2963061230000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.319015056
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.3399044379999996
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cancelled.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.484408058000001
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.07854495200000003,
+  "browser_s": 11.820130531999999,
+  "elapsed_s": 11.950022393,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 13.059501300100237
+}

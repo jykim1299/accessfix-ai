@@ -1,0 +1,359 @@
+{
+  "version": "m4-task-contract-v1",
+  "cases": {
+    "dev-tabs": {
+      "workflows": [
+        {
+          "id": "pointer-activity",
+          "modality": "pointer",
+          "scenario": "activity",
+          "checks": [
+            "content-preserved",
+            "target-panel",
+            "active-tab",
+            "return-panel",
+            "note-action",
+            "persistence"
+          ],
+          "states": [
+            "overview",
+            "activity",
+            "returned-overview",
+            "persisted"
+          ]
+        },
+        {
+          "id": "pointer-billing",
+          "modality": "pointer",
+          "scenario": "billing",
+          "checks": [
+            "content-preserved",
+            "target-panel",
+            "active-tab",
+            "return-panel",
+            "note-action",
+            "persistence"
+          ],
+          "states": [
+            "overview",
+            "billing",
+            "returned-overview",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-activity",
+          "modality": "keyboard",
+          "scenario": "activity",
+          "checks": [
+            "content-preserved",
+            "target-panel",
+            "active-tab",
+            "return-panel",
+            "note-action",
+            "persistence",
+            "focus-target",
+            "focus-return"
+          ],
+          "states": [
+            "overview",
+            "activity",
+            "returned-overview",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-billing",
+          "modality": "keyboard",
+          "scenario": "billing",
+          "checks": [
+            "content-preserved",
+            "target-panel",
+            "active-tab",
+            "return-panel",
+            "note-action",
+            "persistence",
+            "focus-target",
+            "focus-return"
+          ],
+          "states": [
+            "overview",
+            "billing",
+            "returned-overview",
+            "persisted"
+          ]
+        }
+      ]
+    },
+    "holdout-menu": {
+      "workflows": [
+        {
+          "id": "pointer-duplicate",
+          "modality": "pointer",
+          "scenario": "duplicate",
+          "checks": [
+            "content-preserved",
+            "opened",
+            "closed",
+            "selection-result",
+            "cancel-closed",
+            "cancel-preserves",
+            "background-action",
+            "persistence"
+          ],
+          "states": [
+            "closed",
+            "open",
+            "selected",
+            "cancelled",
+            "persisted"
+          ]
+        },
+        {
+          "id": "pointer-archive",
+          "modality": "pointer",
+          "scenario": "archive",
+          "checks": [
+            "content-preserved",
+            "opened",
+            "closed",
+            "selection-result",
+            "cancel-closed",
+            "cancel-preserves",
+            "background-action",
+            "persistence"
+          ],
+          "states": [
+            "closed",
+            "open",
+            "selected",
+            "cancelled",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-duplicate",
+          "modality": "keyboard",
+          "scenario": "duplicate",
+          "checks": [
+            "content-preserved",
+            "opened",
+            "closed",
+            "selection-result",
+            "cancel-closed",
+            "cancel-preserves",
+            "background-action",
+            "persistence",
+            "focus-entry",
+            "focus-command",
+            "selection-focus-return",
+            "cancel-focus-return"
+          ],
+          "states": [
+            "closed",
+            "open",
+            "selected",
+            "cancelled",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-archive",
+          "modality": "keyboard",
+          "scenario": "archive",
+          "checks": [
+            "content-preserved",
+            "opened",
+            "closed",
+            "selection-result",
+            "cancel-closed",
+            "cancel-preserves",
+            "background-action",
+            "persistence",
+            "focus-entry",
+            "focus-command",
+            "selection-focus-return",
+            "cancel-focus-return"
+          ],
+          "states": [
+            "closed",
+            "open",
+            "selected",
+            "cancelled",
+            "persisted"
+          ]
+        }
+      ]
+    },
+    "holdout-switch": {
+      "workflows": [
+        {
+          "id": "pointer-save",
+          "modality": "pointer",
+          "scenario": "save",
+          "checks": [
+            "content-preserved",
+            "toggle-on",
+            "draft-not-saved",
+            "saved-summary",
+            "reset-preserves",
+            "background-action",
+            "persistence",
+            "toggle-off"
+          ],
+          "states": [
+            "initial",
+            "changed",
+            "saved",
+            "persisted"
+          ]
+        },
+        {
+          "id": "pointer-reset",
+          "modality": "pointer",
+          "scenario": "reset",
+          "checks": [
+            "content-preserved",
+            "toggle-on",
+            "draft-not-saved",
+            "saved-summary",
+            "reset-preserves",
+            "background-action",
+            "persistence",
+            "toggle-again",
+            "save-after-reset"
+          ],
+          "states": [
+            "initial",
+            "changed",
+            "saved",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-save",
+          "modality": "keyboard",
+          "scenario": "save",
+          "checks": [
+            "content-preserved",
+            "toggle-on",
+            "draft-not-saved",
+            "saved-summary",
+            "reset-preserves",
+            "background-action",
+            "persistence",
+            "toggle-off"
+          ],
+          "states": [
+            "initial",
+            "changed",
+            "saved",
+            "persisted"
+          ]
+        },
+        {
+          "id": "keyboard-reset",
+          "modality": "keyboard",
+          "scenario": "reset",
+          "checks": [
+            "content-preserved",
+            "toggle-on",
+            "draft-not-saved",
+            "saved-summary",
+            "reset-preserves",
+            "background-action",
+            "persistence",
+            "toggle-again",
+            "save-after-reset"
+          ],
+          "states": [
+            "initial",
+            "changed",
+            "saved",
+            "persisted"
+          ]
+        }
+      ]
+    },
+    "holdout-action": {
+      "workflows": [
+        {
+          "id": "pointer-apply",
+          "modality": "pointer",
+          "scenario": "apply",
+          "checks": [
+            "content-preserved",
+            "coupon-applied",
+            "background-action",
+            "persistence",
+            "clear-coupon",
+            "clear-persistence"
+          ],
+          "states": [
+            "initial",
+            "discounted",
+            "persisted",
+            "cleared"
+          ]
+        },
+        {
+          "id": "pointer-clear-first",
+          "modality": "pointer",
+          "scenario": "clear-first",
+          "checks": [
+            "content-preserved",
+            "coupon-applied",
+            "background-action",
+            "persistence",
+            "clear-coupon",
+            "clear-persistence"
+          ],
+          "states": [
+            "initial",
+            "discounted",
+            "persisted",
+            "cleared"
+          ]
+        },
+        {
+          "id": "keyboard-enter",
+          "modality": "keyboard",
+          "scenario": "enter",
+          "checks": [
+            "content-preserved",
+            "coupon-applied",
+            "background-action",
+            "persistence",
+            "clear-coupon",
+            "clear-persistence"
+          ],
+          "states": [
+            "initial",
+            "discounted",
+            "persisted",
+            "cleared"
+          ]
+        },
+        {
+          "id": "keyboard-space",
+          "modality": "keyboard",
+          "scenario": "space",
+          "checks": [
+            "content-preserved",
+            "coupon-applied",
+            "background-action",
+            "persistence",
+            "clear-coupon",
+            "clear-persistence"
+          ],
+          "states": [
+            "initial",
+            "discounted",
+            "persisted",
+            "cleared"
+          ]
+        }
+      ]
+    }
+  }
+}

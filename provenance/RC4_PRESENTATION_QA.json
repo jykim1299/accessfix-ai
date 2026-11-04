@@ -1,0 +1,29 @@
+{
+  "scope": "README/media publication candidate based on approved RC4; no product design or model experiment change",
+  "repairModelCalls": 0,
+  "readme": {
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "localLinksChecked": 25,
+    "errors": 0,
+    "desktopAndMobileGraphicalAbstract": true,
+    "preview": "Local GFM/Markdig, not an uploaded GitHub page"
+  },
+  "videoDurationSeconds": 165,
+  "fullPlaybackBothFiles": true,
+  "fullDecodeBothFiles": true,
+  "captionCues": 31,
+  "maximumSubtitleLines": 2,
+  "maximumMuxedAudioLagSeconds": 0,
+  "sameVideoStreamBothVersions": true,
+  "originalsPreserved": true,
+  "limitations": [
+    "Owner review of synthetic voice pronunciation/naturalness and final content.",
+    "Project-wide license approval and installed Windows voice/font public-use conditions.",
+    "Actual public URL replacement and final GitHub rendering/dark-mode check.",
+    "RC4 expanded-code18incomplete retained; no full WCAG claim."
+  ]
+}

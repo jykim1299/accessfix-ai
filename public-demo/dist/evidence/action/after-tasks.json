@@ -1,0 +1,1010 @@
+{
+  "schema_version": 1,
+  "case_id": "holdout-action",
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-apply",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Apply coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.161318795
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add item",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.435924999
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0256672339999997
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Clear coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.320432989
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 3.112943085
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.294233669
+    },
+    {
+      "id": "pointer-clear-first",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Apply coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0236816179999997
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Clear coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.3162299460000004
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add item",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5833040339999997
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.175493504
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.9706102790000006
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.1640047750000004
+    },
+    {
+      "id": "keyboard-enter",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9823149269999994
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0066678839999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2412487659999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2614069559999999
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2833987449999995
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 1.8644442769999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.1333036459999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.15362466
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.174291313999999
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.936076671
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.1056758359999996
+    },
+    {
+      "id": "keyboard-space",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0284637300000012
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0521059999999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2817521230000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2994209060000013
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.318302133000001
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 1.8987939860000005
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.1597768780000006
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.182305864
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.2160242720000007
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.9810958210000007
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.160593603000001
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.08293512300000003,
+  "browser_s": 12.895200586000001,
+  "elapsed_s": 13.005453273999999,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 13.975285200052895
+}

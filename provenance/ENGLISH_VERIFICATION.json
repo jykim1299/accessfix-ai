@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-29T22:12:08.254426+00:00",
+  "scope": "English presentation, new saved-evidence recording and public packaging; no historical rescore",
+  "actual_model_calls": 0,
+  "default_ui_language": "en",
+  "independent_hackathon_codebase": true,
+  "research_poc_code_included": false,
+  "tests": {
+    "python_passed": 140,
+    "python_subtests": 6,
+    "python_skipped": 1,
+    "full_ui": {
+      "passed": 26,
+      "total": 26
+    },
+    "history": {
+      "passed": 38,
+      "total": 38
+    },
+    "evidence": {
+      "passed": 10,
+      "total": 10
+    },
+    "final_clean_public_smoke": {
+      "passed": 10,
+      "total": 10
+    },
+    "presentation_states": 24,
+    "presentation_violation_rules": 0,
+    "presentation_states_with_incomplete": 8
+  },
+  "late_presentation_fix": "After \u00b7 Verified candidate changed to After \u00b7 Evaluated candidate, then clean frontend rebuilt, public smoke rerun and video recaptured; no numeric verdict changed",
+  "clean_install": {
+    "source_install_completed": true,
+    "evidence_files_verified": 815,
+    "docker_analysis": {
+      "status": "completed",
+      "image_id": "sha256:f8a84c7ea0b05387ac410dbd80a2903c274b5395e47ad95bf666615707214068",
+      "elapsed_s": 29.156999999999982,
+      "actual_model_calls": 0,
+      "repair_requests": 0,
+      "keyboard_pass": 0,
+      "keyboard_total": 3,
+      "pointer_pass": 2,
+      "pointer_total": 2,
+      "axe_state_nodes": 1,
+      "incomplete_state_nodes": 0,
+      "measurement_complete": false,
+      "notes": "Deliberately broken original; expected keyboard failures are preserved. This is runtime verification, not a new repair evaluation."
+    }
+  },
+  "historical_preservation": {
+    "raw_files": 6431,
+    "frozen_files": 42,
+    "all_unchanged": true
+  },
+  "media": {
+    "duration_s": 173.76,
+    "width": 1920,
+    "height": 1080,
+    "video_codec": "H.264",
+    "pixel_format": "yuv420p",
+    "fps": 25,
+    "narration": "Local Microsoft Zira synthesized English",
+    "captions_burned_in": true,
+    "stored_results_replay": true,
+    "live_inference": false,
+    "full_stream_decode": "passed",
+    "browser_seeks_per_file": 9,
+    "source_recording_sha256": "82c0b3ce38196afa3cf970f38a66b80e5c3b9f7bc045b736514beddf940f3610",
+    "files": [
+      {
+        "file": "accessfix-english-captioned.mp4",
+        "bytes": 11521208,
+        "sha256": "52bc46304fa23ce79b0cfce3dfd4dfe84a2a2209f6a7d1d5e080acf67c827572"
+      },
+      {
+        "file": "accessfix-english-narrated.mp4",
+        "bytes": 14153281,
+        "sha256": "f8478010cebff5a4e80229edb193cc4cb872c05be17a2b502986b1027d1d435b"
+      }
+    ]
+  },
+  "limitations": [
+    "Mobile comparison tables/Diff can retain axe color-contrast incomplete; not an automatic pass.",
+    "Original task failures and missing measurements remain in the independent clean runtime analysis.",
+    "Small reviewed-app experiment; acceptance is not full accessibility conformance.",
+    "Earlier environmental OOM/interrupted runs and first transient Python failure retained locally.",
+    "License approval, human final video review and publication/submission remain owner actions."
+  ]
+}

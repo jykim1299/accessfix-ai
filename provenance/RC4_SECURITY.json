@@ -1,0 +1,328 @@
+{
+  "scope": "New RC4 static preview security checks; not historical model experiment",
+  "requests_tested": 52,
+  "checks": [
+    {
+      "method": "POST",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "POST",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PUT",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "OPTIONS",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "TRACE",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/api/analyses",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/api/repairs/test/repair",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/api/restore",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/api/upload",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "CONNECT",
+      "path": "/admin/execute",
+      "status": 405,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/providers",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/history",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/.env",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/.git/config",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/src/main.tsx",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/scripts/serve.py",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/../README.md",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/%2e%2e/README.md",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/..%5cREADME.md",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200,
+      "pass": true
+    }
+  ],
+  "publish_files": 74,
+  "potential_private_data": [],
+  "dist_unchanged_after_probes": true,
+  "model_api_requests": 0,
+  "backend_app_or_model_sdk_in_server": false,
+  "passed": true,
+  "limitations": [
+    "Pattern scan is not a guarantee to detect every secret.",
+    "Production hosting headers and access policy require verification after a separately approved deployment."
+  ]
+}

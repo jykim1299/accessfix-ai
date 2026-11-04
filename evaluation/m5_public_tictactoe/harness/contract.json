@@ -1,0 +1,123 @@
+{
+  "version": "m5-public-tictactoe-contract-v1",
+  "cases": {
+    "public-tictactoe": {
+      "workflows": [
+        {
+          "id": "pointer-x-win",
+          "modality": "pointer",
+          "scenario": "x-win",
+          "checks": [
+            "content-preserved",
+            "initial-state",
+            "first-move",
+            "occupied-cell-protection",
+            "alternating-turn",
+            "winner",
+            "score",
+            "finished-game-protection",
+            "rematch-clears",
+            "rematch-playing",
+            "score-preserved"
+          ],
+          "states": [
+            "initial",
+            "playing",
+            "won",
+            "rematched"
+          ]
+        },
+        {
+          "id": "pointer-o-win",
+          "modality": "pointer",
+          "scenario": "o-win",
+          "checks": [
+            "content-preserved",
+            "initial-state",
+            "first-move",
+            "occupied-cell-protection",
+            "alternating-turn",
+            "winner",
+            "score",
+            "finished-game-protection",
+            "rematch-clears",
+            "rematch-playing",
+            "score-preserved"
+          ],
+          "states": [
+            "initial",
+            "playing",
+            "won",
+            "rematched"
+          ]
+        },
+        {
+          "id": "pointer-draw",
+          "modality": "pointer",
+          "scenario": "draw",
+          "checks": [
+            "content-preserved",
+            "initial-state",
+            "first-move",
+            "occupied-cell-protection",
+            "alternating-turn",
+            "winner",
+            "score",
+            "finished-game-protection",
+            "rematch-clears",
+            "rematch-playing",
+            "score-preserved"
+          ],
+          "states": [
+            "initial",
+            "playing",
+            "won",
+            "rematched"
+          ]
+        },
+        {
+          "id": "keyboard-enter",
+          "modality": "keyboard",
+          "scenario": "enter",
+          "checks": [
+            "content-preserved",
+            "initial-state",
+            "first-move",
+            "occupied-cell-protection",
+            "alternating-turn",
+            "score",
+            "rematch-clears",
+            "rematch-playing",
+            "score-preserved"
+          ],
+          "states": [
+            "initial",
+            "playing",
+            "rematched"
+          ]
+        },
+        {
+          "id": "keyboard-space",
+          "modality": "keyboard",
+          "scenario": "space",
+          "checks": [
+            "content-preserved",
+            "initial-state",
+            "first-move",
+            "occupied-cell-protection",
+            "alternating-turn",
+            "score",
+            "rematch-clears",
+            "rematch-playing",
+            "score-preserved"
+          ],
+          "states": [
+            "initial",
+            "playing",
+            "rematched"
+          ]
+        }
+      ]
+    }
+  }
+}

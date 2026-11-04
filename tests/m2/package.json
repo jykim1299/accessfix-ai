@@ -1,0 +1,7 @@
+{
+  "name": "accessfix-m2-ui-verification",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node run-ui.mjs"},
+  "devDependencies": {"playwright": "1.64.1", "axe-core": "4.14.0"}
+}

@@ -1,0 +1,67 @@
+{
+  "accepted": true,
+  "status": "accepted",
+  "reasons": [],
+  "regressions": [],
+  "new_violations": [],
+  "new_incomplete": [],
+  "new_browser_errors": [],
+  "manual_review": false,
+  "metrics": {
+    "before": {
+      "measurement_complete": false,
+      "pointer_reference_valid": true,
+      "pointer_pass": 2,
+      "pointer_total": 2,
+      "keyboard_pass": 0,
+      "keyboard_total": 3,
+      "axe_state_nodes": 1,
+      "incomplete_state_nodes": 0,
+      "observed_audit_states": 14,
+      "violations": [
+        "open|aria-dialog-name|[\".preferences-dialog\"]"
+      ],
+      "incomplete": [],
+      "failures": [
+        "keyboard-save:focus-entry",
+        "keyboard-save:focus-forward",
+        "keyboard-save:focus-reverse",
+        "keyboard-save:focus-return",
+        "keyboard-cancel:focus-entry",
+        "keyboard-cancel:focus-forward",
+        "keyboard-cancel:focus-reverse",
+        "keyboard-cancel:focus-return",
+        "keyboard-escape:focus-entry",
+        "keyboard-escape:focus-forward",
+        "keyboard-escape:focus-reverse",
+        "keyboard-escape:closed",
+        "keyboard-escape:focus-return"
+      ],
+      "measurement_problems": [
+        "keyboard-escape:cancelled:audit_missing"
+      ],
+      "browser_errors": [],
+      "manual_review": true,
+      "axe_zero_keyboard_failed": false
+    },
+    "after": {
+      "measurement_complete": true,
+      "pointer_reference_valid": true,
+      "pointer_pass": 2,
+      "pointer_total": 2,
+      "keyboard_pass": 3,
+      "keyboard_total": 3,
+      "axe_state_nodes": 0,
+      "incomplete_state_nodes": 0,
+      "observed_audit_states": 15,
+      "violations": [],
+      "incomplete": [],
+      "failures": [],
+      "measurement_problems": [],
+      "browser_errors": [],
+      "manual_review": false,
+      "axe_zero_keyboard_failed": false
+    }
+  },
+  "scope": "Declared modal user tasks and automated checks only; not WCAG conformance or deployment approval."
+}

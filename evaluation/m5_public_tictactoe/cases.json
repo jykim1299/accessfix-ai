@@ -1,0 +1,8 @@
+[
+  {
+    "id": "public-tictactoe",
+    "split": "external-public",
+    "title": "Public React Tic Tac Toe \u00b7 keyboard play",
+    "task": "Play Tic Tac Toe using only the keyboard as well as with the pointer. Preserve the visible 3-by-3 board, alternating X/O turns, occupied-cell protection, winning-player status, win/draw scoreboard, and Rematch behavior. Repair the observed inability to reach and activate board cells with the keyboard without removing pointer play or changing game rules."
+  }
+]

@@ -1,0 +1,4218 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/result.json",
+      "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/result.json",
+      "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf"
+    }
+  ],
+  "data": {
+    "before": [
+      {
+        "task": "pointer-duplicate",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-archive",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-duplicate",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "missing"
+          },
+          {
+            "state": "cancelled",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-archive",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "missing"
+          },
+          {
+            "state": "cancelled",
+            "status": "missing"
+          },
+          {
+            "state": "persisted",
+            "status": "missing"
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "task": "pointer-duplicate",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-archive",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-duplicate",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 1</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-archive",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Active</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Active</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "description": "Ensure all ARIA attributes have valid values",
+                "help": "ARIA attributes must conform to valid values",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#workspace-actions"
+                    ],
+                    "html": "<button id=\"workspace-actions\" aria-haspopup=\"menu\" aria-expanded=\"true\" aria-controls=\"draft-actions\">Workspace actions</button>",
+                    "impact": "critical",
+                    "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\"",
+                    "any": [],
+                    "all": [
+                      {
+                        "id": "aria-valid-attr-value",
+                        "data": {
+                          "messageKey": "controlsWithinPopup",
+                          "needsReview": "aria-controls=\"draft-actions\""
+                        },
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"draft-actions\""
+                      }
+                    ],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "color-contrast",
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "#queue-title"
+                    ],
+                    "html": "<h2 id=\"queue-title\">Delivery queue</h2>",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                    "any": [
+                      {
+                        "id": "color-contrast",
+                        "data": {
+                          "contrastRatio": 0,
+                          "fontSize": "16.2pt (21.6px)",
+                          "fontWeight": "bold",
+                          "messageKey": "bgOverlap",
+                          "expectedContrastRatio": "3:1"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element's background color could not be determined because it is overlapped by another element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "selected",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "selected.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          },
+          {
+            "state": "persisted",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "description": "Ensure role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dd[aria-label=\"Draft status\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  },
+                  {
+                    "target": [
+                      "dd[aria-label=\"Copy count\"]"
+                    ],
+                    "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                    "impact": "minor",
+                    "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                    "any": [
+                      {
+                        "id": "aria-allowed-role",
+                        "data": [
+                          "status"
+                        ],
+                        "relatedNodes": [],
+                        "impact": "minor",
+                        "message": "ARIA role status is not allowed for given element"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              },
+              {
+                "id": "definition-list",
+                "impact": "serious",
+                "description": "Ensure <dl> elements are structured correctly",
+                "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      "dl"
+                    ],
+                    "html": "<dl><div><dt>Status</dt><dd role=\"status\" aria-label=\"Draft status\">Archived</dd></div><div><dt>Copies</dt><dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd></div></dl>",
+                    "impact": "serious",
+                    "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                    "any": [],
+                    "all": [],
+                    "none": [
+                      {
+                        "id": "only-dlitems",
+                        "data": {
+                          "values": "div > [role=status]"
+                        },
+                        "relatedNodes": [
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Draft status\">Archived</dd>",
+                            "target": [
+                              "dd[aria-label=\"Draft status\"]"
+                            ]
+                          },
+                          {
+                            "html": "<dd role=\"status\" aria-label=\"Copy count\">Copies: 0</dd>",
+                            "target": [
+                              "dd[aria-label=\"Copy count\"]"
+                            ]
+                          }
+                        ],
+                        "impact": "serious",
+                        "message": "dl element has direct children that are not allowed: div > [role=status]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "persisted.png"
+          }
+        ]
+      }
+    ]
+  }
+}

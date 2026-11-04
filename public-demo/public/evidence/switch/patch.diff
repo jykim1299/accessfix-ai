@@ -1,0 +1,11 @@
+--- original/src/App.tsx
++++ candidate/src/App.tsx
+@@ -15,7 +15,7 @@
+     <section className="card" aria-labelledby="delivery-title">
+       <h2 id="delivery-title">Delivery updates</h2>
+       <div className="setting-row"><div><h3 id="weekly-label">Weekly summary</h3><p id="weekly-description">Receive one digest of your workspace activity each week.</p></div>
+-        <div className="switch" role="switch" tabIndex={0} aria-label="Weekly summary" aria-describedby="weekly-description" aria-checked={draft} onClick={() => setDraft(value => !value)} onKeyDown={event => { if (event.key === ' ') { event.preventDefault(); setDraft(value => !value); } }} onKeyUp={event => { if (event.key === ' ') { event.preventDefault(); setDraft(value => !value); } }}><span aria-hidden="true">{draft ? 'On' : 'Off'}</span></div>
++        <button type="button" className="switch" role="switch" aria-label="Weekly summary" aria-describedby="weekly-description" aria-checked={draft} onClick={() => setDraft(value => !value)}><span aria-hidden="true">{draft ? 'On' : 'Off'}</span></button>
+       </div>
+       <p role="status" aria-label="Saved notification settings">Weekly summary: {saved ? 'On' : 'Off'}</p>
+       <div className="actions"><button className="muted-button" onClick={() => setDraft(saved)}>Reset changes</button><button onClick={() => setSaved(draft)}>Save settings</button></div>

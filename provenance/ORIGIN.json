@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-29T10:33:07.606223+00:00",
+  "previous_final_source_manifest_sha256": "cc0809f83bdffac99eeaee3d24ca0b98df34adc0645e02926a7ee578833e7232",
+  "evidence_zip_sha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011",
+  "scope": "English default UI and responsive layout; UI text expectations; newly recorded English UI demo and packaging",
+  "new_model_calls": 0,
+  "old_git_history_included": false,
+  "historical_results_rescored": false,
+  "historical_evidence_modified": false,
+  "license_status": "pending owner decision",
+  "presentation_files": [
+    "frontend/index.html",
+    "frontend/src/main.tsx",
+    "frontend/src/EvidenceFiles.tsx",
+    "frontend/src/api.ts",
+    "tests/m2/run-ui.mjs",
+    "tests/m2/review-ui.mjs",
+    "tests/m2/review-diff.mjs",
+    "tests/m4/m2-regression.mjs",
+    "tests/m4/review-product.mjs",
+    "tests/m4/refresh-provider.mjs",
+    "tests/m5/m2-regression.mjs",
+    "tests/m5/evidence-pages.mjs",
+    "tests/m5/contrast-review.mjs",
+    "tests/m5/mobile-scroll-review.mjs",
+    "tests/m6/release-smoke.mjs",
+    "frontend/src/styles.css"
+  ]
+}

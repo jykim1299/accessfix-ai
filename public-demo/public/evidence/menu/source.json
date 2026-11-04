@@ -1,0 +1,23 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/record.json",
+      "sha256": "7cbbf12e86daf9cd8da4f67bc6ae1bc76c6bf84cc917f8d117d855880bb7a4ed"
+    }
+  ],
+  "data": {
+    "kind": "Project-authored synthetic fixture",
+    "name": "AccessFix AI Workspace menu",
+    "license": "MIT (fixture source)",
+    "sha256": "0faab7fa1b464d7082017bd030e128b238a30cee42b7d591e4c06f098e0a6cc5",
+    "hashes": {
+      "src/App.tsx": "0faab7fa1b464d7082017bd030e128b238a30cee42b7d591e4c06f098e0a6cc5",
+      "src/main.tsx": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "src/styles.css": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6"
+    },
+    "evidenceArchiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011"
+  }
+}

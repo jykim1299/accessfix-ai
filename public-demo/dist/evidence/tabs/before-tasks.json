@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "case_id": "dev-tabs",
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-activity",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence"
+      ],
+      "required_states": [
+        "overview",
+        "activity",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Activity",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Activity",
+            "inDialog": false
+          },
+          "elapsed_s": 1.1379850969999998
+        },
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Overview",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.419906771
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add note",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.646596548
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.233813777
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "activity",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "activity.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.592366912
+    },
+    {
+      "id": "pointer-billing",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence"
+      ],
+      "required_states": [
+        "overview",
+        "billing",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Billing",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Billing",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0204617179999995
+        },
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Overview",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2639027310000002
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add note",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.497198469
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0753076879999997
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "billing",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "billing.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.4166110150000004
+    },
+    {
+      "id": "keyboard-activity",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence",
+        "focus-target",
+        "focus-return"
+      ],
+      "required_states": [
+        "overview",
+        "activity",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "target-panel",
+          "status": "missing"
+        },
+        {
+          "id": "active-tab",
+          "status": "missing"
+        },
+        {
+          "id": "return-panel",
+          "status": "missing"
+        },
+        {
+          "id": "note-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-return",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0028302990000002
+        },
+        {
+          "kind": "key",
+          "key": "ArrowRight",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.024535605
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: focus-target"
+        }
+      ],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "activity",
+          "status": "missing"
+        },
+        {
+          "state": "returned-overview",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.2945639499999997
+    },
+    {
+      "id": "keyboard-billing",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence",
+        "focus-target",
+        "focus-return"
+      ],
+      "required_states": [
+        "overview",
+        "billing",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "target-panel",
+          "status": "missing"
+        },
+        {
+          "id": "active-tab",
+          "status": "missing"
+        },
+        {
+          "id": "return-panel",
+          "status": "missing"
+        },
+        {
+          "id": "note-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-return",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9569836379999997
+        },
+        {
+          "kind": "key",
+          "key": "ArrowLeft",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9777886680000011
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: focus-target"
+        }
+      ],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "billing",
+          "status": "missing"
+        },
+        {
+          "state": "returned-overview",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.234188403
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.08152776299999999,
+  "browser_s": 9.698353627,
+  "elapsed_s": 9.821625575999999,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 10.977402199991047
+}

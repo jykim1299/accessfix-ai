@@ -1,0 +1,282 @@
+{
+  "created_utc": "2026-10-30T09:04:30.164818+00:00",
+  "scope": "Blue presentation edition; no historical experiment modified or rescored",
+  "actual_model_calls": 0,
+  "product_files_changed": [
+    "frontend/src/styles.css"
+  ],
+  "tests": {
+    "python_passed": 140,
+    "python_skipped": 1,
+    "python_subtests_passed": 6,
+    "full_ui_passed": 26,
+    "history_passed": 38,
+    "evidence_passed": 10,
+    "public_snapshot_smoke_passed": 10,
+    "responsive_widths": [
+      1440,
+      390,
+      320
+    ],
+    "responsive_states": 24,
+    "responsive_axe_violation_states": 0,
+    "responsive_incomplete_states": 8,
+    "supplemental_contrast_states": 48,
+    "supplemental_axe_violation_states": 0,
+    "supplemental_incomplete_states": 1,
+    "computed_text_contrast_failures": 0,
+    "manually_reviewed_table_states": 6,
+    "table_contrast_ratio": 9.838905016840346
+  },
+  "palette_contrast": [
+    {
+      "foreground": "#FFFFFF",
+      "background": "#0866FF",
+      "ratio": 4.822183980277067
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#0756B9",
+      "ratio": 6.906290625580716
+    },
+    {
+      "foreground": "#526780",
+      "background": "#F7FAFF",
+      "ratio": 5.559531532976254
+    },
+    {
+      "foreground": "#0756B9",
+      "background": "#EAF3FF",
+      "ratio": 6.170514765750464
+    },
+    {
+      "foreground": "#0B1B34",
+      "background": "#FFFFFF",
+      "ratio": 17.204803765367675
+    }
+  ],
+  "preservation": {
+    "raw_evidence_files": 6431,
+    "frozen_files": 42,
+    "additional_checkpoint_files": 8258,
+    "changed_files": 0,
+    "previous_english_submission_unchanged": true
+  },
+  "media": {
+    "duration_s": 155.92,
+    "width": 1920,
+    "height": 1080,
+    "video_codec": "H.264",
+    "fps": 25,
+    "captions_burned_in": true,
+    "same_frames_both_versions": true,
+    "full_decode": "passed",
+    "files": [
+      {
+        "file": "accessfix-blue-captioned.mp4",
+        "sha256": "902692ee4211b23b38a6e6dbc0873943abb8ae750c85825159850c8c123abdf5",
+        "bytes": 2754878
+      },
+      {
+        "file": "accessfix-blue-narrated.mp4",
+        "sha256": "c9a5f4bf2353e6cf6f51506af4b66601cafa88c311df1161cfa02f69fb7fed22",
+        "bytes": 5193499
+      }
+    ]
+  },
+  "synchronization": {
+    "pass": true,
+    "duration_s": 155.92,
+    "speech_clips": 29,
+    "subtitle_cues": 30,
+    "maximum_lines": 2,
+    "transcript_matches_all_captions": true,
+    "first_word_event_vs_waveform_max_s": 0.020000000000010232,
+    "caption_start_lead_s": 0.04,
+    "caption_end_tail_s": 0.1,
+    "video_frame_quantization_max_s": 0.02,
+    "aac_audio_alignment": [
+      {
+        "clip": 1,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9860762518549623
+      },
+      {
+        "clip": 2,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9999875715477633
+      },
+      {
+        "clip": 3,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9999940458720457
+      },
+      {
+        "clip": 4,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9990842516378137
+      },
+      {
+        "clip": 5,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9977264432702287
+      },
+      {
+        "clip": 6,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9979223154623231
+      },
+      {
+        "clip": 7,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9948294338596794
+      },
+      {
+        "clip": 8,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9959697340305181
+      },
+      {
+        "clip": 9,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9957322810188518
+      },
+      {
+        "clip": 10,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9973194789007671
+      },
+      {
+        "clip": 11,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9977799718251452
+      },
+      {
+        "clip": 12,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9997713412115646
+      },
+      {
+        "clip": 13,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9961217958005142
+      },
+      {
+        "clip": 14,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9923877058061811
+      },
+      {
+        "clip": 15,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9995240243470687
+      },
+      {
+        "clip": 16,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9875122599840725
+      },
+      {
+        "clip": 17,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9980237620677327
+      },
+      {
+        "clip": 18,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9997874232008599
+      },
+      {
+        "clip": 19,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9992686489646394
+      },
+      {
+        "clip": 20,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9978966251172188
+      },
+      {
+        "clip": 21,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.996767174584722
+      },
+      {
+        "clip": 22,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9989403486365928
+      },
+      {
+        "clip": 23,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9975726577196264
+      },
+      {
+        "clip": 24,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9999693856399389
+      },
+      {
+        "clip": 25,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9975857456481309
+      },
+      {
+        "clip": 26,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9963395051492657
+      },
+      {
+        "clip": 27,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9999963735469553
+      },
+      {
+        "clip": 28,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9983208827093327
+      },
+      {
+        "clip": 29,
+        "measured_audio_lag_s": 0.0,
+        "normalized_waveform_correlation": 0.9964905426252447
+      }
+    ],
+    "max_abs_muxed_audio_lag_s": 0.0,
+    "timing_resolution_s": 0.01,
+    "discarded_attempts": "24 kHz and default 22.05 kHz SpeechProgress timestamps exceeded clip bounds; regenerated at 16 kHz, matching event clock. Earlier attempts kept privately.",
+    "limitation": "Synthesis timestamps and waveform verification are not independent ASR or a human voice-naturalness assessment."
+  },
+  "full_playback": {
+    "files": [
+      {
+        "file": "accessfix-blue-narrated.mp4",
+        "duration": 155.92,
+        "wall_time_s": 156.869,
+        "ended": true,
+        "audio_bytes": 2365944,
+        "errors": [],
+        "played_start_to_end_without_seeking": true
+      },
+      {
+        "file": "accessfix-blue-captioned.mp4",
+        "duration": 155.92,
+        "wall_time_s": 156.411,
+        "ended": true,
+        "audio_bytes": 0,
+        "errors": [],
+        "played_start_to_end_without_seeking": true
+      }
+    ],
+    "speed": 1,
+    "seek_operations": 0
+  },
+  "source_evidence_bundle_sha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011",
+  "limits": [
+    "Axe incomplete from horizontally clipped tables/diff is retained, not relabelled as pass.",
+    "No new Meta experiment. Visuals are an editorial replay of preserved screenshots, key logs and new blue UI captures.",
+    "No independent ASR alignment, human voice-naturalness score, or first-time-viewer study.",
+    "No claim of full WCAG conformance or generalization to arbitrary websites.",
+    "Public push, hosting, official submission and project license activation remain unperformed."
+  ]
+}

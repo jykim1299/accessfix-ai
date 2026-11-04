@@ -1,0 +1,25 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/record.json",
+      "sha256": "935d755ea50abb5df158e6f3a214a3326f4eb6231ef22324095973bce4ae551a"
+    }
+  ],
+  "data": {
+    "kind": "Project-authored synthetic fixture",
+    "name": "AccessFix AI Delivery preferences",
+    "license": "MIT (fixture source)",
+    "sha256": "661bcff00fca19fa22d803e01969549ba69ce6da01160cd172307972aac9b7ff",
+    "hashes": {
+      "LICENSE": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "PROVENANCE.md": "01f2ebbf4e77f47b2f97f450c47c931fbefc72d4a21e7b517373b8529efd4a83",
+      "src/main.tsx": "cd66ae332085ddefe6410f8b392820ab67ada4c2e755f911792490d199f55125",
+      "src/ModalApp.tsx": "661bcff00fca19fa22d803e01969549ba69ce6da01160cd172307972aac9b7ff",
+      "src/styles.css": "4e81049800dc2ea5c990dbc307d3bd12137e35de369b384d6bb1e3ff2311b305"
+    },
+    "evidenceArchiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "modal-contract-v1",
+  "workflows": [
+    {"id":"pointer-save","modality":"pointer","scenario":"save","checks":["content-preserved","opened","saved-summary","saved-storage","closed","reopened","background-action"],"states":["closed","open","saved"]},
+    {"id":"pointer-cancel","modality":"pointer","scenario":"cancel","checks":["content-preserved","opened","cancelled-summary","cancelled-storage","closed","reopened","background-action"],"states":["closed","open","cancelled"]},
+    {"id":"keyboard-save","modality":"keyboard","scenario":"save","checks":["content-preserved","opened","focus-entry","focus-forward","focus-reverse","saved-summary","saved-storage","closed","focus-return","reopened","background-action"],"states":["closed","open","saved"]},
+    {"id":"keyboard-cancel","modality":"keyboard","scenario":"cancel","checks":["content-preserved","opened","focus-entry","focus-forward","focus-reverse","cancelled-summary","cancelled-storage","closed","focus-return","reopened","background-action"],"states":["closed","open","cancelled"]},
+    {"id":"keyboard-escape","modality":"keyboard","scenario":"escape","checks":["content-preserved","opened","focus-entry","focus-forward","focus-reverse","cancelled-summary","cancelled-storage","closed","focus-return","reopened","background-action"],"states":["closed","open","cancelled"]}
+  ]
+}

@@ -1,0 +1,1190 @@
+{
+  "version": 1,
+  "archiveName": "accessfix-demo-evidence.zip",
+  "archiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011",
+  "method": "Explicit public allowlist; raw files copied byte-for-byte; derived fields retain source references and hashes.",
+  "sourceOriginalsModified": false,
+  "modelRequests": 0,
+  "networkRequests": 0,
+  "excluded": [
+    "private files",
+    "credentials",
+    "raw model requests/responses",
+    "trace archives",
+    "unselected experiments"
+  ],
+  "caseIds": [
+    "tabs",
+    "switch",
+    "modal",
+    "action",
+    "menu",
+    "tictactoe"
+  ],
+  "files": [
+    {
+      "path": "/evidence/tabs/decision.json",
+      "sha256": "0e7ba2365122d3acf2ec458bbd624686e4d228f1e6e8fccb2d0c8d40546a8c40",
+      "bytes": 2933,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/decision.json",
+          "sha256": "0e7ba2365122d3acf2ec458bbd624686e4d228f1e6e8fccb2d0c8d40546a8c40"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/tabs/model.json",
+      "sha256": "e62be75d211fb20ba9ce8e4a644ede177a84044b8abf113972090eb9980525e6",
+      "bytes": 1008,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/model/metadata.json",
+          "sha256": "e62be75d211fb20ba9ce8e4a644ede177a84044b8abf113972090eb9980525e6"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/tabs/patch.diff",
+      "sha256": "7b3757f902ad62e3c61ca6cb3ced5f48e785e1c5a3ae974277edff12ef22202f",
+      "bytes": 2743,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/patch.diff",
+          "sha256": "7b3757f902ad62e3c61ca6cb3ced5f48e785e1c5a3ae974277edff12ef22202f"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/tabs/before-tasks.json",
+      "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f",
+      "bytes": 14342,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/result.json",
+          "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f"
+        }
+      ],
+      "label": "Original browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/tabs/after-tasks.json",
+      "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767",
+      "bytes": 20566,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/result.json",
+          "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767"
+        }
+      ],
+      "label": "Candidate browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/tabs/audits.json",
+      "sha256": "57aa3099123b7ab13e6b874666fbb763c27bf64851cf4b1c4fde3e8f61b97bd3",
+      "bytes": 9970,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/result.json",
+          "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/result.json",
+          "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767"
+        }
+      ],
+      "label": "Measured state audits \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/tabs/tasks.json",
+      "sha256": "a0b65935f6ff5045e74c6dd2c873043eb7c3e5104bef6474364b36c0cb2d1d59",
+      "bytes": 8734,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/result.json",
+          "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/result.json",
+          "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767"
+        }
+      ],
+      "label": "Task comparison \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/tabs/before.png",
+      "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742",
+      "bytes": 48244,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/evidence/keyboard-activity/overview.png",
+          "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742"
+        }
+      ],
+      "label": "Original: the keyboard task stays on Overview.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/tabs/after.png",
+      "sha256": "76832a39de8e16bfcb83e652c40a27a19c70362b87d8d8edd0403808c8ee4ef3",
+      "bytes": 48423,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/evidence/keyboard-activity/activity.png",
+          "sha256": "76832a39de8e16bfcb83e652c40a27a19c70362b87d8d8edd0403808c8ee4ef3"
+        }
+      ],
+      "label": "Candidate: the same task reaches Activity.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/tabs/after-persisted.png",
+      "sha256": "a3f5ec8e8cea5242867ab32acd16646e79c3edeaa7677616f251ddd084eeb069",
+      "bytes": 48083,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/evidence/keyboard-activity/persisted.png",
+          "sha256": "a3f5ec8e8cea5242867ab32acd16646e79c3edeaa7677616f251ddd084eeb069"
+        }
+      ],
+      "label": "Candidate note remains after reload",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/tabs/source.json",
+      "sha256": "c0402db825a1d95cbbfd764afcc9ac62ac4cbcdf5870ce37813a545322232b25",
+      "bytes": 999,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/record.json",
+          "sha256": "5ef0c1f7efcaa2801b7065210ce42765d0280f438459bea22d65b2972cd19a30"
+        }
+      ],
+      "label": "Source attribution \u00b7 derived",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/tabs/LICENSE.txt",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "bytes": 1082,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m4/cases/LICENSE",
+          "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6"
+        }
+      ],
+      "label": "Fixture source license",
+      "kind": "license"
+    },
+    {
+      "path": "/evidence/switch/decision.json",
+      "sha256": "e760d4b86dd8dd15d96685203bd668620ae93cbf1fcbbf2f5b9670dd043dccf3",
+      "bytes": 3597,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/decision.json",
+          "sha256": "e760d4b86dd8dd15d96685203bd668620ae93cbf1fcbbf2f5b9670dd043dccf3"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/switch/model.json",
+      "sha256": "9d6e025e7bcda6b31af27503b3f113449b71c8dd9806f0e63f8f0226f87d8431",
+      "bytes": 1008,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/model/metadata.json",
+          "sha256": "9d6e025e7bcda6b31af27503b3f113449b71c8dd9806f0e63f8f0226f87d8431"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/switch/patch.diff",
+      "sha256": "77b77eb3d1c237e18b2e74263e554af3792c86f31ffc77753f4ad310368c7957",
+      "bytes": 1395,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/patch.diff",
+          "sha256": "77b77eb3d1c237e18b2e74263e554af3792c86f31ffc77753f4ad310368c7957"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/switch/before-tasks.json",
+      "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9",
+      "bytes": 34148,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/result.json",
+          "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9"
+        }
+      ],
+      "label": "Original browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/switch/after-tasks.json",
+      "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b",
+      "bytes": 63718,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/result.json",
+          "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b"
+        }
+      ],
+      "label": "Candidate browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/switch/audits.json",
+      "sha256": "0039531b35013634e2b3f9337d5a66212c5e8069bca3ee4e73ad80c409fcd355",
+      "bytes": 60609,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/result.json",
+          "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/result.json",
+          "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b"
+        }
+      ],
+      "label": "Measured state audits \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/switch/tasks.json",
+      "sha256": "7f2d34281613ae450427b3af1bbb7360b06b2147132fb45f28c6b630b48eb054",
+      "bytes": 14555,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/result.json",
+          "sha256": "493eaafa413235e72516c3ab7829c6d1de1566850a91e94aba87f3d59bb5f9d9"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/result.json",
+          "sha256": "97f0c00eb231f12aec1d8267c7c230507183d02bd451b3a9dd471d08be1c697b"
+        }
+      ],
+      "label": "Task comparison \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/switch/before.png",
+      "sha256": "3cb9ed8a07fbe94da1fa1a0804df82d138c9335d36d5b9734a39368072275c4b",
+      "bytes": 58981,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/evidence/pointer-save/initial.png",
+          "sha256": "3cb9ed8a07fbe94da1fa1a0804df82d138c9335d36d5b9734a39368072275c4b"
+        }
+      ],
+      "label": "Original initial state: the Off label is readable.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/switch/after.png",
+      "sha256": "edf5027affeb823e97d63f376247be25248a0bb71a772b85bf305d7e47c2de5f",
+      "bytes": 59129,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/evidence/pointer-save/initial.png",
+          "sha256": "edf5027affeb823e97d63f376247be25248a0bb71a772b85bf305d7e47c2de5f"
+        }
+      ],
+      "label": "Candidate, same initial state: white Off text loses contrast.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/switch/taskBefore.png",
+      "sha256": "3cb9ed8a07fbe94da1fa1a0804df82d138c9335d36d5b9734a39368072275c4b",
+      "bytes": 58981,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/baseline/evidence/keyboard-save/initial.png",
+          "sha256": "3cb9ed8a07fbe94da1fa1a0804df82d138c9335d36d5b9734a39368072275c4b"
+        }
+      ],
+      "label": "Keyboard save task taskBefore",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/switch/taskAfter.png",
+      "sha256": "7a3327c510b8aa9542a0565d66df12b3eda35a5dc8a1cb1e6d5b879c7fabf466",
+      "bytes": 59794,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/evidence/keyboard-save/saved.png",
+          "sha256": "7a3327c510b8aa9542a0565d66df12b3eda35a5dc8a1cb1e6d5b879c7fabf466"
+        }
+      ],
+      "label": "Keyboard save task taskAfter",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/switch/contrast-audit.json",
+      "sha256": "a6b2d41f2c8e0c5cf748edd42d3b790f939f2120c89f2a08d8599f760eae5376",
+      "bytes": 3389,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/evidence/pointer-save/initial.axe.json",
+          "sha256": "a6b2d41f2c8e0c5cf748edd42d3b790f939f2120c89f2a08d8599f760eae5376"
+        }
+      ],
+      "label": "New contrast violation \u00b7 original audit",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/switch/source.json",
+      "sha256": "34f3f6778ea55694467b3d8f19f9dbec3c5c4d52ea735883128ecbef18756fdb",
+      "bytes": 1012,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-switch/jobs/analyses/4e88252e82914c1dabd5f3cfb44e7015/record.json",
+          "sha256": "d053735e311850175e99bdddabefd32ca6c26ff8d138c7e5cd49f15fe2761b79"
+        }
+      ],
+      "label": "Source attribution \u00b7 derived",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/switch/LICENSE.txt",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "bytes": 1082,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m4/cases/LICENSE",
+          "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6"
+        }
+      ],
+      "label": "Fixture source license",
+      "kind": "license"
+    },
+    {
+      "path": "/evidence/modal/decision.json",
+      "sha256": "19187238f60cf3e837f8118966789ac66a84967c95ee307016b07c6af2531c6b",
+      "bytes": 2023,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/decision.json",
+          "sha256": "19187238f60cf3e837f8118966789ac66a84967c95ee307016b07c6af2531c6b"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/modal/model.json",
+      "sha256": "7f912dc0748e2fdd29290604a659234db72533b98ed0cd8a4bd8b813e387258e",
+      "bytes": 1000,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/model/metadata.json",
+          "sha256": "7f912dc0748e2fdd29290604a659234db72533b98ed0cd8a4bd8b813e387258e"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/modal/patch.diff",
+      "sha256": "f8dfc79b70003ef8b723d46afb46b6fbb8d13b93b06c799be8da431ac6dfdf9a",
+      "bytes": 3507,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/patch.diff",
+          "sha256": "f8dfc79b70003ef8b723d46afb46b6fbb8d13b93b06c799be8da431ac6dfdf9a"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/modal/before-tasks.json",
+      "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0",
+      "bytes": 82930,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/result.json",
+          "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0"
+        }
+      ],
+      "label": "Original browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/modal/after-tasks.json",
+      "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d",
+      "bytes": 62761,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/result.json",
+          "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d"
+        }
+      ],
+      "label": "Candidate browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/modal/audits.json",
+      "sha256": "593a48478fe66d2a6a0b9ab3ecef961350a38582aa7a5fdf6aae41add898175e",
+      "bytes": 21248,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/result.json",
+          "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/result.json",
+          "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d"
+        }
+      ],
+      "label": "Measured state audits \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/modal/tasks.json",
+      "sha256": "844722a559849772cfc7d083217688929997d23306c477eb28c42045c3ba6a19",
+      "bytes": 39554,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/result.json",
+          "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/result.json",
+          "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d"
+        }
+      ],
+      "label": "Task comparison \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/modal/before.png",
+      "sha256": "d7875531737bf4581725433b9741e1341e26aeab1500a8680b55f21fd48d62f7",
+      "bytes": 78078,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/evidence/keyboard-escape/open.png",
+          "sha256": "d7875531737bf4581725433b9741e1341e26aeab1500a8680b55f21fd48d62f7"
+        }
+      ],
+      "label": "Original: the Escape task leaves the dialog open.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/modal/after.png",
+      "sha256": "cb6b4cd7b80bdb192bdde27cedd1a3e55a601ba364359a04fdb626ab15133f1d",
+      "bytes": 50437,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/evidence/keyboard-escape/cancelled.png",
+          "sha256": "cb6b4cd7b80bdb192bdde27cedd1a3e55a601ba364359a04fdb626ab15133f1d"
+        }
+      ],
+      "label": "Candidate: Escape closes the dialog and returns focus.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/modal/source.json",
+      "sha256": "6f2ca0cd3819e9fd7411d2947418af5ff859d5fd29d7d7bac0f00fef0868d21b",
+      "bytes": 1179,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/record.json",
+          "sha256": "935d755ea50abb5df158e6f3a214a3326f4eb6231ef22324095973bce4ae551a"
+        }
+      ],
+      "label": "Source attribution \u00b7 derived",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/modal/LICENSE.txt",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "bytes": 1082,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "examples/modal/LICENSE",
+          "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6"
+        }
+      ],
+      "label": "Fixture source license",
+      "kind": "license"
+    },
+    {
+      "path": "/evidence/action/decision.json",
+      "sha256": "4494402c3d4da559b2561fefe55649bfa05f0e1c2f5124b1c850928224b5a12e",
+      "bytes": 3362,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/decision.json",
+          "sha256": "4494402c3d4da559b2561fefe55649bfa05f0e1c2f5124b1c850928224b5a12e"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/action/model.json",
+      "sha256": "e1d361f767d9092bc97dee1cb108a485c05769388460f4deb1c526e615dbfc17",
+      "bytes": 1008,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/model/metadata.json",
+          "sha256": "e1d361f767d9092bc97dee1cb108a485c05769388460f4deb1c526e615dbfc17"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/action/patch.diff",
+      "sha256": "3fa799aabcb9eac604d7c9b23f5d409fff7a80ed055621c471aca6a294e60de6",
+      "bytes": 1902,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/patch.diff",
+          "sha256": "3fa799aabcb9eac604d7c9b23f5d409fff7a80ed055621c471aca6a294e60de6"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/action/before-tasks.json",
+      "sha256": "5c7a7d57640809bb9de96313d2b84afdbecdc64de43c7724f539c0a768b26101",
+      "bytes": 60883,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/baseline/result.json",
+          "sha256": "5c7a7d57640809bb9de96313d2b84afdbecdc64de43c7724f539c0a768b26101"
+        }
+      ],
+      "label": "Original browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/action/after-tasks.json",
+      "sha256": "4faf0b2aec5cd0d52e5d4f09604bf7b31a9b4151cba3224ef96b50ba1fcc1d95",
+      "bytes": 26816,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/validation/result.json",
+          "sha256": "4faf0b2aec5cd0d52e5d4f09604bf7b31a9b4151cba3224ef96b50ba1fcc1d95"
+        }
+      ],
+      "label": "Candidate browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/action/audits.json",
+      "sha256": "020a9264b96b6393742a3d9e2b36c663ad2c7b9bd08dc95a473388235afd8932",
+      "bytes": 53357,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/baseline/result.json",
+          "sha256": "5c7a7d57640809bb9de96313d2b84afdbecdc64de43c7724f539c0a768b26101"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/validation/result.json",
+          "sha256": "4faf0b2aec5cd0d52e5d4f09604bf7b31a9b4151cba3224ef96b50ba1fcc1d95"
+        }
+      ],
+      "label": "Measured state audits \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/action/tasks.json",
+      "sha256": "3dedfe6580c8916afb2eabe6ed0be69c4fac3eec7f6ce21fc01d5f5c89ee770f",
+      "bytes": 16600,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/baseline/result.json",
+          "sha256": "5c7a7d57640809bb9de96313d2b84afdbecdc64de43c7724f539c0a768b26101"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/validation/result.json",
+          "sha256": "4faf0b2aec5cd0d52e5d4f09604bf7b31a9b4151cba3224ef96b50ba1fcc1d95"
+        }
+      ],
+      "label": "Task comparison \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/action/before.png",
+      "sha256": "378375324341c413c05f8f8c965513592caef08915a7173e7f323b905eb58d9c",
+      "bytes": 51306,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/baseline/evidence/keyboard-enter/initial.png",
+          "sha256": "378375324341c413c05f8f8c965513592caef08915a7173e7f323b905eb58d9c"
+        }
+      ],
+      "label": "Original: keyboard activation does not apply the discount.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/action/after.png",
+      "sha256": "81db9e611262e7d5d283c019b7e053c86e3f12710eac080970fa59c07541aa75",
+      "bytes": 53568,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/repairs/39d0aebf21294ae0b7dcdaede0cfc478/validation/evidence/keyboard-enter/discounted.png",
+          "sha256": "81db9e611262e7d5d283c019b7e053c86e3f12710eac080970fa59c07541aa75"
+        }
+      ],
+      "label": "Candidate: keyboard activation applies the discount.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/action/source.json",
+      "sha256": "51aed6c6207bb11bd756edfb450330bafd8f8c22c7810f6ccd86eef374b9bb2e",
+      "bytes": 1005,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/record.json",
+          "sha256": "02f378431f86e49b8550634ba1cf612bf255ddd12276db6d4760e5d1ceb9a039"
+        }
+      ],
+      "label": "Source attribution \u00b7 derived",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/action/LICENSE.txt",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "bytes": 1082,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m4/cases/LICENSE",
+          "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6"
+        }
+      ],
+      "label": "Fixture source license",
+      "kind": "license"
+    },
+    {
+      "path": "/evidence/menu/decision.json",
+      "sha256": "241e633140852888a23cd751e938d1e48030182051e38efa097a401d0adb9791",
+      "bytes": 5925,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/decision.json",
+          "sha256": "241e633140852888a23cd751e938d1e48030182051e38efa097a401d0adb9791"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/menu/model.json",
+      "sha256": "9df8b19cc76a19b9f69b96d2d6a2746d5e4c389a70aadbb052bd98314efcb07a",
+      "bytes": 1008,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/model/metadata.json",
+          "sha256": "9df8b19cc76a19b9f69b96d2d6a2746d5e4c389a70aadbb052bd98314efcb07a"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/menu/patch.diff",
+      "sha256": "83ae3828b4c2b550d9b2991b400034f44c9ad02d56bd7a9cb98a52e88dfff337",
+      "bytes": 4720,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/patch.diff",
+          "sha256": "83ae3828b4c2b550d9b2991b400034f44c9ad02d56bd7a9cb98a52e88dfff337"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/menu/before-tasks.json",
+      "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2",
+      "bytes": 94323,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/result.json",
+          "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2"
+        }
+      ],
+      "label": "Original browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/menu/after-tasks.json",
+      "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf",
+      "bytes": 127656,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/result.json",
+          "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf"
+        }
+      ],
+      "label": "Candidate browser task results",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/menu/audits.json",
+      "sha256": "ff06f062706270c26bf1b27374f731e7d6844fd59545ef422ec7cc36c78417db",
+      "bytes": 186889,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/result.json",
+          "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/result.json",
+          "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf"
+        }
+      ],
+      "label": "Measured state audits \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/menu/tasks.json",
+      "sha256": "61b910357705eec6688104ca2a4b27776671d2a49a496a4b1d802a722b54f8f1",
+      "bytes": 18556,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/result.json",
+          "sha256": "bc39ec074b6e082abbafa3091c28f2aba98355fde76238fadd3b67464a95eab2"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/result.json",
+          "sha256": "7722f8dcf9fcedf297d203d4cbe66c95bbb0b2e62e81b16b8d132369f6a6f0bf"
+        }
+      ],
+      "label": "Task comparison \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/menu/before.png",
+      "sha256": "d96f56d39c92aa34ae1fe3c10d0028d9afbf01ba8f8c15ef38716ffe43d5bbc8",
+      "bytes": 45990,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/baseline/evidence/keyboard-duplicate/open.png",
+          "sha256": "d96f56d39c92aa34ae1fe3c10d0028d9afbf01ba8f8c15ef38716ffe43d5bbc8"
+        }
+      ],
+      "label": "Original: the menu opens but keyboard selection is blocked.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/menu/after.png",
+      "sha256": "689caf1b8b17014e403d9c82612e87637d8b6af540fbac3ab96c26f7c8f72857",
+      "bytes": 42009,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/repairs/dd7011debd554dfa807b45aeb8f082ac/validation/evidence/keyboard-duplicate/selected.png",
+          "sha256": "689caf1b8b17014e403d9c82612e87637d8b6af540fbac3ab96c26f7c8f72857"
+        }
+      ],
+      "label": "Candidate: the keyboard task selects Duplicate.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/menu/source.json",
+      "sha256": "d390ebbfd20b0d95a07b1da0bfa781902571dc4969c7453adee201745967fde2",
+      "bytes": 1005,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "artifacts/m4/meta-live-v1/holdout-menu/jobs/analyses/e28c0615cc9f4714b5885e0580fafa3c/record.json",
+          "sha256": "7cbbf12e86daf9cd8da4f67bc6ae1bc76c6bf84cc917f8d117d855880bb7a4ed"
+        }
+      ],
+      "label": "Source attribution \u00b7 derived",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/menu/LICENSE.txt",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "bytes": 1082,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m4/cases/LICENSE",
+          "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6"
+        }
+      ],
+      "label": "Fixture source license",
+      "kind": "license"
+    },
+    {
+      "path": "/evidence/tictactoe/decision.json",
+      "sha256": "973c02775a11656dbb98f1fc09b28892789553b096171e2320c852728eaf7711",
+      "bytes": 5735,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app/decision.json",
+          "sha256": "973c02775a11656dbb98f1fc09b28892789553b096171e2320c852728eaf7711"
+        }
+      ],
+      "label": "Recorded decision",
+      "kind": "decision"
+    },
+    {
+      "path": "/evidence/tictactoe/model.json",
+      "sha256": "2c75f32f66718c5a0766c04c02edca49ed3cc7aa6771682ab5584abdf887c973",
+      "bytes": 1024,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app/model/metadata.json",
+          "sha256": "2c75f32f66718c5a0766c04c02edca49ed3cc7aa6771682ab5584abdf887c973"
+        }
+      ],
+      "label": "Recorded model metadata",
+      "kind": "model"
+    },
+    {
+      "path": "/evidence/tictactoe/patch.diff",
+      "sha256": "e749c877ee31efe182c0ea15df5f61fa75084353a4c6dc7f08002dcbe80e3871",
+      "bytes": 1149,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app/patch.diff",
+          "sha256": "e749c877ee31efe182c0ea15df5f61fa75084353a4c6dc7f08002dcbe80e3871"
+        }
+      ],
+      "label": "Actual model patch",
+      "kind": "patch"
+    },
+    {
+      "path": "/evidence/tictactoe/recorded-summary.json",
+      "sha256": "e1df5d49aa003e76ebe753891cc97d3bbbc427ddb9eba14a21b325cc8cf660ca",
+      "bytes": 14647,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app-meta-summary.json",
+          "sha256": "e1df5d49aa003e76ebe753891cc97d3bbbc427ddb9eba14a21b325cc8cf660ca"
+        }
+      ],
+      "label": "Preserved public experiment summary",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/tictactoe/before.png",
+      "sha256": "b800419794d68c7ec154c0ee4324d5d1c13b29c9ea3b2d1a12727022bd03d575",
+      "bytes": 20370,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/screenshots/public-before.png",
+          "sha256": "b800419794d68c7ec154c0ee4324d5d1c13b29c9ea3b2d1a12727022bd03d575"
+        }
+      ],
+      "label": "Original public mini app: board outlines are visible.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/tictactoe/after.png",
+      "sha256": "ce8f5b590bc89f679f733795f06c23dbe24cf4a75ea8614ff142a851bc5a70ed",
+      "bytes": 18647,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/screenshots/public-after.png",
+          "sha256": "ce8f5b590bc89f679f733795f06c23dbe24cf4a75ea8614ff142a851bc5a70ed"
+        }
+      ],
+      "label": "Candidate: keyboard play works, but board outlines are lost.",
+      "kind": "image"
+    },
+    {
+      "path": "/evidence/tictactoe/tasks.json",
+      "sha256": "6843b666bdc547dda0835aa26cf4b961aefc63745095dd48d059c552cab3cc8a",
+      "bytes": 1367,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app/decision.json",
+          "sha256": "973c02775a11656dbb98f1fc09b28892789553b096171e2320c852728eaf7711"
+        },
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app-meta-summary.json",
+          "sha256": "e1df5d49aa003e76ebe753891cc97d3bbbc427ddb9eba14a21b325cc8cf660ca"
+        }
+      ],
+      "label": "Task outcome summary \u00b7 derived",
+      "kind": "tasks"
+    },
+    {
+      "path": "/evidence/tictactoe/audits.json",
+      "sha256": "903875646d5f1ef0c588cceee123900207424bb6aab93933453e26403e3f05c3",
+      "bytes": 5697,
+      "derived": true,
+      "byteIdentical": false,
+      "sources": [
+        {
+          "origin": "reviewed-public-archive",
+          "member": "public-evidence/m5/public-app/decision.json",
+          "sha256": "973c02775a11656dbb98f1fc09b28892789553b096171e2320c852728eaf7711"
+        }
+      ],
+      "label": "Audit signature summary \u00b7 derived",
+      "kind": "audit"
+    },
+    {
+      "path": "/evidence/tictactoe/source-provenance.json",
+      "sha256": "ec20828f18a68962c2a6300d767b502a60df91f3cb57dc50dac2b777b512da87",
+      "bytes": 3010,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m5_public_tictactoe/provenance.json",
+          "sha256": "ec20828f18a68962c2a6300d767b502a60df91f3cb57dc50dac2b777b512da87"
+        }
+      ],
+      "label": "Published upstream source provenance",
+      "kind": "source"
+    },
+    {
+      "path": "/evidence/tictactoe/LICENSE.txt",
+      "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475",
+      "bytes": 1069,
+      "derived": false,
+      "byteIdentical": true,
+      "sources": [
+        {
+          "origin": "reviewed-public-snapshot",
+          "member": "evaluation/m5_public_tictactoe/upstream/LICENSE",
+          "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475"
+        }
+      ],
+      "label": "Upstream MIT license",
+      "kind": "license"
+    }
+  ],
+  "normalizedData": {
+    "path": "/data/cases.json",
+    "sha256": "8a9f9ebb71282418b079ece31f57f6150c9aec1917283870bfbfbded7d1150b2",
+    "derived": true
+  }
+}

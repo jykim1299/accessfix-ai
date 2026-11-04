@@ -1,0 +1,614 @@
+{
+  "captions": [
+    {
+      "id": 1,
+      "clip": "P01",
+      "start": 0.72,
+      "end": 1.96,
+      "text": "Works with a mouse."
+    },
+    {
+      "id": 2,
+      "clip": "P02",
+      "start": 2.36,
+      "end": 3.8,
+      "text": "But not with a keyboard."
+    },
+    {
+      "id": 3,
+      "clip": "P03",
+      "start": 4.84,
+      "end": 6.44,
+      "text": "AI proposes a fix."
+    },
+    {
+      "id": 4,
+      "clip": "P04",
+      "start": 9.28,
+      "end": 12.32,
+      "text": "Keyboard tasks: 0/2 → 2/2."
+    },
+    {
+      "id": 5,
+      "clip": "P05",
+      "start": 13.08,
+      "end": 14.28,
+      "text": "Accepted."
+    },
+    {
+      "id": 6,
+      "clip": "P06",
+      "start": 15.44,
+      "end": 17.24,
+      "text": "But readability got worse."
+    },
+    {
+      "id": 7,
+      "clip": "P07",
+      "start": 18.28,
+      "end": 20.96,
+      "text": "Contrast: 1.19:1."
+    },
+    {
+      "id": 8,
+      "clip": "P08",
+      "start": 21.2,
+      "end": 22.4,
+      "text": "Rejected."
+    },
+    {
+      "id": 9,
+      "clip": "P08",
+      "start": 22.56,
+      "end": 23.92,
+      "text": "Original preserved."
+    },
+    {
+      "id": 10,
+      "clip": "P09",
+      "start": 24.12,
+      "end": 26.68,
+      "text": "AccessFix independently verifies."
+    },
+    {
+      "id": 11,
+      "clip": "P10",
+      "start": 27.36,
+      "end": 28.72,
+      "text": "Fixes need proof."
+    },
+    {
+      "id": 12,
+      "clip": "N09",
+      "start": 30.28,
+      "end": 33.64,
+      "text": "We built AccessFix AI\naround a simple separation."
+    },
+    {
+      "id": 13,
+      "clip": "N10",
+      "start": 34.32,
+      "end": 36.24,
+      "text": "Meta Muse Spark proposes code."
+    },
+    {
+      "id": 14,
+      "clip": "N10",
+      "start": 36.68,
+      "end": 39.8,
+      "text": "An independent browser verifier\ntests the outcome."
+    },
+    {
+      "id": 15,
+      "clip": "N11",
+      "start": 41.12,
+      "end": 44.64,
+      "text": "These are saved experiments on\nproject-authored test apps."
+    },
+    {
+      "id": 16,
+      "clip": "N12",
+      "start": 45.48,
+      "end": 47.2,
+      "text": "Both pointer tasks passed."
+    },
+    {
+      "id": 17,
+      "clip": "N12",
+      "start": 47.64,
+      "end": 49.44,
+      "text": "Both keyboard tasks failed."
+    },
+    {
+      "id": 18,
+      "clip": "N12",
+      "start": 49.92,
+      "end": 52.2,
+      "text": "ArrowRight left focus on Overview."
+    },
+    {
+      "id": 19,
+      "clip": "N13",
+      "start": 53.44,
+      "end": 55.28,
+      "text": "The saved patch adds navigation"
+    },
+    {
+      "id": 20,
+      "clip": "N13",
+      "start": 55.28,
+      "end": 58.16,
+      "text": "and explicitly moves focus\nto the selected tab."
+    },
+    {
+      "id": 21,
+      "clip": "N14",
+      "start": 59.16,
+      "end": 61.16,
+      "text": "Both keyboard tasks now pass."
+    },
+    {
+      "id": 22,
+      "clip": "N14",
+      "start": 61.6,
+      "end": 63.68,
+      "text": "Both pointer tasks still pass."
+    },
+    {
+      "id": 23,
+      "clip": "N15",
+      "start": 65.08,
+      "end": 67.28,
+      "text": "Checks also cover returning to Overview,"
+    },
+    {
+      "id": 24,
+      "clip": "N15",
+      "start": 67.36,
+      "end": 70.08,
+      "text": "adding a note,\nand persistence after reload."
+    },
+    {
+      "id": 25,
+      "clip": "N16",
+      "start": 71.36,
+      "end": 73.2,
+      "text": "Accepted on those measured checks."
+    },
+    {
+      "id": 26,
+      "clip": "N16",
+      "start": 73.56,
+      "end": 76.6,
+      "text": "The historical run was later\nrestored to the original."
+    },
+    {
+      "id": 27,
+      "clip": "N17",
+      "start": 78.16,
+      "end": 81.36,
+      "text": "The Switch candidate also passed\nboth keyboard tasks"
+    },
+    {
+      "id": 28,
+      "clip": "N17",
+      "start": 81.36,
+      "end": 83.6,
+      "text": "and preserved both pointer tasks."
+    },
+    {
+      "id": 29,
+      "clip": "N18",
+      "start": 84.16,
+      "end": 85.76,
+      "text": "The patch used a native button."
+    },
+    {
+      "id": 30,
+      "clip": "N18",
+      "start": 86.24,
+      "end": 88.44,
+      "text": "It contained no CSS edit."
+    },
+    {
+      "id": 31,
+      "clip": "N19",
+      "start": 90.16,
+      "end": 95.64,
+      "text": "But the same Off label became harder to\nread: 1.19:1, below 4.5:1."
+    },
+    {
+      "id": 32,
+      "clip": "N20",
+      "start": 98.16,
+      "end": 100.76,
+      "text": "That is a new confirmed\ncontrast violation."
+    },
+    {
+      "id": 33,
+      "clip": "N20",
+      "start": 101.28,
+      "end": 103.76,
+      "text": "AccessFix AI rejected the candidate."
+    },
+    {
+      "id": 34,
+      "clip": "N21",
+      "start": 105.16,
+      "end": 108.96,
+      "text": "The stored record selects the original\nand confirms it stayed intact."
+    },
+    {
+      "id": 35,
+      "clip": "N22",
+      "start": 112.16,
+      "end": 116.68,
+      "text": "Inspect the actual model patch beside the\nindependent verification results."
+    },
+    {
+      "id": 36,
+      "clip": "N23",
+      "start": 118.12,
+      "end": 120.2,
+      "text": "Playwright checked completed tasks."
+    },
+    {
+      "id": 37,
+      "clip": "N23",
+      "start": 120.64,
+      "end": 123.04,
+      "text": "axe-core audited the observed states."
+    },
+    {
+      "id": 38,
+      "clip": "N24",
+      "start": 124.16,
+      "end": 128.76,
+      "text": "The final decision follows measured\noutcomes, not the model's explanation."
+    },
+    {
+      "id": 39,
+      "clip": "N25",
+      "start": 129.96,
+      "end": 133.12,
+      "text": "Both experiments used\nMuse Spark 1.3 Contributor,"
+    },
+    {
+      "id": 40,
+      "clip": "N25",
+      "start": 133.16,
+      "end": 136.28,
+      "text": "one request each. No retry."
+    },
+    {
+      "id": 41,
+      "clip": "N26",
+      "start": 137.48,
+      "end": 139.16,
+      "text": "Menu still needs review."
+    },
+    {
+      "id": 42,
+      "clip": "N27",
+      "start": 140.48,
+      "end": 144.44,
+      "text": "Tic Tac Toe: new incomplete findings,\nnot violations."
+    },
+    {
+      "id": 43,
+      "clip": "N27",
+      "start": 144.92,
+      "end": 147.32,
+      "text": "Visual review found lost outlines."
+    },
+    {
+      "id": 44,
+      "clip": "N28",
+      "start": 149.32,
+      "end": 150.84,
+      "text": "AI generates the fix."
+    },
+    {
+      "id": 45,
+      "clip": "N28",
+      "start": 151.28,
+      "end": 154.0,
+      "text": "AccessFix AI proves whether it works."
+    },
+    {
+      "id": 46,
+      "clip": "N29",
+      "start": 157.28,
+      "end": 159.0,
+      "text": "Explore the read-only demo."
+    },
+    {
+      "id": 47,
+      "clip": "N29",
+      "start": 159.44,
+      "end": 160.92,
+      "text": "Inspect the evidence."
+    }
+  ],
+  "speech": [
+    {
+      "id": "P01",
+      "start": 0.65,
+      "deadline": 2.27,
+      "duration": 1.224,
+      "onset": 0.09,
+      "offset": 1.17,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P02",
+      "start": 2.35,
+      "deadline": 4.62,
+      "duration": 1.368,
+      "onset": 0.09,
+      "offset": 1.3,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P03",
+      "start": 4.7,
+      "deadline": 9.12,
+      "duration": 1.656,
+      "onset": 0.09,
+      "offset": 1.62,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P04",
+      "start": 9.2,
+      "deadline": 12.92,
+      "duration": 3.024,
+      "onset": 0.09,
+      "offset": 2.96,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P05",
+      "start": 13.0,
+      "deadline": 15.37,
+      "duration": 0.936,
+      "onset": 0.09,
+      "offset": 0.91,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P06",
+      "start": 15.45,
+      "deadline": 18.12,
+      "duration": 1.68,
+      "onset": 0.09,
+      "offset": 1.65,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P07",
+      "start": 18.2,
+      "deadline": 21.07,
+      "duration": 2.664,
+      "onset": 0.09,
+      "offset": 2.63,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P08",
+      "start": 21.15,
+      "deadline": 23.97,
+      "duration": 2.688,
+      "onset": 0.09,
+      "offset": 2.65,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P09",
+      "start": 24.05,
+      "deadline": 27.22,
+      "duration": 2.544,
+      "onset": 0.09,
+      "offset": 2.48,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "P10",
+      "start": 27.3,
+      "deadline": 29.9,
+      "duration": 1.344,
+      "onset": 0.09,
+      "offset": 1.3,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N09",
+      "start": 30.2,
+      "deadline": 34.17,
+      "duration": 3.36,
+      "onset": 0.09,
+      "offset": 3.3,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N10",
+      "start": 34.25,
+      "deadline": 41.02,
+      "duration": 5.472,
+      "onset": 0.09,
+      "offset": 5.42,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N11",
+      "start": 41.1,
+      "deadline": 45.32,
+      "duration": 3.48,
+      "onset": 0.09,
+      "offset": 3.42,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N12",
+      "start": 45.4,
+      "deadline": 53.37,
+      "duration": 6.672,
+      "onset": 0.09,
+      "offset": 6.65,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N13",
+      "start": 53.45,
+      "deadline": 59.02,
+      "duration": 4.608,
+      "onset": 0.07,
+      "offset": 4.56,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N14",
+      "start": 59.1,
+      "deadline": 64.92,
+      "duration": 4.488,
+      "onset": 0.09,
+      "offset": 4.45,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N15",
+      "start": 65.0,
+      "deadline": 71.22,
+      "duration": 4.992,
+      "onset": 0.09,
+      "offset": 4.96,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N16",
+      "start": 71.3,
+      "deadline": 78.02,
+      "duration": 5.208,
+      "onset": 0.09,
+      "offset": 5.17,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N17",
+      "start": 78.1,
+      "deadline": 84.02,
+      "duration": 5.4,
+      "onset": 0.07,
+      "offset": 5.36,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N18",
+      "start": 84.1,
+      "deadline": 90.02,
+      "duration": 4.272,
+      "onset": 0.07,
+      "offset": 4.22,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N19",
+      "start": 90.1,
+      "deadline": 98.02,
+      "duration": 5.496,
+      "onset": 0.09,
+      "offset": 5.38,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N20",
+      "start": 98.1,
+      "deadline": 105.02,
+      "duration": 5.568,
+      "onset": 0.09,
+      "offset": 5.52,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N21",
+      "start": 105.1,
+      "deadline": 112.02,
+      "duration": 3.792,
+      "onset": 0.06,
+      "offset": 3.74,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N22",
+      "start": 112.1,
+      "deadline": 118.02,
+      "duration": 4.488,
+      "onset": 0.09,
+      "offset": 4.44,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N23",
+      "start": 118.1,
+      "deadline": 124.02,
+      "duration": 4.824,
+      "onset": 0.09,
+      "offset": 4.79,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N24",
+      "start": 124.1,
+      "deadline": 129.82,
+      "duration": 4.56,
+      "onset": 0.07,
+      "offset": 4.51,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N25",
+      "start": 129.9,
+      "deadline": 137.32,
+      "duration": 6.288,
+      "onset": 0.09,
+      "offset": 6.26,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N26",
+      "start": 137.4,
+      "deadline": 140.32,
+      "duration": 1.68,
+      "onset": 0.09,
+      "offset": 1.63,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N27",
+      "start": 140.4,
+      "deadline": 149.12,
+      "duration": 6.864,
+      "onset": 0.09,
+      "offset": 6.78,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N28",
+      "start": 149.2,
+      "deadline": 157.0,
+      "duration": 4.68,
+      "onset": 0.09,
+      "offset": 4.65,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    },
+    {
+      "id": "N29",
+      "start": 157.2,
+      "deadline": 161.2,
+      "duration": 3.648,
+      "onset": 0.09,
+      "offset": 3.59,
+      "method": "10ms RMS threshold; only diagnostic, not permission to trim words"
+    }
+  ]
+}

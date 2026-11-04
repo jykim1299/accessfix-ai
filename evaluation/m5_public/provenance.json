@@ -1,0 +1,66 @@
+{
+  "repository": "https://github.com/sadanandpai/frontend-mini-challenges",
+  "commit": "48b7dae8bae41e4c69b904c7793bb8a4f892f337",
+  "commit_time_utc": "2026-10-20T04:28:12Z",
+  "retrieved_utc": "2026-10-28T07:52:13.986014+00:00",
+  "license": "MIT",
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "local_path": "evaluation/m5_public/upstream/LICENSE",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/LICENSE",
+      "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475",
+      "bytes": 1069,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "package.json",
+      "local_path": "evaluation/m5_public/upstream/package.json",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/package.json",
+      "sha256": "ac9b5b1930f77dcfe0986ce689e31ab6b29690e0eccb478eb29d25695427092b",
+      "bytes": 1053,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/package.json",
+      "local_path": "evaluation/m5_public/upstream/react-package.json",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/package.json",
+      "sha256": "ee238a7ceb1d6e2559b1a8c46f3a169848b467c77a8ef0a82f74fa3de668f27c",
+      "bytes": 1367,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/accordion/App.jsx",
+      "local_path": "evaluation/m5_public/application/src/App.jsx",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/accordion/App.jsx",
+      "sha256": "f47afc70650a4ab30b769d9b91a6368a98384f232feabb0bafdce5222cc15f7b",
+      "bytes": 1128,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/accordion/Accordion.jsx",
+      "local_path": "evaluation/m5_public/application/src/Accordion.jsx",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/accordion/Accordion.jsx",
+      "sha256": "a17cc929ec5641e10d97b122e3908ad44aa5d470e2005a85094938d0ba9142d6",
+      "bytes": 785,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/accordion/Accordion.module.css",
+      "local_path": "evaluation/m5_public/application/src/Accordion.module.css",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/accordion/Accordion.module.css",
+      "sha256": "6ea1425bee9c96899fe06bc9afe452c5a50448832d098e4189b9007064ba716d",
+      "bytes": 629,
+      "byte_identical": true
+    },
+    {
+      "upstream_path": "apps/react/src/challenges/accordion/data.js",
+      "local_path": "evaluation/m5_public/application/src/data.js",
+      "url": "https://raw.githubusercontent.com/sadanandpai/frontend-mini-challenges/48b7dae8bae41e4c69b904c7793bb8a4f892f337/apps/react/src/challenges/accordion/data.js",
+      "sha256": "fd23dc666a2de150dd6c1948f4c2f627e9f69873ca7701698c7919b7f73bf242",
+      "bytes": 1398,
+      "byte_identical": true
+    }
+  ],
+  "execution_boundary": "Only reviewed accordion module and locally authored React entry. No upstream build scripts, lifecycle hooks, package install, network, or full catalog routing."
+}

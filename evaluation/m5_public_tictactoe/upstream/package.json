@@ -1,0 +1,36 @@
+{
+  "name": "@fmc/main",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nx run-many -t dev --maxParallel=8",
+    "build": "nx run-many -t build",
+    "lint": "nx run-many -t lint",
+    "build-baseless": "nx run-many -t build-baseless",
+    "copy-to-dist": "rm -rf dist && cp -r apps/host/dist dist && cp -r apps/css/dist dist/css && cp -r apps/javascript/dist dist/javascript && cp -r apps/react/dist dist/react && cp -r apps/vue/dist dist/vue && cp -r apps/angular/dist/angular/browser dist/angular",
+    "unit:test": "nx run-many -t unit:test",
+    "prettify": "pretty-quick --staged",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": "^24.19.0"
+  },
+  "overrides": {
+    "typescript": "$typescript"
+  },
+  "devDependencies": {
+    "@nx/js": "^23.1.2",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.13.3",
+    "husky": "^9.1.7",
+    "nx": "^23.1.2",
+    "prettier": "^3.9.6",
+    "pretty-quick": "^4.2.2",
+    "typescript": "~6.0.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "shared/*"
+  ]
+}

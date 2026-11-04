@@ -1,0 +1,897 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-28T13:43:22.417070+00:00",
+  "development_commit_before_snapshot": "c7e2b7367f0070321afee39c49f81988cea4b9a2",
+  "history_included": false,
+  "entries": [
+    {
+      "path": ".env.example",
+      "sha256": "c3f980add93d7df727fc07d3350711cfe8cf4501de49554d446dcd782b5b6086",
+      "source_path": ".env.example"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "source_path": ".gitattributes"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ca31eb384b4745a416185ca6b18e1ed9c147d30c22b2b0074a85c50b57d00194",
+      "source_path": ".gitignore"
+    },
+    {
+      "path": "backend/accessfix/__init__.py",
+      "sha256": "4144591182736cdb04253f0ef82380730f277ee185bc44d5779b859da3654948",
+      "source_path": "backend/accessfix/__init__.py"
+    },
+    {
+      "path": "backend/accessfix/api.py",
+      "sha256": "8091032b5357cab1db27f1c240869ea51d854f91d31f19edab669ec3450a0155",
+      "source_path": "backend/accessfix/api.py"
+    },
+    {
+      "path": "backend/accessfix/browser.py",
+      "sha256": "77ec40cae689f8ebad47f04206cc0972e230a55a5ee6326598e3efaf4fbb26f3",
+      "source_path": "backend/accessfix/browser.py"
+    },
+    {
+      "path": "backend/accessfix/cli.py",
+      "sha256": "b103948a405ee641cc4b0101526a7b3e808fc7f168933b74c934ec25e4d76467",
+      "source_path": "backend/accessfix/cli.py"
+    },
+    {
+      "path": "backend/accessfix/gate.py",
+      "sha256": "5fdf6d411a46e52492838ab2c6b5657b3cc0d6852e2e07818beaa2de3148d98b",
+      "source_path": "backend/accessfix/gate.py"
+    },
+    {
+      "path": "backend/accessfix/patching.py",
+      "sha256": "38f1032668da130621e55dcbf3dbb5afa4dd25a355e94e97a2e5a27164a2d2dc",
+      "source_path": "backend/accessfix/patching.py"
+    },
+    {
+      "path": "backend/accessfix/product.py",
+      "sha256": "fbd24f5d664fb50c5d83750af08eadc114ffdff1f2372f0be465bae16545301e",
+      "source_path": "backend/accessfix/product.py"
+    },
+    {
+      "path": "backend/accessfix/providers.py",
+      "sha256": "54b48bc23394bdda878eba176c85ac6306f5154dad061e475a9d58de070ba494",
+      "source_path": "backend/accessfix/providers.py"
+    },
+    {
+      "path": "backend/accessfix/service.py",
+      "sha256": "7ef31e3761afb0467b8efe8d6b20c834f11bc89999ea63b53855ac1efd5d5763",
+      "source_path": "backend/accessfix/service.py"
+    },
+    {
+      "path": "backend/accessfix/storage.py",
+      "sha256": "a3f48c614cdeafcf14bf785d6e3526a5fd402595bb7e1f98b862316e25c87b0d",
+      "source_path": "backend/accessfix/storage.py"
+    },
+    {
+      "path": "evaluation/m4/browser.py",
+      "sha256": "ee1022609e79b88f6d043dd02ebf3ebf85c1b124455fb03cb69695d1e42b3164",
+      "source_path": "evaluation/m4/browser.py"
+    },
+    {
+      "path": "evaluation/m4/cases.json",
+      "sha256": "11504980643c15f1a96f2e098cc33cf84a9649162a10086b44588d768058971b",
+      "source_path": "evaluation/m4/cases.json"
+    },
+    {
+      "path": "evaluation/m4/cases/LICENSE",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "source_path": "evaluation/m4/cases/LICENSE"
+    },
+    {
+      "path": "evaluation/m4/cases/README.md",
+      "sha256": "fb6a03a811cceee56a8f6b30a3f93b099907ba3c98430ea069937ffdeeb7654f",
+      "source_path": "evaluation/m4/cases/README.md"
+    },
+    {
+      "path": "evaluation/m4/cases/dev-tabs/src/App.tsx",
+      "sha256": "8748a694ff69b3442aea76ad1ae2ca8c95b16704e9cdfbd130e582d0b19fc2d1",
+      "source_path": "evaluation/m4/cases/dev-tabs/src/App.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/dev-tabs/src/main.tsx",
+      "sha256": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "source_path": "evaluation/m4/cases/dev-tabs/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/dev-tabs/src/styles.css",
+      "sha256": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6",
+      "source_path": "evaluation/m4/cases/dev-tabs/src/styles.css"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-action/src/App.tsx",
+      "sha256": "6893c50f6fadf9ea827af98d171e6df1cfd9a9d66334f96b6ec28e0bb4797bf7",
+      "source_path": "evaluation/m4/cases/holdout-action/src/App.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-action/src/main.tsx",
+      "sha256": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "source_path": "evaluation/m4/cases/holdout-action/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-action/src/styles.css",
+      "sha256": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6",
+      "source_path": "evaluation/m4/cases/holdout-action/src/styles.css"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-menu/src/App.tsx",
+      "sha256": "0faab7fa1b464d7082017bd030e128b238a30cee42b7d591e4c06f098e0a6cc5",
+      "source_path": "evaluation/m4/cases/holdout-menu/src/App.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-menu/src/main.tsx",
+      "sha256": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "source_path": "evaluation/m4/cases/holdout-menu/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-menu/src/styles.css",
+      "sha256": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6",
+      "source_path": "evaluation/m4/cases/holdout-menu/src/styles.css"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-switch/src/App.tsx",
+      "sha256": "1b5acbff8048509820d62385d1a6e475e61377a2f0827a4f7398187846da3afe",
+      "source_path": "evaluation/m4/cases/holdout-switch/src/App.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-switch/src/main.tsx",
+      "sha256": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "source_path": "evaluation/m4/cases/holdout-switch/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m4/cases/holdout-switch/src/styles.css",
+      "sha256": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6",
+      "source_path": "evaluation/m4/cases/holdout-switch/src/styles.css"
+    },
+    {
+      "path": "evaluation/m4/freeze.json",
+      "sha256": "dfe84ca86cc98d4b35f8a1f6d0532bbf2a7aa0cf5ef8add187b4f443b1847fc2",
+      "source_path": "evaluation/m4/freeze.json"
+    },
+    {
+      "path": "evaluation/m4/gate.py",
+      "sha256": "c1dbf7d5fe6f6baf8046dae6692179df58b70c127db36c2c804e428543c1f75f",
+      "source_path": "evaluation/m4/gate.py"
+    },
+    {
+      "path": "evaluation/m4/harness/contract.json",
+      "sha256": "af8e593271ec6c183083a5ba45b9a707906ed2c371180f27b2c77d277294b8c3",
+      "source_path": "evaluation/m4/harness/contract.json"
+    },
+    {
+      "path": "evaluation/m4/harness/semantics.mjs",
+      "sha256": "50cd48a45f66b38545cda80a3b43d5c4f5bcd6b3864359076d12ef72fd3106bb",
+      "source_path": "evaluation/m4/harness/semantics.mjs"
+    },
+    {
+      "path": "evaluation/m4/harness/worker.mjs",
+      "sha256": "30953ed544d317d8a1537e4f1dc41f12f76f8408660d2339a9a00c8f31a4e33f",
+      "source_path": "evaluation/m4/harness/worker.mjs"
+    },
+    {
+      "path": "evaluation/m4/model.py",
+      "sha256": "c93ee83341682935f2d619129a9c37cd8290189289561db69d6e25affcf9dcac",
+      "source_path": "evaluation/m4/model.py"
+    },
+    {
+      "path": "evaluation/m4/patch.py",
+      "sha256": "8826c14bf7bb90fbdaf98d7444a5d7364c57892d020ad091f2801eb5edf53955",
+      "source_path": "evaluation/m4/patch.py"
+    },
+    {
+      "path": "evaluation/m5_public/README.md",
+      "sha256": "240c48c6ed2ff705c112e80ea6581415c625032c58e3c93e8d56a84ed6c77c35",
+      "source_path": "evaluation/m5_public/README.md"
+    },
+    {
+      "path": "evaluation/m5_public/application/src/Accordion.jsx",
+      "sha256": "a17cc929ec5641e10d97b122e3908ad44aa5d470e2005a85094938d0ba9142d6",
+      "source_path": "evaluation/m5_public/application/src/Accordion.jsx"
+    },
+    {
+      "path": "evaluation/m5_public/application/src/Accordion.module.css",
+      "sha256": "6ea1425bee9c96899fe06bc9afe452c5a50448832d098e4189b9007064ba716d",
+      "source_path": "evaluation/m5_public/application/src/Accordion.module.css"
+    },
+    {
+      "path": "evaluation/m5_public/application/src/App.jsx",
+      "sha256": "f47afc70650a4ab30b769d9b91a6368a98384f232feabb0bafdce5222cc15f7b",
+      "source_path": "evaluation/m5_public/application/src/App.jsx"
+    },
+    {
+      "path": "evaluation/m5_public/application/src/data.js",
+      "sha256": "fd23dc666a2de150dd6c1948f4c2f627e9f69873ca7701698c7919b7f73bf242",
+      "source_path": "evaluation/m5_public/application/src/data.js"
+    },
+    {
+      "path": "evaluation/m5_public/application/src/main.tsx",
+      "sha256": "8bef3952772450b7dd04f8f0f65951458071d1b58d2442143a222b78e2600e23",
+      "source_path": "evaluation/m5_public/application/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m5_public/browser.py",
+      "sha256": "87c3d12c12416fb2f3dc278bdac8b5d6490574f9d6b653eb1f027e6a1f1c0ceb",
+      "source_path": "evaluation/m5_public/browser.py"
+    },
+    {
+      "path": "evaluation/m5_public/cases.json",
+      "sha256": "5ae42bdf011df8e148c83d63efe0cb67a5c805b6c8d7cdddf96edbb45d5160f5",
+      "source_path": "evaluation/m5_public/cases.json"
+    },
+    {
+      "path": "evaluation/m5_public/gate.py",
+      "sha256": "b68f3540a5ecbf7d957a662b14ecfabcaf5a3ce261638ffc3f25a8b1f2f60811",
+      "source_path": "evaluation/m5_public/gate.py"
+    },
+    {
+      "path": "evaluation/m5_public/harness/contract.json",
+      "sha256": "ea59c731c6d612df19be754bc0abcfb1843f3ae6276d5fbfb6023d7f1cdaed03",
+      "source_path": "evaluation/m5_public/harness/contract.json"
+    },
+    {
+      "path": "evaluation/m5_public/harness/worker.mjs",
+      "sha256": "5ac8cd918a19e104e07e6799a803b5544f78133649ac6671b3b2270fc63a7d9f",
+      "source_path": "evaluation/m5_public/harness/worker.mjs"
+    },
+    {
+      "path": "evaluation/m5_public/model.py",
+      "sha256": "69b72cc3144b0ef1b7ccd770c1d74ab66b66bc3d78cc3b768878a564a0dbc228",
+      "source_path": "evaluation/m5_public/model.py"
+    },
+    {
+      "path": "evaluation/m5_public/patch.py",
+      "sha256": "5c6e1e9100dac4fdc1af9a05e728d3d64270fbf13ee7ca737a4192ed8408ea33",
+      "source_path": "evaluation/m5_public/patch.py"
+    },
+    {
+      "path": "evaluation/m5_public/provenance.json",
+      "sha256": "d39e102eafc722be34fe020b8a67e52385390e55a2f311767111d243a5c26fdf",
+      "source_path": "evaluation/m5_public/provenance.json"
+    },
+    {
+      "path": "evaluation/m5_public/upstream/LICENSE",
+      "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475",
+      "source_path": "evaluation/m5_public/upstream/LICENSE"
+    },
+    {
+      "path": "evaluation/m5_public/upstream/package.json",
+      "sha256": "ac9b5b1930f77dcfe0986ce689e31ab6b29690e0eccb478eb29d25695427092b",
+      "source_path": "evaluation/m5_public/upstream/package.json"
+    },
+    {
+      "path": "evaluation/m5_public/upstream/react-package.json",
+      "sha256": "ee238a7ceb1d6e2559b1a8c46f3a169848b467c77a8ef0a82f74fa3de668f27c",
+      "source_path": "evaluation/m5_public/upstream/react-package.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/README.md",
+      "sha256": "d8dda26a323c95d623619f7e8d84a420cca0accf349c2a6622fbeee20067a064",
+      "source_path": "evaluation/m5_public_tictactoe/README.md"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/application/src/App.jsx",
+      "sha256": "2e70cb7140949e3d7eeb30fe2838ff5435bd3b599ef215c87125bc3bb460a29a",
+      "source_path": "evaluation/m5_public_tictactoe/application/src/App.jsx"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/application/src/constant.js",
+      "sha256": "583ea3cb5aaf1d406717e95953e23baa7883c313bde07396caba4d305a26d2bc",
+      "source_path": "evaluation/m5_public_tictactoe/application/src/constant.js"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/application/src/main.tsx",
+      "sha256": "38f654e5b12c153f78e266203065a86261aff8a0eca626b216f8b314880385ec",
+      "source_path": "evaluation/m5_public_tictactoe/application/src/main.tsx"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/application/src/tictactoe.module.css",
+      "sha256": "4c8d614057b0e2c983f65a39031b99f48d6d40dae5a0d67b420cbbff1d8b2e23",
+      "source_path": "evaluation/m5_public_tictactoe/application/src/tictactoe.module.css"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/browser.py",
+      "sha256": "bc7df8714edfcf4676afe15ed3f22bdbb416682e9b11471af7f72120e691487e",
+      "source_path": "evaluation/m5_public_tictactoe/browser.py"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/cases.json",
+      "sha256": "f9420a5d9bd2c0a84d0c668ad27bf29c0427ec852c2b3c8e3e737ce35bd36110",
+      "source_path": "evaluation/m5_public_tictactoe/cases.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/freeze.json",
+      "sha256": "7510aebf1a829f466e2a72e44a8257053663af15284af4a3b6fcae57e35f92b7",
+      "source_path": "evaluation/m5_public_tictactoe/freeze.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/gate.py",
+      "sha256": "d73dfd73c9a122e62007274c8e995eb1518e4735a87c741fd4feb73565424dca",
+      "source_path": "evaluation/m5_public_tictactoe/gate.py"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/harness/contract.json",
+      "sha256": "65e2d1e4f671eaaa53b8b95f246873c6496dba033a48e37465b6733b006b3715",
+      "source_path": "evaluation/m5_public_tictactoe/harness/contract.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/harness/worker.mjs",
+      "sha256": "a4a4f9281da1074083788a77c4031ee0d42143fc4fce73f59c2371d22d01789b",
+      "source_path": "evaluation/m5_public_tictactoe/harness/worker.mjs"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/model.py",
+      "sha256": "da4bd0aa52cfed32f7c47e38bc48d9293664a3273e96e8526fe3daa2394deefc",
+      "source_path": "evaluation/m5_public_tictactoe/model.py"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/patch.py",
+      "sha256": "d74b8d998ad1110ee82ad9398f59d7d86dbc2efb7019586fa01e9369087ede02",
+      "source_path": "evaluation/m5_public_tictactoe/patch.py"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/provenance.json",
+      "sha256": "ec20828f18a68962c2a6300d767b502a60df91f3cb57dc50dac2b777b512da87",
+      "source_path": "evaluation/m5_public_tictactoe/provenance.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/upstream/LICENSE",
+      "sha256": "b58b2257f9e815a9032d350703b4f1187465e3448a2269c3cb785fd0765e6475",
+      "source_path": "evaluation/m5_public_tictactoe/upstream/LICENSE"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/upstream/package.json",
+      "sha256": "ac9b5b1930f77dcfe0986ce689e31ab6b29690e0eccb478eb29d25695427092b",
+      "source_path": "evaluation/m5_public_tictactoe/upstream/package.json"
+    },
+    {
+      "path": "evaluation/m5_public_tictactoe/upstream/react-package.json",
+      "sha256": "ee238a7ceb1d6e2559b1a8c46f3a169848b467c77a8ef0a82f74fa3de668f27c",
+      "source_path": "evaluation/m5_public_tictactoe/upstream/react-package.json"
+    },
+    {
+      "path": "examples/modal/LICENSE",
+      "sha256": "f9dc8c66bfbfbc85bcd43a6b23b750b255b477dae9fb10e23d81908a643600b6",
+      "source_path": "examples/modal/LICENSE"
+    },
+    {
+      "path": "examples/modal/PROVENANCE.md",
+      "sha256": "01f2ebbf4e77f47b2f97f450c47c931fbefc72d4a21e7b517373b8529efd4a83",
+      "source_path": "examples/modal/PROVENANCE.md"
+    },
+    {
+      "path": "examples/modal/src/ModalApp.tsx",
+      "sha256": "661bcff00fca19fa22d803e01969549ba69ce6da01160cd172307972aac9b7ff",
+      "source_path": "examples/modal/src/ModalApp.tsx"
+    },
+    {
+      "path": "examples/modal/src/main.tsx",
+      "sha256": "cd66ae332085ddefe6410f8b392820ab67ada4c2e755f911792490d199f55125",
+      "source_path": "examples/modal/src/main.tsx"
+    },
+    {
+      "path": "examples/modal/src/styles.css",
+      "sha256": "4e81049800dc2ea5c990dbc307d3bd12137e35de369b384d6bb1e3ff2311b305",
+      "source_path": "examples/modal/src/styles.css"
+    },
+    {
+      "path": "frontend/build.mjs",
+      "sha256": "7221738d6844d897df8b079a8aedb1120bdc0ff97ff123949b9b0c299a5367aa",
+      "source_path": "frontend/build.mjs"
+    },
+    {
+      "path": "frontend/index.html",
+      "sha256": "b18a028800b35b34b7fe296f86a461f0ef633ed3d717b002ec140f652c4efe1b",
+      "source_path": "frontend/index.html"
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "1724c3d0cf5343dc120e3bebf17e8e93cd747955569e10b50f9fbaba0cf6a659",
+      "source_path": "frontend/package.json"
+    },
+    {
+      "path": "frontend/pnpm-lock.yaml",
+      "sha256": "763d0041861c5f9dfae4f4ff9794d438e3cf6c3909b9a5fc2170ab709dfc9b38",
+      "source_path": "frontend/pnpm-lock.yaml"
+    },
+    {
+      "path": "frontend/src/EvidenceFiles.tsx",
+      "sha256": "3f871042559a3025260ffa490926e04d898b8f0558dd27bc217db662500cca13",
+      "source_path": "frontend/src/EvidenceFiles.tsx"
+    },
+    {
+      "path": "frontend/src/api.ts",
+      "sha256": "98993c92eaa7d6627cf29a71748053455be934a902379516ad0bca368f8558da",
+      "source_path": "frontend/src/api.ts"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "25a09275a1af3da882ed76af795c3e914499204501c28fd93c74a1152778de80",
+      "source_path": "frontend/src/main.tsx"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "sha256": "d959507ba24e199df92409bed84f6f656af0e71e1a9daf4a44d052f1d9527ce5",
+      "source_path": "frontend/src/styles.css"
+    },
+    {
+      "path": "frontend/src/types.ts",
+      "sha256": "9961fc0899bc63684a8bd37ae7c2bd848e9274421a4d703679229ae5b37f05b1",
+      "source_path": "frontend/src/types.ts"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "sha256": "a7ad8bf1ee784bc34b865af40778f9d45ff26bd282fb101f6bf226733f8e56b2",
+      "source_path": "frontend/tsconfig.json"
+    },
+    {
+      "path": "release/LICENSE.MIT-DRAFT.txt",
+      "sha256": "9b99a62350cebf445cf5980f5fe59f6ae2ef91fc7910918cb22a5ef3bb72cd2e",
+      "source_path": "release/LICENSE.MIT-DRAFT.txt"
+    },
+    {
+      "path": "release/THIRD_PARTY_NOTICES.md",
+      "sha256": "bc4edf59893dd3de27af2b2463c59ee81f080c979d6cfca0a50467bba418b708",
+      "source_path": "release/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "release/run_demo.py",
+      "sha256": "0ced145fbc2c2b089c4be7f64d2230485f94eb7f8b3c5438496df0f1b3268dd2",
+      "source_path": "release/run_demo.py"
+    },
+    {
+      "path": "release/verify_runtime.py",
+      "sha256": "0b6a89535ee82cb23327ac73d561a6262c42ad8c0303b396e07c058ba50faea5",
+      "source_path": "release/verify_runtime.py"
+    },
+    {
+      "path": "reports/m4-20261028/history-index.json",
+      "sha256": "ec8f83ba65b04f91f3a55cf96a9e1ad82cb001f54ea43188625c50ff4efd4ff1",
+      "source_path": "reports/m4-20261028/history-index.json"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "af31c268d2b155e585e9733c476c0fea6d87bc1758ef527314463a3be31af187",
+      "source_path": "requirements.txt"
+    },
+    {
+      "path": "runtime/Dockerfile",
+      "sha256": "96d6844b22963f6cdcc6812b7656f6b60ff15f9cf818df323d0fac4616ba8a44",
+      "source_path": "runtime/Dockerfile"
+    },
+    {
+      "path": "runtime/README.md",
+      "sha256": "d8c473f5fa5be76f1904af0a337d8c6e085c9828357af54d17146ad0073ad8c2",
+      "source_path": "runtime/README.md"
+    },
+    {
+      "path": "runtime/contract.json",
+      "sha256": "518e77575eafa0e2500d6fa08ccaa400193993293a9c00d66a6a0347a7d71b57",
+      "source_path": "runtime/contract.json"
+    },
+    {
+      "path": "runtime/package-lock.json",
+      "sha256": "a0cd1e2ce4a6d068471b536d5b69426b8bc8a7f729831f4f2aa5fcc61d6c42bc",
+      "source_path": "runtime/package-lock.json"
+    },
+    {
+      "path": "runtime/package.json",
+      "sha256": "a101cf64932acc7325527bf6084cb8026b798263ebbda4eaf8190972294f9300",
+      "source_path": "runtime/package.json"
+    },
+    {
+      "path": "runtime/test_browser_wrapper.py",
+      "sha256": "a532accb81226f710fc3b396a54e62b36d4288b52b08de31f881c4aab89b7688",
+      "source_path": "runtime/test_browser_wrapper.py"
+    },
+    {
+      "path": "runtime/worker.mjs",
+      "sha256": "c2fc20ae8204219cb7d44b955b7ee0612d7a67a5b70c3fbaaa022a4e9aa20f9d",
+      "source_path": "runtime/worker.mjs"
+    },
+    {
+      "path": "scripts/install_demo_evidence.py",
+      "sha256": "cc3d817a36e8eca91add525832c85e03a3f22b011249e6a8cc6dc4923892979a",
+      "source_path": "scripts/install_demo_evidence.py"
+    },
+    {
+      "path": "scripts/m3_meta.py",
+      "sha256": "3b08f9e8cb04fb44f374a4c3c52db40edaef4c9f1eab8970d3773b5bf54aba30",
+      "source_path": "scripts/m3_meta.py"
+    },
+    {
+      "path": "scripts/m4_eval.py",
+      "sha256": "7f4715cdecfe9a18f615527bbba34fc43ee5361ec516c628c9bb356fcc7dd358",
+      "source_path": "scripts/m4_eval.py"
+    },
+    {
+      "path": "scripts/m5_public_tictactoe_eval.py",
+      "sha256": "967d1bdfc693fdd017aeef63ddee6f2a9493496f17f6df256e08f7aa020abe02",
+      "source_path": "scripts/m5_public_tictactoe_eval.py"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "6b28d8cd45791bd57af65ad317a0e7e4c25984ecd86e91e706ac70a610a6077b",
+      "source_path": "tests/conftest.py"
+    },
+    {
+      "path": "tests/controls/README.md",
+      "sha256": "e687b654af72bc82aaa9639c7c212c60003ac066736627771eee23bc751bfbf3",
+      "source_path": "tests/controls/README.md"
+    },
+    {
+      "path": "tests/controls/build_controls.py",
+      "sha256": "2179be5c61aeb693324dbf9380ae545f0b1b9317558591857bebc452c09f9a99",
+      "source_path": "tests/controls/build_controls.py"
+    },
+    {
+      "path": "tests/live_m1.py",
+      "sha256": "c0d3dbef69e6229bdffda34960e22ab685b674e1497ad884a675ca4d1f0f4835",
+      "source_path": "tests/live_m1.py"
+    },
+    {
+      "path": "tests/live_rejection_control.py",
+      "sha256": "38242dff92dc292bba135eb939f33be08d7e9c1dcc6e6f718f8a8b86d29ad67c",
+      "source_path": "tests/live_rejection_control.py"
+    },
+    {
+      "path": "tests/m2/README.md",
+      "sha256": "dcda1d5e4cb21aae058e12b8de1b40eb00c61eacde11a8dae93ad4688576b9fc",
+      "source_path": "tests/m2/README.md"
+    },
+    {
+      "path": "tests/m2/package.json",
+      "sha256": "3198b95e7e31787f0a43e9c9c171d99b1e9a85a9e78e207c4822176b3d19d9b2",
+      "source_path": "tests/m2/package.json"
+    },
+    {
+      "path": "tests/m2/pnpm-lock.yaml",
+      "sha256": "31fe932736ad5be6271d3955cf907d3ba0997ae3810e8ca74a1f252cf24a4cbd",
+      "source_path": "tests/m2/pnpm-lock.yaml"
+    },
+    {
+      "path": "tests/m2/review-diff.mjs",
+      "sha256": "5ed91f2be882cd2d9e52a391bcac2134596f4fdb398b3afba17022bfd74ea22f",
+      "source_path": "tests/m2/review-diff.mjs"
+    },
+    {
+      "path": "tests/m2/review-ui.mjs",
+      "sha256": "37dc101886e13bc57ad6cc1c7af3884ab6c1a1e2bf8e904d1ec706e831cb008b",
+      "source_path": "tests/m2/review-ui.mjs"
+    },
+    {
+      "path": "tests/m2/run-ui.mjs",
+      "sha256": "8962936737c9acced221bffb27613b643bb85b1fe15f39e9fbec9e609c0703ab",
+      "source_path": "tests/m2/run-ui.mjs"
+    },
+    {
+      "path": "tests/m2/test_server.py",
+      "sha256": "e3c261ca6f18d9ee25c94ac9db157f1bd2d39f40a0efc0b78a2de3cf5375c1b0",
+      "source_path": "tests/m2/test_server.py"
+    },
+    {
+      "path": "tests/m4/build_controls.py",
+      "sha256": "854817d6a5d2cb48337ecc0ca69e94c5158ad8c09768bdfe30ee382c04721dbf",
+      "source_path": "tests/m4/build_controls.py"
+    },
+    {
+      "path": "tests/m4/focus-boundary.mjs",
+      "sha256": "312691ff60f62f834575bb1c0d5a07d1884b3ebfc6706f599e743c0c186734aa",
+      "source_path": "tests/m4/focus-boundary.mjs"
+    },
+    {
+      "path": "tests/m4/m2-regression-provenance.json",
+      "sha256": "bd86309331149325de048542fb3b69055fef7d8d82eb2dee3cf0206d0f8a880b",
+      "source_path": "tests/m4/m2-regression-provenance.json"
+    },
+    {
+      "path": "tests/m4/m2-regression.mjs",
+      "sha256": "cce94f520f247ded10d5cb0c067339736554edd51b8356eeac058e9bb9b5d9a4",
+      "source_path": "tests/m4/m2-regression.mjs"
+    },
+    {
+      "path": "tests/m4/product_server.py",
+      "sha256": "d1ec16fd2ebbe6a32a07b34a1185d51593d7e96a65ecc4cf1af94831e92573c2",
+      "source_path": "tests/m4/product_server.py"
+    },
+    {
+      "path": "tests/m4/refresh-provider.mjs",
+      "sha256": "c7abdae5a56a787a13f765bb53595b44c2504c2cb1b5fac8a000dcf01228c60a",
+      "source_path": "tests/m4/refresh-provider.mjs"
+    },
+    {
+      "path": "tests/m4/review-product.mjs",
+      "sha256": "a34c76cab0f3a488e1dac5589a67ff2589ab66a6318a4df3a6914ab591b8b27c",
+      "source_path": "tests/m4/review-product.mjs"
+    },
+    {
+      "path": "tests/m5/README.md",
+      "sha256": "a52edb75962068b1238f0873607391f667bcb391f66f84aee230d46d4b23a731",
+      "source_path": "tests/m5/README.md"
+    },
+    {
+      "path": "tests/m5/build_public_controls.py",
+      "sha256": "71d97731d5f66132fa4abbae8401c8a2907e5028e7ec06aad482920b3a18228a",
+      "source_path": "tests/m5/build_public_controls.py"
+    },
+    {
+      "path": "tests/m5/contrast-review.mjs",
+      "sha256": "5f28001a1bf89cab208800de13a837a77968d4c4bebbc132940deeb74297b045",
+      "source_path": "tests/m5/contrast-review.mjs"
+    },
+    {
+      "path": "tests/m5/evidence-pages.mjs",
+      "sha256": "bac570574ca8b31548b7d7c5e3315b46638fdc35466f6163b741109e46b7cbcb",
+      "source_path": "tests/m5/evidence-pages.mjs"
+    },
+    {
+      "path": "tests/m5/m2-regression-provenance.json",
+      "sha256": "abee9b7da8558b826c11db8c9999e04ec95f5aae62f020ff50fb417b50f57e0e",
+      "source_path": "tests/m5/m2-regression-provenance.json"
+    },
+    {
+      "path": "tests/m5/m2-regression.mjs",
+      "sha256": "65eb2b950470de15acbb502df064e0bfa8f9ff2060adc8e3eadc2517325ae9ba",
+      "source_path": "tests/m5/m2-regression.mjs"
+    },
+    {
+      "path": "tests/m5/mobile-scroll-review.mjs",
+      "sha256": "c1f37714e54c15a76fb0afcd499e328b9b21c5c0fedd76d2aaba2a210be26ec0",
+      "source_path": "tests/m5/mobile-scroll-review.mjs"
+    },
+    {
+      "path": "tests/m5/product_server.py",
+      "sha256": "cd2e84ecf93261bb596f8311cd4524684f5b8a0a889020954b5be16eaca3d0e7",
+      "source_path": "tests/m5/product_server.py"
+    },
+    {
+      "path": "tests/m6/demo-record.mjs",
+      "sha256": "854d5eae8dcc40dbc3e322c23a5eff6254ae812ff928fc49bf25e866c138768a",
+      "source_path": "tests/m6/demo-record.mjs"
+    },
+    {
+      "path": "tests/m6/release-smoke.mjs",
+      "sha256": "7fe1a36248f803e0a624496d01057b6288f37a9876d05e8586c8b3bfd7d4a93d",
+      "source_path": "tests/m6/release-smoke.mjs"
+    },
+    {
+      "path": "tests/m6/verify-video.mjs",
+      "sha256": "83cef1d7dc33dbdbe8499d9923f117c4b332fb1990b35f4f85cc6a4acd8b99b8",
+      "source_path": "tests/m6/verify-video.mjs"
+    },
+    {
+      "path": "tests/run_controls.py",
+      "sha256": "37e7c0e0195b26fb8d8048447b176bada113464e71306e873ca1d66ae1682d32",
+      "source_path": "tests/run_controls.py"
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "0a140b8c779f26fbc54c8a7620d7d15cebcc64eee13c0d3a2bfb9bdb71b6bffe",
+      "source_path": "tests/test_core.py"
+    },
+    {
+      "path": "tests/test_m4_engine.py",
+      "sha256": "f56b460f7a21444c508acb4d0c22a7479ce3fc5829cacf111e6dbd7846137284",
+      "source_path": "tests/test_m4_engine.py"
+    },
+    {
+      "path": "tests/test_m4_product.py",
+      "sha256": "9363c86916f6aed97cda5bf259ec02ff44230ba292c6fa587fd62f42acc1bdd0",
+      "source_path": "tests/test_m4_product.py"
+    },
+    {
+      "path": "tests/test_m5_public_engine.py",
+      "sha256": "c3bb4e5fbeb708fdf65625b836e92b4f6e5aac1ab407c8050413a010aa43e859",
+      "source_path": "tests/test_m5_public_engine.py"
+    },
+    {
+      "path": "tests/test_meta_m3.py",
+      "sha256": "864be65058c700b3c8ec794731915bfec2f22c56e30987881821d744004c3406",
+      "source_path": "tests/test_meta_m3.py"
+    },
+    {
+      "path": "tests/test_product_api.py",
+      "sha256": "ecad661c808562ac1b610013ccb6f93075cbfb549bb0d8df1d5001343f6c575e",
+      "source_path": "tests/test_product_api.py"
+    },
+    {
+      "path": "tests/test_providers.py",
+      "sha256": "c9ef48c700f4bc433cc71096e4f6e80dd6c2a60b2e648b436399f787e11a9e97",
+      "source_path": "tests/test_providers.py"
+    },
+    {
+      "path": "tests/test_release_bundle.py",
+      "sha256": "0b03d855cb471b04b22f1130e9fb886ebae6ac67b954aa0a7bd4b0d8c8b48547",
+      "source_path": "tests/test_release_bundle.py"
+    },
+    {
+      "path": "tests/test_release_product.py",
+      "sha256": "770a161253a244fb90483360e6d617aa13a311ac55273024a0c2deb98363f7b3",
+      "source_path": "tests/test_release_product.py"
+    },
+    {
+      "path": "README.md",
+      "sha256": "34d0071a5fc52ad5f1e55a9063d0254834bc8fb95462da1267c29fa27d63b74a",
+      "source_path": "docs/M6_PUBLIC_README.md"
+    },
+    {
+      "path": "docs/M5_DEMO_SCRIPT_EN.md",
+      "sha256": "46a9f64b775d9d8713206eddc8eb76518b4ec131fe1bad239df33bdcb48a609d",
+      "source_path": "docs/M5_DEMO_SCRIPT_EN.md"
+    },
+    {
+      "path": "docs/M6_DEMO_SCRIPT_EN.md",
+      "sha256": "6d9e1578f1611e2681a382f7964526c0488920cb0e4c253ea39c834401db2edf",
+      "source_path": "docs/M6_DEMO_SCRIPT_EN.md"
+    },
+    {
+      "path": "docs/M6_RECORDING_GUIDE_KO.md",
+      "sha256": "18e9209ab1c793be7cded2831f272abbe782118b48453475a3096d31b3303f36",
+      "source_path": "docs/M6_RECORDING_GUIDE_KO.md"
+    }
+  ],
+  "excluded_tracked_paths": [
+    "AGENTS.md",
+    "DEVELOPMENT_LEDGER.csv",
+    "README.md",
+    "RULES_STATUS.md",
+    "docs/DOCUMENTATION_CHECK_KO.md",
+    "docs/M1_RUN_KO.md",
+    "docs/M2_RUN_KO.md",
+    "docs/M3_META_PROTOCOL_KO.md",
+    "docs/M4_EVALUATION_PROTOCOL_KO.md",
+    "docs/M4_RUN_AND_DEMO_KO.md",
+    "docs/M5_DEMO_SCRIPT_EN.md",
+    "docs/M5_RECORDING_GUIDE_KO.md",
+    "docs/M5_TECHNOLOGY_AND_LICENSES.md",
+    "docs/M5_UI_ACCESSIBILITY_REVIEW_KO.md",
+    "docs/MILESTONE1_DESIGN_KO.md",
+    "docs/MILESTONE1_REPORT_KO.md",
+    "docs/MILESTONE2_REPORT_KO.md",
+    "docs/MILESTONE3_META_REPORT_KO.md",
+    "docs/MILESTONE4_REPORT_KO.md",
+    "docs/MILESTONE5_REPORT_KO.md",
+    "docs/MODEL_PROVIDER_PLAN_KO.md",
+    "docs/PRE_KICKOFF_STATUS_KO.md",
+    "docs/PROVIDER_STATUS_KO.md",
+    "docs/README_PUBLIC_DRAFT.md",
+    "docs/REQUIREMENTS_KO.md",
+    "docs/VALIDATION_PLAN_KO.md",
+    "frontend/README.md",
+    "reports/m1-20261027/api-rejection-summary.json",
+    "reports/m1-20261027/artifact-manifest.json",
+    "reports/m1-20261027/control-summary.json",
+    "reports/m1-20261027/evidence-check.json",
+    "reports/m1-20261027/live-summary.json",
+    "reports/m1-20261027/patch.diff",
+    "reports/m1-20261027/protocol-manifest.json",
+    "reports/m1-20261027/provider-metadata.json",
+    "reports/m1-20261027/pytest.xml",
+    "reports/m2-20261027/artifact-manifest.json",
+    "reports/m2-20261027/before-after.png",
+    "reports/m2-20261027/dashboard.png",
+    "reports/m2-20261027/diff-keyboard.png",
+    "reports/m2-20261027/final-build.json",
+    "reports/m2-20261027/final-diff-failure.json",
+    "reports/m2-20261027/final-diff-observed.json",
+    "reports/m2-20261027/final-review.json",
+    "reports/m2-20261027/incomplete-review.json",
+    "reports/m2-20261027/mobile-before-after.png",
+    "reports/m2-20261027/preservation.json",
+    "reports/m2-20261027/pytest.xml",
+    "reports/m2-20261027/ui-v1.json",
+    "reports/m2-20261027/ui-v2.json",
+    "reports/m2-20261027/ui-v3.json",
+    "reports/m3-20261028/artifact-manifest.json",
+    "reports/m3-20261028/isolation.json",
+    "reports/m3-20261028/live-v1-summary.json",
+    "reports/m3-20261028/live-v2-summary.json",
+    "reports/m3-20261028/meta-decision.json",
+    "reports/m3-20261028/meta-patch.diff",
+    "reports/m3-20261028/meta-proposal.json",
+    "reports/m3-20261028/meta-provider.json",
+    "reports/m3-20261028/preservation.json",
+    "reports/m3-20261028/screenshots/before-keyboard-open.png",
+    "reports/m3-20261028/screenshots/meta-after-keyboard-open.png",
+    "reports/m3-20261028/unit-results.xml",
+    "reports/m3-20261028/verification-summary.json",
+    "reports/m4-20261028/artifact-manifest.json",
+    "reports/m4-20261028/cases/dev-tabs/decision.json",
+    "reports/m4-20261028/cases/dev-tabs/model-metadata.json",
+    "reports/m4-20261028/cases/dev-tabs/patch.diff",
+    "reports/m4-20261028/cases/dev-tabs/proposal.json",
+    "reports/m4-20261028/cases/dev-tabs/summary.json",
+    "reports/m4-20261028/cases/holdout-action/decision.json",
+    "reports/m4-20261028/cases/holdout-action/model-metadata.json",
+    "reports/m4-20261028/cases/holdout-action/patch.diff",
+    "reports/m4-20261028/cases/holdout-action/proposal.json",
+    "reports/m4-20261028/cases/holdout-action/summary.json",
+    "reports/m4-20261028/cases/holdout-menu/decision.json",
+    "reports/m4-20261028/cases/holdout-menu/model-metadata.json",
+    "reports/m4-20261028/cases/holdout-menu/patch.diff",
+    "reports/m4-20261028/cases/holdout-menu/proposal.json",
+    "reports/m4-20261028/cases/holdout-menu/summary.json",
+    "reports/m4-20261028/cases/holdout-switch/decision.json",
+    "reports/m4-20261028/cases/holdout-switch/model-metadata.json",
+    "reports/m4-20261028/cases/holdout-switch/patch.diff",
+    "reports/m4-20261028/cases/holdout-switch/proposal.json",
+    "reports/m4-20261028/cases/holdout-switch/summary.json",
+    "reports/m4-20261028/comparison.json",
+    "reports/m4-20261028/copy-provenance.json",
+    "reports/m4-20261028/engine-unit-results.xml",
+    "reports/m4-20261028/focus-boundary.json",
+    "reports/m4-20261028/freeze.json",
+    "reports/m4-20261028/isolation.json",
+    "reports/m4-20261028/m2-regression-v1.json",
+    "reports/m4-20261028/m2-regression-v2.json",
+    "reports/m4-20261028/meta-live-summary.json",
+    "reports/m4-20261028/preflight-v1.json",
+    "reports/m4-20261028/preflight-v2.json",
+    "reports/m4-20261028/preservation.json",
+    "reports/m4-20261028/refresh-provider.json",
+    "reports/m4-20261028/screenshots/dashboard.png",
+    "reports/m4-20261028/screenshots/m3-meta-compare.png",
+    "reports/m4-20261028/screenshots/m4-meta-dev-tabs-compare.png",
+    "reports/m4-20261028/screenshots/m4-meta-holdout-menu-overview.png",
+    "reports/m4-20261028/screenshots/m4-meta-holdout-switch-compare.png",
+    "reports/m4-20261028/screenshots/m4-meta-holdout-switch-evidence.png",
+    "reports/m4-20261028/screenshots/m4-meta-holdout-switch-overview.png",
+    "reports/m4-20261028/screenshots/mobile-320-meta.png",
+    "reports/m4-20261028/secret-scan.json",
+    "reports/m4-20261028/ui-final-summary.json",
+    "reports/m4-20261028/unit-results.xml",
+    "reports/m5-20261028/artifact-manifest.json",
+    "reports/m5-20261028/contrast-after.json",
+    "reports/m5-20261028/contrast-before.json",
+    "reports/m5-20261028/copy-provenance.json",
+    "reports/m5-20261028/evidence-pages.json",
+    "reports/m5-20261028/exploration/accordion-preflight-v1.json",
+    "reports/m5-20261028/exploration/accordion-preflight-v2.json",
+    "reports/m5-20261028/exploration/tictactoe-preflight-v1.json",
+    "reports/m5-20261028/exploration/tictactoe-preflight-v2.json",
+    "reports/m5-20261028/final-integrity.json",
+    "reports/m5-20261028/mobile-scroll-v1.json",
+    "reports/m5-20261028/mobile-scroll-v2.json",
+    "reports/m5-20261028/preservation.json",
+    "reports/m5-20261028/public-app-freeze.json",
+    "reports/m5-20261028/public-app-meta-summary.json",
+    "reports/m5-20261028/public-app-preflight-final.json",
+    "reports/m5-20261028/public-app/decision.json",
+    "reports/m5-20261028/public-app/model/metadata.json",
+    "reports/m5-20261028/public-app/model/proposal.json",
+    "reports/m5-20261028/public-app/patch.diff",
+    "reports/m5-20261028/public-app/restoration.json",
+    "reports/m5-20261028/public-engine-unit.xml",
+    "reports/m5-20261028/publication-scan-summary.json",
+    "reports/m5-20261028/readonly-ui.json",
+    "reports/m5-20261028/screenshots/dashboard.png",
+    "reports/m5-20261028/screenshots/evidence-mobile.png",
+    "reports/m5-20261028/screenshots/mobile-diff-end.png",
+    "reports/m5-20261028/screenshots/mobile-table-left.png",
+    "reports/m5-20261028/screenshots/mobile-table-right.png",
+    "reports/m5-20261028/screenshots/public-after.png",
+    "reports/m5-20261028/screenshots/public-before.png",
+    "reports/m5-20261028/submission-docs.json",
+    "reports/m5-20261028/ui-regression-analysis.json",
+    "reports/m5-20261028/ui-regression-v1.json",
+    "reports/m5-20261028/ui-regression-v2.json",
+    "reports/m5-20261028/unit-results.xml",
+    "scripts/m4_archive_controls.py",
+    "scripts/m5_archive.py",
+    "scripts/m5_public_eval.py",
+    "scripts/m5_readiness.py"
+  ],
+  "excluded_categories": [
+    ".git and all prior Git blobs",
+    "raw artifacts and all raw traces",
+    "environment/credentials",
+    "developer venv/node_modules/build caches",
+    "historical developer reports/docs not explicitly selected"
+  ],
+  "license_status": "Owner decision pending; MIT draft is not effective"
+}

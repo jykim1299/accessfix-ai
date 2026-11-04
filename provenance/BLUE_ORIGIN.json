@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-30T08:56:09.828045+00:00",
+  "scope": "Blue product CSS, new editorial demo and synchronized local narration",
+  "new_model_calls": 0,
+  "old_git_history_included": false,
+  "historical_evidence_modified": false,
+  "historical_results_rescored": false,
+  "license_status": "Owner decision pending; inherited license draft unchanged",
+  "previous_english_manifest_sha256": "79a078e09140bf7a6455e1d2763872e3b779748550140a2356468aa62e9ab1e8",
+  "changed_product_files": [
+    "frontend/src/styles.css"
+  ]
+}

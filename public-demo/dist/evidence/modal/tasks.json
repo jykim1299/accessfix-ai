@@ -1,0 +1,1549 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/result.json",
+      "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/result.json",
+      "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d"
+    }
+  ],
+  "data": [
+    {
+      "id": "pointer-save",
+      "name": "Change and save using the pointer",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ]
+    },
+    {
+      "id": "pointer-cancel",
+      "name": "Cancel without changing saved preferences",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ]
+    },
+    {
+      "id": "keyboard-save",
+      "name": "Change and save using the keyboard",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ]
+    },
+    {
+      "id": "keyboard-cancel",
+      "name": "Cancel changes and return keyboard focus",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ]
+    },
+    {
+      "id": "keyboard-escape",
+      "name": "Close with Escape and return keyboard focus",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-forward",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "pass",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ]
+    }
+  ]
+}

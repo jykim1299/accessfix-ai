@@ -1,0 +1,34 @@
+[
+  {
+    "id": "dev-tabs",
+    "split": "development",
+    "title": "Project views · keyboard tabs",
+    "kind": "tabs",
+    "source_relative": "evaluation/m4/cases/dev-tabs",
+    "task": "Switch among the project views using the keyboard or pointer, read the selected view, and keep the Add note action working."
+  },
+  {
+    "id": "holdout-menu",
+    "split": "holdout",
+    "title": "Workspace actions · menu lifecycle",
+    "kind": "menu",
+    "source_relative": "evaluation/m4/cases/holdout-menu",
+    "task": "Open the workspace actions menu, choose a draft action or dismiss the menu using keyboard or pointer, and keep draft creation and existing action effects working."
+  },
+  {
+    "id": "holdout-switch",
+    "split": "holdout",
+    "title": "Notification settings · switch and save",
+    "kind": "switch",
+    "source_relative": "evaluation/m4/cases/holdout-switch",
+    "task": "Change the weekly summary setting using keyboard or pointer, save or reset changes, and keep the test notification feature working."
+  },
+  {
+    "id": "holdout-action",
+    "split": "holdout",
+    "title": "Order summary · named action activation",
+    "kind": "action",
+    "source_relative": "evaluation/m4/cases/holdout-action",
+    "task": "Apply or clear the coupon using keyboard or pointer, add an item, and preserve correct order totals and the existing saved order state."
+  }
+]

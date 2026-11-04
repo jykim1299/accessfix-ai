@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "asset": "pointer-activity.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/evidence/pointer-activity/activity.png",
+      "sha256": "480c1af8ccf46f4fe28f3f6736c5a3fc21564b30e88d1a77ede6ff5ed173f948",
+      "unchanged_original": true
+    },
+    {
+      "asset": "keyboard-before.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/evidence/keyboard-activity/overview.png",
+      "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742",
+      "unchanged_original": true
+    },
+    {
+      "asset": "keyboard-after.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/evidence/keyboard-activity/activity.png",
+      "sha256": "76832a39de8e16bfcb83e652c40a27a19c70362b87d8d8edd0403808c8ee4ef3",
+      "unchanged_original": true
+    },
+    {
+      "asset": "keyboard-persisted.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/evidence/keyboard-activity/persisted.png",
+      "sha256": "a3f5ec8e8cea5242867ab32acd16646e79c3edeaa7677616f251ddd084eeb069",
+      "unchanged_original": true
+    },
+    {
+      "asset": "switch-candidate.png",
+      "source": "artifacts/m4/meta-live-v1/holdout-switch/jobs/repairs/5797f925762948bb8a5bdd0841101fe0/validation/evidence/pointer-save/initial.png",
+      "sha256": "edf5027affeb823e97d63f376247be25248a0bb71a772b85bf305d7e47c2de5f",
+      "unchanged_original": true
+    },
+    {
+      "asset": "pointer-overview.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/evidence/pointer-activity/overview.png",
+      "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742",
+      "unchanged_original": true
+    },
+    {
+      "asset": "candidate-overview.png",
+      "source": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/evidence/keyboard-activity/overview.png",
+      "sha256": "d3c92a9a63ecd50b320dccb3dc760eb1e1c9841baaa0263508126b8f429ee742",
+      "unchanged_original": true
+    }
+  ],
+  "recorded_ui": "New blue product UI screenshots; historical screenshot bytes copied unchanged",
+  "new_model_calls": 0
+}

@@ -1,0 +1,35 @@
+{
+  "provider": "meta",
+  "requested_model": "muse-spark-1.3-contributor",
+  "response_model": "muse-spark-1.3-contributor",
+  "transport": "chat-completions",
+  "prompt_version": "user-task-repair-one-shot-m4-v1",
+  "started_utc": "2026-10-27T20:18:52.553691+00:00",
+  "request_attempts": 1,
+  "automatic_retries": 0,
+  "usage": {
+    "completion_tokens": 2261,
+    "prompt_tokens": 2872,
+    "total_tokens": 5133,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1959
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "cost_usd": null,
+  "live_response_received": true,
+  "auth_verified": true,
+  "muse_spark_measured": true,
+  "endpoint": "https://api.meta.ai/v1/chat/completions",
+  "purpose": "repair",
+  "patch_parsed": true,
+  "browser_verified": false,
+  "http_status": 200,
+  "response_status": null,
+  "response_model_matches_requested": true,
+  "finish_reason": "stop",
+  "elapsed_s": 20.968999999924563,
+  "finished_utc": "2026-10-27T20:19:13.517310+00:00"
+}

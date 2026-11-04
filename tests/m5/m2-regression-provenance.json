@@ -1,0 +1,21 @@
+{
+  "source": "tests/m2/run-ui.mjs",
+  "source_sha256": "8962936737c9acced221bffb27613b643bb85b1fe15f39e9fbec9e609c0703ab",
+  "intermediate": "tests/m4/m2-regression.mjs",
+  "intermediate_sha256": "cce94f520f247ded10d5cb0c067339736554edd51b8356eeac058e9bb9b5d9a4",
+  "adapted": "tests/m5/m2-regression.mjs",
+  "adapted_sha256": "65eb2b950470de15acbb502df064e0bfa8f9ff2060adc8e3eadc2517325ae9ba",
+  "retained_checks": 26,
+  "external_model_requests": 0,
+  "changes": [
+    "Use renamed OpenAI M1 comparison link with same destination and keyboard assertions.",
+    "Use current rejection heading while retaining manual provenance, rejected decision and pointer regression reason assertions.",
+    "On reload hold provider catalog request, require Repair disabled before catalog then await actual response, exact option count and enabled Repair; retain same saved analysis identity.",
+    "Resolve original pinned dependencies from tests/m2/package.json; no fixture, contract, gate or prior test edits."
+  ],
+  "prior_results": [
+    "artifacts/m4/m2-regression-v1/summary.json",
+    "artifacts/m4/m2-regression-v2/summary.json"
+  ],
+  "test_semantics": "Repair is unavailable until server model catalog is loaded; a saved analysis reload must eventually make configured provider repair available. This is asynchronous synchronization, not weakening the acceptance criterion."
+}
