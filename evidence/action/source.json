@@ -1,0 +1,23 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/holdout-action/jobs/analyses/5156f3d206654ff0a38452cf5c8a811f/record.json",
+      "sha256": "02f378431f86e49b8550634ba1cf612bf255ddd12276db6d4760e5d1ceb9a039"
+    }
+  ],
+  "data": {
+    "kind": "Project-authored synthetic fixture",
+    "name": "AccessFix AI Order action",
+    "license": "MIT (fixture source)",
+    "sha256": "6893c50f6fadf9ea827af98d171e6df1cfd9a9d66334f96b6ec28e0bb4797bf7",
+    "hashes": {
+      "src/App.tsx": "6893c50f6fadf9ea827af98d171e6df1cfd9a9d66334f96b6ec28e0bb4797bf7",
+      "src/main.tsx": "6b52df82ead198253c3bc4b81878ff959aec70c1ad9e0118cc7896aa82836ddb",
+      "src/styles.css": "1726280ffa377512988dd2f097604f6f962cffebe55571328ebd86912dc138b6"
+    },
+    "evidenceArchiveSha256": "05cff33e4fc04912c360111456e5789573f5f2762c4e6e639f883331448b2011"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "accepted": false,
+  "status": "rejected",
+  "reasons": [
+    "new_axe_violation"
+  ],
+  "regressions": [],
+  "new_violations": [
+    "initial|color-contrast|[\"span\"]"
+  ],
+  "new_incomplete": [],
+  "new_browser_errors": [],
+  "manual_review": true,
+  "metrics": {
+    "before": {
+      "measurement_complete": false,
+      "pointer_reference_valid": true,
+      "pointer_pass": 2,
+      "pointer_total": 2,
+      "keyboard_pass": 0,
+      "keyboard_total": 2,
+      "axe_state_nodes": 0,
+      "incomplete_state_nodes": 4,
+      "observed_audit_states": 10,
+      "violations": [],
+      "incomplete": [
+        "changed|label-content-name-mismatch|[\".switch\"]",
+        "initial|label-content-name-mismatch|[\".switch\"]",
+        "persisted|label-content-name-mismatch|[\".switch\"]",
+        "saved|label-content-name-mismatch|[\".switch\"]"
+      ],
+      "failures": [
+        "keyboard-save:toggle-on",
+        "keyboard-save:draft-not-saved",
+        "keyboard-save:saved-summary",
+        "keyboard-save:reset-preserves",
+        "keyboard-save:background-action",
+        "keyboard-save:persistence",
+        "keyboard-save:toggle-off",
+        "keyboard-reset:toggle-on",
+        "keyboard-reset:draft-not-saved",
+        "keyboard-reset:saved-summary",
+        "keyboard-reset:reset-preserves",
+        "keyboard-reset:background-action",
+        "keyboard-reset:persistence",
+        "keyboard-reset:toggle-again",
+        "keyboard-reset:save-after-reset"
+      ],
+      "measurement_problems": [
+        "keyboard-save:draft-not-saved:unmeasured",
+        "keyboard-save:saved-summary:unmeasured",
+        "keyboard-save:reset-preserves:unmeasured",
+        "keyboard-save:background-action:unmeasured",
+        "keyboard-save:persistence:unmeasured",
+        "keyboard-save:toggle-off:unmeasured",
+        "keyboard-save:changed:audit_missing",
+        "keyboard-save:saved:audit_missing",
+        "keyboard-save:persisted:audit_missing",
+        "keyboard-reset:draft-not-saved:unmeasured",
+        "keyboard-reset:saved-summary:unmeasured",
+        "keyboard-reset:reset-preserves:unmeasured",
+        "keyboard-reset:background-action:unmeasured",
+        "keyboard-reset:persistence:unmeasured",
+        "keyboard-reset:toggle-again:unmeasured",
+        "keyboard-reset:save-after-reset:unmeasured",
+        "keyboard-reset:changed:audit_missing",
+        "keyboard-reset:saved:audit_missing",
+        "keyboard-reset:persisted:audit_missing"
+      ],
+      "browser_errors": [],
+      "manual_review": true,
+      "axe_zero_keyboard_failed": true
+    },
+    "after": {
+      "measurement_complete": true,
+      "pointer_reference_valid": true,
+      "pointer_pass": 2,
+      "pointer_total": 2,
+      "keyboard_pass": 2,
+      "keyboard_total": 2,
+      "axe_state_nodes": 1,
+      "incomplete_state_nodes": 4,
+      "observed_audit_states": 16,
+      "violations": [
+        "initial|color-contrast|[\"span\"]"
+      ],
+      "incomplete": [
+        "changed|label-content-name-mismatch|[\".switch\"]",
+        "initial|label-content-name-mismatch|[\".switch\"]",
+        "persisted|label-content-name-mismatch|[\".switch\"]",
+        "saved|label-content-name-mismatch|[\".switch\"]"
+      ],
+      "failures": [],
+      "measurement_problems": [],
+      "browser_errors": [],
+      "manual_review": true,
+      "axe_zero_keyboard_failed": false
+    }
+  },
+  "scope": "Declared M4 user tasks and automated checks only; not WCAG conformance or deployment approval."
+}

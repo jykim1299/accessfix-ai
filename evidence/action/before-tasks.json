@@ -1,0 +1,1660 @@
+{
+  "schema_version": 1,
+  "case_id": "holdout-action",
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-apply",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$180.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Apply coupon",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.208626499
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add item",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.483856252
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0704163600000003
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Clear coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 2.386493504
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 3.162399003
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$100.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$90.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$90.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$90.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$180.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 2</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$180.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$180.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$200.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 2</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$200.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$200.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.336959815
+    },
+    {
+      "id": "pointer-clear-first",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "pass",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "clear-coupon",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        },
+        {
+          "id": "clear-persistence",
+          "status": "pass",
+          "expected": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          },
+          "actual": {
+            "total": "$200.00",
+            "coupon": "No coupon",
+            "items": "Items: 2"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Apply coupon",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0133510000000006
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Clear coupon",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Clear coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2743507959999998
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add item",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add item",
+            "inDialog": false
+          },
+          "elapsed_s": 1.52416975
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.1191459800000003
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / ORDERS\n\nOrder summary\n\nReview your items and apply your available discount.\n\nStudio supplies\nQuantity\nItems:",
+            "inDialog": false
+          },
+          "elapsed_s": 2.9237877150000005
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$100.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$90.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$90.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$90.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "discounted.png"
+        },
+        {
+          "state": "cleared",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$100.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cleared.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$200.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 2</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$200.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 2</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$200.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 3.078804172
+    },
+    {
+      "id": "keyboard-enter",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "fail",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "clear-coupon",
+          "status": "missing"
+        },
+        {
+          "id": "clear-persistence",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0027583270000004
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0251582639999997
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: coupon-applied"
+        }
+      ],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$100.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        },
+        {
+          "state": "cleared",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.2689912580000002
+    },
+    {
+      "id": "keyboard-space",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "coupon-applied",
+        "background-action",
+        "persistence",
+        "clear-coupon",
+        "clear-persistence"
+      ],
+      "required_states": [
+        "initial",
+        "discounted",
+        "persisted",
+        "cleared"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "coupon-applied",
+          "status": "fail",
+          "expected": {
+            "total": "$90.00",
+            "coupon": "Coupon applied",
+            "items": "Items: 1"
+          },
+          "actual": {
+            "total": "$100.00",
+            "coupon": "No coupon",
+            "items": "Items: 1"
+          }
+        },
+        {
+          "id": "background-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "clear-coupon",
+          "status": "missing"
+        },
+        {
+          "id": "clear-persistence",
+          "status": "missing"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.060880126
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "DIV",
+            "role": "button",
+            "name": null,
+            "text": "Apply coupon",
+            "inDialog": false
+          },
+          "elapsed_s": 1.081311775
+        }
+      ],
+      "errors": [
+        {
+          "category": "task_failed",
+          "message": "User task checkpoint failed: coupon-applied"
+        }
+      ],
+      "audits": [
+        {
+          "state": "initial",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-allowed-role",
+              "impact": "minor",
+              "description": "Ensure role attribute has an appropriate value for the element",
+              "help": "ARIA role should be appropriate for the element",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dd[aria-label=\"Item count\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                },
+                {
+                  "target": [
+                    "dd[aria-label=\"Order total\"]"
+                  ],
+                  "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                  "impact": "minor",
+                  "failureSummary": "Fix any of the following:\n  ARIA role status is not allowed for given element",
+                  "any": [
+                    {
+                      "id": "aria-allowed-role",
+                      "data": [
+                        "status"
+                      ],
+                      "relatedNodes": [],
+                      "impact": "minor",
+                      "message": "ARIA role status is not allowed for given element"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            },
+            {
+              "id": "definition-list",
+              "impact": "serious",
+              "description": "Ensure <dl> elements are structured correctly",
+              "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/definition-list?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    "dl"
+                  ],
+                  "html": "<dl><div><dt>Quantity</dt><dd role=\"status\" aria-label=\"Item count\">Items: 1</dd></div><div><dt>Total</dt><dd role=\"status\" aria-label=\"Order total\">$100.00</dd></div></dl>",
+                  "impact": "serious",
+                  "failureSummary": "Fix all of the following:\n  dl element has direct children that are not allowed: div > [role=status]",
+                  "any": [],
+                  "all": [],
+                  "none": [
+                    {
+                      "id": "only-dlitems",
+                      "data": {
+                        "values": "div > [role=status]"
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Item count\">Items: 1</dd>",
+                          "target": [
+                            "dd[aria-label=\"Item count\"]"
+                          ]
+                        },
+                        {
+                          "html": "<dd role=\"status\" aria-label=\"Order total\">$100.00</dd>",
+                          "target": [
+                            "dd[aria-label=\"Order total\"]"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "dl element has direct children that are not allowed: div > [role=status]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "initial.png"
+        },
+        {
+          "state": "discounted",
+          "status": "missing"
+        },
+        {
+          "state": "persisted",
+          "status": "missing"
+        },
+        {
+          "state": "cleared",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.3471761419999986
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.07850522999999998,
+  "browser_s": 11.199708063,
+  "elapsed_s": 11.304358596,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 12.315910500008613
+}

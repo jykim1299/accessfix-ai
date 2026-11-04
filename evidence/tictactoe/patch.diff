@@ -1,0 +1,39 @@
+--- original/src/App.jsx
++++ candidate/src/App.jsx
+@@ -90,11 +90,11 @@
+   };
+ 
+   return (
+-    <div className={styles['grid-item']} onClick={handleClick}>
+-      <div style={{ opacity: value !== null ? 1 : 0, transition: 'all .1s ease-in-out' }}>
++    <button type="button" className={styles['grid-item']} onClick={handleClick} aria-label={`Cell ${iTh + 1}${value !== null ? `, ${value === 1 ? 'X' : 'O'}` : ', empty'}`}>
++      <div style={{ opacity: value !== null ? 1 : 0, transition: 'all .1s ease-in-out' }} aria-hidden="true">
+         {value !== null ? (value === 1 ? 'X' : 'O') : 'X'}
+       </div>
+-    </div>
++    </button>
+   );
+ };
+ 
+--- original/src/tictactoe.module.css
++++ candidate/src/tictactoe.module.css
+@@ -28,10 +28,19 @@
+   cursor: pointer;
+   border: 1px solid grey;
+   transition: all 0.2s ease;
++  background-color: #fff;
++  font-family: inherit;
++  font-weight: bold;
++  color: inherit;
+ }
+ 
+ .grid-item:hover {
+   box-shadow: rgb(50 50 93 / 15%) 0 30px 60px -12px inset;
++}
++
++.grid-item:focus-visible {
++  outline: 3px solid #000;
++  outline-offset: 2px;
+ }
+ 
+ .container button {

@@ -1,0 +1,2962 @@
+{
+  "schema_version": 1,
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-save",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "saved-summary",
+        "saved-storage",
+        "closed",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "saved"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.215885306
+        },
+        {
+          "kind": "pointer-input",
+          "name": "Display name",
+          "length": 12,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.4873130719999998
+        },
+        {
+          "kind": "pointer",
+          "role": "checkbox",
+          "name": "Email updates",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.5347670280000003
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Save preferences",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nAster Studi",
+            "inDialog": false
+          },
+          "elapsed_s": 1.588234751
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.837152432
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nAster Studi",
+            "inDialog": false
+          },
+          "elapsed_s": 1.919816355
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Create draft",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 1.9711113009999999
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-dialog-name",
+              "impact": "serious",
+              "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+              "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".preferences-dialog"
+                  ],
+                  "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                  "any": [
+                    {
+                      "id": "aria-label",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-label attribute does not exist or is empty"
+                    },
+                    {
+                      "id": "aria-labelledby",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                    },
+                    {
+                      "id": "non-empty-title",
+                      "data": {
+                        "messageKey": "noAttr"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element has no title attribute"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.0918822840000004
+    },
+    {
+      "id": "pointer-cancel",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.025375607
+        },
+        {
+          "kind": "pointer-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.2689816009999995
+        },
+        {
+          "kind": "pointer",
+          "role": "checkbox",
+          "name": "Email updates",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 1.3182755980000003
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 1.3701384709999993
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Edit delivery preferences",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.6005955759999997
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Cancel",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 1.6534374389999993
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Create draft",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 1.702023564
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-dialog-name",
+              "impact": "serious",
+              "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+              "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".preferences-dialog"
+                  ],
+                  "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                  "any": [
+                    {
+                      "id": "aria-label",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-label attribute does not exist or is empty"
+                    },
+                    {
+                      "id": "aria-labelledby",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                    },
+                    {
+                      "id": "non-empty-title",
+                      "data": {
+                        "messageKey": "noAttr"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element has no title attribute"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cancelled.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 1.8037146259999999
+    },
+    {
+      "id": "keyboard-save",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "saved-summary",
+        "saved-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "saved"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "saved-summary",
+          "status": "pass",
+          "expected": "Aster Studio · Email updates: Off",
+          "actual": "Aster Studio · Email updates: Off"
+        },
+        {
+          "id": "saved-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          },
+          "actual": {
+            "displayName": "Aster Studio",
+            "emailUpdates": false
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9689056499999997
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9966422399999992
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.6381559609999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.667844726999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.6949988839999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.7267606969999987
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 2.752299641999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 2.7775112739999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.805803271
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.831330332999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.8605631189999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.887175289
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.9262941469999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.949335017999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.974607599
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 3.010736857999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 3.0358341549999994
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 3.069195687999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1031584410000006
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.128692640999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.154278761999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 3.1785876799999997
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.2249376829999994
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.245204790999999
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.2901301780000005
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 12,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.418153657
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.483057265999999
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.505816494
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 3.5276776660000007
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 3.5456381009999998
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nAster Studi",
+            "inDialog": false
+          },
+          "elapsed_s": 3.5651663369999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.220336264999999
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.241658928
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.294848579999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 5.3159837539999995
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 5.335408613
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 5.363595542
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nAster Studi",
+            "inDialog": false
+          },
+          "elapsed_s": 5.40594818
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.426466024000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.446563374
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.469362943999999
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-dialog-name",
+              "impact": "serious",
+              "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+              "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".preferences-dialog"
+                  ],
+                  "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                  "any": [
+                    {
+                      "id": "aria-label",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-label attribute does not exist or is empty"
+                    },
+                    {
+                      "id": "aria-labelledby",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                    },
+                    {
+                      "id": "non-empty-title",
+                      "data": {
+                        "messageKey": "noAttr"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element has no title attribute"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "saved",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "saved.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 5.637130598999999
+    },
+    {
+      "id": "keyboard-cancel",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 0.9789873640000005
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0032653099999989
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.6475673040000003
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.6743927690000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.7049229589999997
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.7363273790000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 2.775551024999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 2.7971250870000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.8204343229999993
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.8412380570000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.878956892
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.9083275269999995
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.9671767139999994
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.003939976
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 3.0329261640000005
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 3.070386725999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 3.096458398999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1270840790000003
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1659955420000006
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1918086089999997
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.219910641999999
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 3.2637592530000004
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.3087087470000007
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.32445867
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.340630714999999
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.391800262999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.4212843709999996
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.4626309149999996
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 3.488652049
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 3.515008378999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.156906770999998
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.177593880000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.222941490000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 5.246708328
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 5.266005023999998
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 5.284151664000001
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 5.302181655
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 5.324928114999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.342843161000001
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 5.362493310999998
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-dialog-name",
+              "impact": "serious",
+              "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+              "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".preferences-dialog"
+                  ],
+                  "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                  "any": [
+                    {
+                      "id": "aria-label",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-label attribute does not exist or is empty"
+                    },
+                    {
+                      "id": "aria-labelledby",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                    },
+                    {
+                      "id": "non-empty-title",
+                      "data": {
+                        "messageKey": "noAttr"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element has no title attribute"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "cancelled.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 5.504225385999998
+    },
+    {
+      "id": "keyboard-escape",
+      "modality": "keyboard",
+      "status": "fail",
+      "required_checks": [
+        "content-preserved",
+        "opened",
+        "focus-entry",
+        "focus-forward",
+        "focus-reverse",
+        "cancelled-summary",
+        "cancelled-storage",
+        "closed",
+        "focus-return",
+        "reopened",
+        "background-action"
+      ],
+      "required_states": [
+        "closed",
+        "open",
+        "cancelled"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "opened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "focus-entry",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-forward",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            }
+          ]
+        },
+        {
+          "id": "focus-reverse",
+          "status": "fail",
+          "expected": "all key steps keep focus in dialog",
+          "actual": [
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            },
+            {
+              "tag": "BODY",
+              "role": null,
+              "name": null,
+              "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Save preferences",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Cancel",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": null,
+              "text": "",
+              "inDialog": true
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Create draft",
+              "inDialog": false
+            },
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": null,
+              "text": "Edit delivery preferences",
+              "inDialog": false
+            }
+          ]
+        },
+        {
+          "id": "closed",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "focus-return",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "cancelled-summary",
+          "status": "pass",
+          "expected": "Morgan · Email updates: On",
+          "actual": "Morgan · Email updates: On"
+        },
+        {
+          "id": "cancelled-storage",
+          "status": "pass",
+          "expected": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          },
+          "actual": {
+            "displayName": "Morgan",
+            "emailUpdates": true
+          }
+        },
+        {
+          "id": "reopened",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "background-action",
+          "status": "pass",
+          "expected": "1 drafts",
+          "actual": "1 drafts"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0139401870000002
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 1.03864084
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.723895462
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.750914331
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.7787709990000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 2.8063639900000017
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 2.8327131000000008
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 2.8601169200000003
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 2.887958065999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 2.912842380000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.941039836
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 2.9678714370000017
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.004216053
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.0333502489999993
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 3.061243770000001
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 3.0902619999999987
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1160854580000015
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 3.1431450860000005
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.172135577000001
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.2002849640000024
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.233754364
+        },
+        {
+          "kind": "key",
+          "key": "Shift+Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 3.2641346440000016
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 3.3036739320000015
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.322762952000001
+        },
+        {
+          "kind": "key",
+          "key": "ControlOrMeta+A",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.3434007889999995
+        },
+        {
+          "kind": "keyboard-input",
+          "name": "Display name",
+          "length": 16,
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.394421208
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.423317164
+        },
+        {
+          "kind": "key",
+          "key": "Space",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.443077645000001
+        },
+        {
+          "kind": "key",
+          "key": "Escape",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 3.4495411950000014
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 6.31140483
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Save preferences",
+            "inDialog": true
+          },
+          "elapsed_s": 6.32967253
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 6.347379664
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 6.366735613
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 6.385159576000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 6.426203743000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 6.444746179000002
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "INPUT",
+            "role": null,
+            "name": null,
+            "text": "",
+            "inDialog": true
+          },
+          "elapsed_s": 6.46398601
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Cancel",
+            "inDialog": true
+          },
+          "elapsed_s": 6.482987029
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / DELIVERY\n\nDelivery workspace\n\nKeep your delivery preferences in one place.\n\n01\nYour preferences\n\nMorgan · Em",
+            "inDialog": false
+          },
+          "elapsed_s": 6.501793503000001
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Edit delivery preferences",
+            "inDialog": false
+          },
+          "elapsed_s": 6.522251049999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 6.542490201000001
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Create draft",
+            "inDialog": false
+          },
+          "elapsed_s": 6.560477568999999
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "closed",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "closed.png"
+        },
+        {
+          "state": "open",
+          "status": "complete",
+          "violations": [
+            {
+              "id": "aria-dialog-name",
+              "impact": "serious",
+              "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+              "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+              "nodes": [
+                {
+                  "target": [
+                    ".preferences-dialog"
+                  ],
+                  "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                  "impact": "serious",
+                  "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                  "any": [
+                    {
+                      "id": "aria-label",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-label attribute does not exist or is empty"
+                    },
+                    {
+                      "id": "aria-labelledby",
+                      "data": null,
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                    },
+                    {
+                      "id": "non-empty-title",
+                      "data": {
+                        "messageKey": "noAttr"
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element has no title attribute"
+                    }
+                  ],
+                  "all": [],
+                  "none": []
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "open.png"
+        },
+        {
+          "state": "cancelled",
+          "status": "missing"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 6.679534388
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.11161471600000004,
+  "browser_s": 23.911368249,
+  "elapsed_s": 24.074434547999996,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 25.70307050005067
+}

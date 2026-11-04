@@ -1,0 +1,43 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "public-evidence/m5/public-app/decision.json",
+      "sha256": "973c02775a11656dbb98f1fc09b28892789553b096171e2320c852728eaf7711"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "public-evidence/m5/public-app-meta-summary.json",
+      "sha256": "e1df5d49aa003e76ebe753891cc97d3bbbc427ddb9eba14a21b325cc8cf660ca"
+    }
+  ],
+  "data": {
+    "tasks": [
+      {
+        "id": "keyboard-summary",
+        "name": "Complete both keyboard game tasks (Enter and Space)",
+        "mode": "keyboard",
+        "beforePassed": false,
+        "afterPassed": true,
+        "beforeCount": 0,
+        "afterCount": 2,
+        "total": 2,
+        "evidenceLevel": "Preserved aggregate result; detailed per-step log is not in this public copy."
+      },
+      {
+        "id": "pointer-summary",
+        "name": "Complete the three pointer game outcomes",
+        "mode": "pointer",
+        "beforePassed": true,
+        "afterPassed": true,
+        "beforeCount": 3,
+        "afterCount": 3,
+        "total": 3,
+        "evidenceLevel": "Preserved aggregate result; detailed per-step log is not in this public copy."
+      }
+    ],
+    "keyboardLogAvailable": false
+  }
+}

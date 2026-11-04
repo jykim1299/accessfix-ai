@@ -1,0 +1,620 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m3-meta/live-v2/jobs/analyses/6f85e31f4bc34de395d46087c653ad25/baseline/result.json",
+      "sha256": "201f2bd45af19a953fc36615e12c4115f88464ffe3745ea1aa37a5de7a5537f0"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m3-meta/live-v2/jobs/repairs/fe2e9435f2e84842a497a7004a37a3da/validation/result.json",
+      "sha256": "d4af0e8caabed56af9564d3dd29a3a85a78eeabf63a2c92ab942a05c044a3c6d"
+    }
+  ],
+  "data": {
+    "before": [
+      {
+        "task": "pointer-save",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-dialog-name",
+                "impact": "serious",
+                "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+                "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".preferences-dialog"
+                    ],
+                    "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "any": [
+                      {
+                        "id": "aria-label",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty"
+                      },
+                      {
+                        "id": "aria-labelledby",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                      },
+                      {
+                        "id": "non-empty-title",
+                        "data": {
+                          "messageKey": "noAttr"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element has no title attribute"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-cancel",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-dialog-name",
+                "impact": "serious",
+                "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+                "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".preferences-dialog"
+                    ],
+                    "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "any": [
+                      {
+                        "id": "aria-label",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty"
+                      },
+                      {
+                        "id": "aria-labelledby",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                      },
+                      {
+                        "id": "non-empty-title",
+                        "data": {
+                          "messageKey": "noAttr"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element has no title attribute"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-save",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-dialog-name",
+                "impact": "serious",
+                "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+                "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".preferences-dialog"
+                    ],
+                    "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "any": [
+                      {
+                        "id": "aria-label",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty"
+                      },
+                      {
+                        "id": "aria-labelledby",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                      },
+                      {
+                        "id": "non-empty-title",
+                        "data": {
+                          "messageKey": "noAttr"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element has no title attribute"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-cancel",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-dialog-name",
+                "impact": "serious",
+                "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+                "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".preferences-dialog"
+                    ],
+                    "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "any": [
+                      {
+                        "id": "aria-label",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty"
+                      },
+                      {
+                        "id": "aria-labelledby",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                      },
+                      {
+                        "id": "non-empty-title",
+                        "data": {
+                          "messageKey": "noAttr"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element has no title attribute"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-escape",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [
+              {
+                "id": "aria-dialog-name",
+                "impact": "serious",
+                "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+                "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=axeAPI",
+                "nodes": [
+                  {
+                    "target": [
+                      ".preferences-dialog"
+                    ],
+                    "html": "<div class=\"preferences-dialog\" role=\"dialog\" aria-modal=\"true\">",
+                    "impact": "serious",
+                    "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "any": [
+                      {
+                        "id": "aria-label",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-label attribute does not exist or is empty"
+                      },
+                      {
+                        "id": "aria-labelledby",
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                      },
+                      {
+                        "id": "non-empty-title",
+                        "data": {
+                          "messageKey": "noAttr"
+                        },
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "message": "Element has no title attribute"
+                      }
+                    ],
+                    "all": [],
+                    "none": []
+                  }
+                ]
+              }
+            ],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "missing"
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "task": "pointer-save",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          }
+        ]
+      },
+      {
+        "task": "pointer-cancel",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-save",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "saved",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "saved.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-cancel",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          }
+        ]
+      },
+      {
+        "task": "keyboard-escape",
+        "audits": [
+          {
+            "state": "closed",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "closed.png"
+          },
+          {
+            "state": "open",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "open.png"
+          },
+          {
+            "state": "cancelled",
+            "status": "complete",
+            "violations": [],
+            "incomplete": [],
+            "test_engine": {
+              "name": "axe-core",
+              "version": "4.14.0"
+            },
+            "screenshot": "cancelled.png"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "derived": true,
+  "notice": "Derived presentation of preserved public evidence; not a new experiment.",
+  "sources": [
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/analyses/8328c19142b14cb4bd87c0403fd20a5d/baseline/result.json",
+      "sha256": "df59b706b45cd84811b859d32a360874fbebdc04177d9b51caa78018050dd66f"
+    },
+    {
+      "origin": "reviewed-public-archive",
+      "member": "artifacts/m4/meta-live-v1/dev-tabs/jobs/repairs/f4ebaa0f3eaa4ee0907961d4596fb874/validation/result.json",
+      "sha256": "ac40d767740af0ae0293cacc739804e4dd906c8a952372bc3bb9ba12a8ceb767"
+    }
+  ],
+  "data": [
+    {
+      "id": "pointer-activity",
+      "name": "Click Activity and keep notes working",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ]
+    },
+    {
+      "id": "pointer-billing",
+      "name": "Click Billing and keep notes working",
+      "mode": "pointer",
+      "beforePassed": true,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ]
+    },
+    {
+      "id": "keyboard-activity",
+      "name": "Open Activity, return, and save a note",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "target-panel",
+          "status": "missing"
+        },
+        {
+          "id": "active-tab",
+          "status": "missing"
+        },
+        {
+          "id": "return-panel",
+          "status": "missing"
+        },
+        {
+          "id": "note-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-return",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ]
+    },
+    {
+      "id": "keyboard-billing",
+      "name": "Open Billing, return, and save a note",
+      "mode": "keyboard",
+      "beforePassed": false,
+      "afterPassed": true,
+      "beforeChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "fail",
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "target-panel",
+          "status": "missing"
+        },
+        {
+          "id": "active-tab",
+          "status": "missing"
+        },
+        {
+          "id": "return-panel",
+          "status": "missing"
+        },
+        {
+          "id": "note-action",
+          "status": "missing"
+        },
+        {
+          "id": "persistence",
+          "status": "missing"
+        },
+        {
+          "id": "focus-return",
+          "status": "missing"
+        }
+      ],
+      "afterChecks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ]
+    }
+  ]
+}

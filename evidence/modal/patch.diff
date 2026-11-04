@@ -1,0 +1,70 @@
+--- original/src/ModalApp.tsx
++++ candidate/src/ModalApp.tsx
+@@ -1,4 +1,4 @@
+-import React, { FormEvent, useEffect, useState } from 'react';
++import React, { FormEvent, useEffect, useRef, useState } from 'react';
+ 
+ type Preferences = { displayName: string; emailUpdates: boolean };
+ const storageKey = 'accessfix.delivery';
+@@ -19,10 +19,43 @@
+   const [draft, setDraft] = useState<Preferences>(saved);
+   const [open, setOpen] = useState(false);
+   const [drafts, setDrafts] = useState(0);
++  const editButtonRef = useRef<HTMLButtonElement>(null);
++  const dialogRef = useRef<HTMLDivElement>(null);
+ 
+   useEffect(() => {
+     localStorage.setItem(storageKey, JSON.stringify(saved));
+   }, [saved]);
++
++  useEffect(() => {
++    if (!open) return;
++    const trigger = editButtonRef.current;
++    const dialog = dialogRef.current;
++    const firstField = dialog?.querySelector<HTMLElement>("#display-name");
++    ((firstField ?? dialog) as HTMLElement | null | undefined)?.focus();
++    function handleKeyDown(event: KeyboardEvent) {
++      if (event.key === "Escape") {
++        event.preventDefault();
++        setOpen(false);
++      } else if (event.key === "Tab" && dialog) {
++        const focusables = Array.from(dialog.querySelectorAll<HTMLElement>("button, input, select, textarea, a[href], [tabindex]:not([tabindex=\"-1\"])")).filter((el) => !el.hasAttribute("disabled"));
++        if (focusables.length === 0) return;
++        const first = focusables[0];
++        const last = focusables[focusables.length - 1];
++        if (event.shiftKey && document.activeElement === first) {
++          event.preventDefault();
++          last.focus();
++        } else if (!event.shiftKey && document.activeElement === last) {
++          event.preventDefault();
++          first.focus();
++        }
++      }
++    }
++    document.addEventListener("keydown", handleKeyDown);
++    return () => {
++      document.removeEventListener("keydown", handleKeyDown);
++      trigger?.focus();
++    };
++  }, [open]);
+ 
+   function openPreferences() {
+     setDraft({ ...saved });
+@@ -45,7 +78,7 @@
+       <section className="settings-card" aria-labelledby="saved-title">
+         <div className="card-heading"><span className="section-number">01</span><h2 id="saved-title">Your preferences</h2></div>
+         <p role="status" aria-label="Saved preferences" className="saved-summary">{saved.displayName} · Email updates: {saved.emailUpdates ? 'On' : 'Off'}</p>
+-        <button className="primary" onClick={openPreferences}>Edit delivery preferences</button>
++        <button ref={editButtonRef} className="primary" onClick={openPreferences}>Edit delivery preferences</button>
+       </section>
+       <section className="draft-card" aria-labelledby="draft-title">
+         <div><h2 id="draft-title">Delivery drafts</h2><p>Prepare a new delivery without changing your preferences.</p></div>
+@@ -55,7 +88,7 @@
+     </section>
+ 
+     {open && <div className="modal-backdrop">
+-      <div className="preferences-dialog" role="dialog" aria-modal="true">
++      <div ref={dialogRef} tabIndex={-1} className="preferences-dialog" role="dialog" aria-modal="true" aria-labelledby="preferences-title" aria-describedby="preferences-description">
+         <p className="eyebrow">WORKSPACE SETTINGS</p>
+         <h2 id="preferences-title">Delivery preferences</h2>
+         <p id="preferences-description">Choose the name and updates used for your deliveries.</p>

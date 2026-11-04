@@ -1,0 +1,15 @@
+--- original/src/App.tsx
++++ candidate/src/App.tsx
+@@ -17,10 +17,10 @@
+     <header><p className="eyebrow">NORTHSTAR / ORDERS</p><h1>Order summary</h1><p>Review your items and apply your available discount.</p></header>
+     <section className="card" aria-labelledby="order-title">
+       <h2 id="order-title">Studio supplies</h2>
+-      <dl><div><dt>Quantity</dt><dd role="status" aria-label="Item count">Items: {order.items}</dd></div><div><dt>Total</dt><dd role="status" aria-label="Order total">${total.toFixed(2)}</dd></div></dl>
++      <dl><div><dt>Quantity</dt><dd><span role="status" aria-label="Item count">Items: {order.items}</span></dd></div><div><dt>Total</dt><dd><span role="status" aria-label="Order total">${total.toFixed(2)}</span></dd></div></dl>
+       <p>Available offer: 10% off the entire order.</p>
+       <p role="status" aria-label="Coupon status">{order.coupon ? 'Coupon applied' : 'No coupon'}</p>
+-      <div className="actions"><div className="action-control" role="button" tabIndex={0} onClick={() => setOrder(current => ({ ...current, coupon: true }))}>Apply coupon</div><button className="muted-button" onClick={() => setOrder(current => ({ ...current, coupon: false }))}>Clear coupon</button></div>
++      <div className="actions"><button className="action-control" onClick={() => setOrder(current => ({ ...current, coupon: true }))}>Apply coupon</button><button className="muted-button" onClick={() => setOrder(current => ({ ...current, coupon: false }))}>Clear coupon</button></div>
+     </section>
+     <section className="card secondary" aria-labelledby="items-title"><div><h2 id="items-title">Add supplies</h2><p>Each additional item costs $100 before discounts.</p></div><button onClick={() => setOrder(current => ({ ...current, items: current.items + 1 }))}>Add item</button></section>
+     <footer>Your demo order stays in this browser.</footer>

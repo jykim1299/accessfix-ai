@@ -1,0 +1,47 @@
+--- original/src/App.tsx
++++ candidate/src/App.tsx
+@@ -1,4 +1,4 @@
+-import React, { useEffect, useState } from 'react';
++import React, { useEffect, useRef, useState } from 'react';
+ 
+ type View = 'overview' | 'activity' | 'billing';
+ const views: { id: View; label: string; heading: string; body: string }[] = [
+@@ -14,13 +14,37 @@
+ export default function App() {
+   const [selected, setSelected] = useState<View>('overview');
+   const [notes, setNotes] = useState(initialNotes);
++  const tabRefs = useRef<(HTMLDivElement | null)[]>([]);
+   useEffect(() => { localStorage.setItem('accessfix.m4.tabs.notes', String(notes)); }, [notes]);
++  const onTabKeyDown = (event: React.KeyboardEvent<HTMLDivElement>, index: number) => {
++    let next: number | null = null;
++    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
++      next = (index + 1) % views.length;
++    } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
++      next = (index - 1 + views.length) % views.length;
++    } else if (event.key === 'Home') {
++      next = 0;
++    } else if (event.key === 'End') {
++      next = views.length - 1;
++    } else if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
++      event.preventDefault();
++      setSelected(views[index].id);
++      return;
++    } else {
++      return;
++    }
++    event.preventDefault();
++    if (next !== null) {
++      setSelected(views[next].id);
++      tabRefs.current[next]?.focus();
++    }
++  };
+   return <main>
+     <header><p className="eyebrow">NORTHSTAR / PROJECTS</p><h1>Project workspace</h1><p>Choose a view and keep your project notes nearby.</p></header>
+     <section className="card" aria-labelledby="views-title">
+       <h2 id="views-title">Project views</h2>
+       <div role="tablist" aria-label="Project views" className="tab-list">
+-        {views.map(view => <div key={view.id} id={`tab-${view.id}`} role="tab" tabIndex={selected === view.id ? 0 : -1} aria-selected={selected === view.id} aria-controls={`panel-${view.id}`} onClick={() => setSelected(view.id)}>{view.label}</div>)}
++        {views.map((view, index) => <div key={view.id} ref={el => { tabRefs.current[index] = el; }} id={`tab-${view.id}`} role="tab" tabIndex={selected === view.id ? 0 : -1} aria-selected={selected === view.id} aria-controls={`panel-${view.id}`} onClick={() => setSelected(view.id)} onKeyDown={event => onTabKeyDown(event, index)}>{view.label}</div>)}
+       </div>
+       {views.map(view => <section key={view.id} id={`panel-${view.id}`} role="tabpanel" aria-labelledby={`tab-${view.id}`} hidden={selected !== view.id} tabIndex={0} className="view-panel">
+         <h3>{view.heading}</h3><p>{view.body}</p>

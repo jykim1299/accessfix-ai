@@ -1,0 +1,802 @@
+{
+  "schema_version": 1,
+  "case_id": "dev-tabs",
+  "mode": "final",
+  "build_ok": true,
+  "workflows": [
+    {
+      "id": "pointer-activity",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence"
+      ],
+      "required_states": [
+        "overview",
+        "activity",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Activity",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Activity",
+            "inDialog": false
+          },
+          "elapsed_s": 1.1505714509999998
+        },
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Overview",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.427977789
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add note",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.6731520529999997
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.241468108
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "activity",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "activity.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.594081249
+    },
+    {
+      "id": "pointer-billing",
+      "modality": "pointer",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence"
+      ],
+      "required_states": [
+        "overview",
+        "billing",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Billing",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Billing",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0791750939999998
+        },
+        {
+          "kind": "pointer",
+          "role": "tab",
+          "name": "Overview",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.3371004829999997
+        },
+        {
+          "kind": "pointer",
+          "role": "button",
+          "name": "Add note",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5366241299999996
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0993887630000003
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "billing",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "billing.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.43133556
+    },
+    {
+      "id": "keyboard-activity",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence",
+        "focus-target",
+        "focus-return"
+      ],
+      "required_states": [
+        "overview",
+        "activity",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0210165100000004
+        },
+        {
+          "kind": "key",
+          "key": "ArrowRight",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Activity",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0467701880000004
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Activity",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0724724150000002
+        },
+        {
+          "kind": "key",
+          "key": "ArrowLeft",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2822794010000007
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.3078619160000007
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "SECTION",
+            "role": "tabpanel",
+            "name": null,
+            "text": "Project overview\n\nThe Northstar workspace has three active projects.",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5189770130000007
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.54109713
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5625847659999998
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.128600109
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "activity",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "activity.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.4666638839999995
+    },
+    {
+      "id": "keyboard-billing",
+      "modality": "keyboard",
+      "status": "pass",
+      "required_checks": [
+        "content-preserved",
+        "target-panel",
+        "active-tab",
+        "return-panel",
+        "note-action",
+        "persistence",
+        "focus-target",
+        "focus-return"
+      ],
+      "required_states": [
+        "overview",
+        "billing",
+        "returned-overview",
+        "persisted"
+      ],
+      "checks": [
+        {
+          "id": "content-preserved",
+          "status": "pass",
+          "expected": "Notes: 0",
+          "actual": "Notes: 0"
+        },
+        {
+          "id": "focus-target",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "target-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "active-tab",
+          "status": "pass",
+          "expected": "true",
+          "actual": "true"
+        },
+        {
+          "id": "focus-return",
+          "status": "pass",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "return-panel",
+          "status": "pass",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "note-action",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        },
+        {
+          "id": "persistence",
+          "status": "pass",
+          "expected": "Notes: 1",
+          "actual": "Notes: 1"
+        }
+      ],
+      "actions": [
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0094195149999996
+        },
+        {
+          "kind": "key",
+          "key": "ArrowLeft",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Billing",
+            "inDialog": false
+          },
+          "elapsed_s": 1.0316098359999997
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Billing",
+            "inDialog": false
+          },
+          "elapsed_s": 1.055685207999999
+        },
+        {
+          "kind": "key",
+          "key": "ArrowRight",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.2523980389999998
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "DIV",
+            "role": "tab",
+            "name": null,
+            "text": "Overview",
+            "inDialog": false
+          },
+          "elapsed_s": 1.278099871999999
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "SECTION",
+            "role": "tabpanel",
+            "name": null,
+            "text": "Project overview\n\nThe Northstar workspace has three active projects.",
+            "inDialog": false
+          },
+          "elapsed_s": 1.4850726679999988
+        },
+        {
+          "kind": "key",
+          "key": "Tab",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5067851129999998
+        },
+        {
+          "kind": "key",
+          "key": "Enter",
+          "focus": {
+            "tag": "BUTTON",
+            "role": null,
+            "name": null,
+            "text": "Add note",
+            "inDialog": false
+          },
+          "elapsed_s": 1.5321662120000001
+        },
+        {
+          "kind": "reload",
+          "focus": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "text": "NORTHSTAR / PROJECTS\n\nProject workspace\n\nChoose a view and keep your project notes nearby.\n\nProject views\nOverview\nActiv",
+            "inDialog": false
+          },
+          "elapsed_s": 2.0943670079999994
+        }
+      ],
+      "errors": [],
+      "audits": [
+        {
+          "state": "overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "overview.png"
+        },
+        {
+          "state": "billing",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "billing.png"
+        },
+        {
+          "state": "returned-overview",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "returned-overview.png"
+        },
+        {
+          "state": "persisted",
+          "status": "complete",
+          "violations": [],
+          "incomplete": [],
+          "test_engine": {
+            "name": "axe-core",
+            "version": "4.14.0"
+          },
+          "screenshot": "persisted.png"
+        }
+      ],
+      "page_errors": [],
+      "blocked_requests": [],
+      "elapsed_s": 2.426368774999999
+    }
+  ],
+  "environment": {
+    "playwright": "1.64.1",
+    "axe": "4.14.0",
+    "react": "19.2.0",
+    "esbuild": "0.25.12",
+    "chromium_sandbox": false,
+    "source_scripts_executed": false,
+    "network": "none",
+    "chromium": "156.0.8078.4"
+  },
+  "build_s": 0.09358731299999999,
+  "browser_s": 10.095417491000001,
+  "elapsed_s": 10.217235502,
+  "image_id": "sha256:da0be7beb30eab8e2315e3b76a4df5659f2497bb7c82d20eb244f6f08cedf498",
+  "container_exit_code": 0,
+  "wall_s": 11.342945000040345
+}
